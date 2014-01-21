@@ -7,7 +7,10 @@ Collections Of Useful Bash Linux Scripts
 ===========
 MULTIMEDIA
 
+videoaudioconv.sh -> audio and video converter, based on ffmpeg. Extract even audio from video
+
 youtube-sl.sh -> command line interface to youtube-dl https://github.com/rg3/youtube-dl
+
 
 
 ===========
