@@ -17,6 +17,8 @@ youtube-sl.sh -> command line interface to youtube-dl https://github.com/rg3/you
 ===========
 SYSTEM
 
+isoedit.sh -> script that let the user edits a Linux Live ISO
+
 myip.sh -> find local and external IP
 
 linuxversion.sh -> finds the current linux distribution's name and version
