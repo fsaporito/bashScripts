@@ -33,6 +33,8 @@ myip.sh -> find local and external IP
 
 linux_version.sh -> finds the current linux distribution's name and version
 
+ramdisk.sh -> crypted ramdisk creation and elimination
+
 
 
 ===========
