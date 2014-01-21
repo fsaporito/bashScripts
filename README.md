@@ -3,6 +3,13 @@ bashScripts
 
 Collections Of Useful Bash Linux Scripts
 
+===========
+
+wiki.sh -> generate a wordlist from all the articles on wikipedia (all languages)
+
+===========
+
+wordlisted.sh -> wordlist editor
 
 ===========
 
