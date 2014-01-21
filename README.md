@@ -7,12 +7,12 @@ Collections Of Useful Bash Linux Scripts
 ===========
 FIREWALL
 
-del_firewall.sh -> delete the currents IP tables rules
+del_firewall.sh -> delete the currents IP tables rules [require root]
 
-firewall_client.sh -> IP tables rules for a client computer
+firewall_client.sh -> IP tables rules for a client computer [require root]
 
-firewall_server.sh -> IP tables rules for a server computer
-
+firewall_server.sh -> IP tables rules for a server computer [require root]
+ 
 
 
 ===========
@@ -27,13 +27,13 @@ youtube-sl.sh -> command line interface to youtube-dl https://github.com/rg3/you
 ===========
 SYSTEM
 
-iso_edit.sh -> script that let the user edits a Linux Live ISO
+iso_edit.sh -> script that let the user edits a Linux Live ISO [require root]
 
 myip.sh -> find local and external IP
 
 linux_version.sh -> finds the current linux distribution's name and version
 
-ramdisk.sh -> crypted ramdisk creation and elimination
+ramdisk.sh -> crypted ramdisk creation and elimination [require root]
 
 
 
