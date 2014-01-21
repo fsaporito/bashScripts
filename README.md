@@ -13,10 +13,13 @@ videoaudioconv.sh -> audio and video converter, based on ffmpeg. Extract even au
 youtube-sl.sh -> command line interface to youtube-dl https://github.com/rg3/youtube-dl
 
 
+
 ===========
 SYSTEM
 
 myip.sh -> find local and external IP
+
+linuxversion.sh -> finds the current linux distribution's name and version
 
 
 
