@@ -45,7 +45,7 @@ ${downloader} http://dumps.wikimedia.org/afwiki/latest/afwiki-latest-pages-artic
 bzip2 -d -c afwiki-latest-pages-articles.xml.bz2 >> afwiki.xml
 rm -f afwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=50000 afwiki.xml
 rm -f afwiki.xml
 
@@ -72,7 +72,7 @@ ${downloader} http://dumps.wikimedia.org/sqwiki/latest/sqwiki-latest-pages-artic
 bzip2 -d -c sqwiki-latest-pages-articles.xml.bz2 >> sqwiki.xml
 rm -f sqwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 sqwiki.xml
 rm -f sqwiki.xml
 
@@ -99,7 +99,7 @@ ${downloader} http://dumps.wikimedia.org/arwiki/latest/arwiki-latest-pages-artic
 bzip2 -d -c arwiki-latest-pages-articles.xml.bz2 >> arwiki.xml
 rm -f arwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 arwiki.xml
 rm -f arwiki.xml
 
@@ -126,7 +126,7 @@ ${downloader} http://dumps.wikimedia.org/hywiki/latest/hywiki-latest-pages-artic
 bzip2 -d -c hywiki-latest-pages-articles.xml.bz2 >> hywiki.xml
 rm -f hywiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 hywiki.xml
 rm -f hywiki.xml
 
@@ -153,7 +153,7 @@ ${downloader} http://dumps.wikimedia.org/azwiki/latest/azwiki-latest-pages-artic
 bzip2 -d -c azwiki-latest-pages-articles.xml.bz2 >> azwiki.xml
 rm -f azwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 azwiki.xml
 rm -f azwiki.xml
 
@@ -180,7 +180,7 @@ ${downloader} http://dumps.wikimedia.org/euwiki/latest/euwiki-latest-pages-artic
 bzip2 -d -c euwiki-latest-pages-articles.xml.bz2 >> euwiki.xml
 rm -f euwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 euwiki.xml
 rm -f euwiki.xml
 
@@ -207,7 +207,7 @@ ${downloader} http://dumps.wikimedia.org/bewiki/latest/bewiki-latest-pages-artic
 bzip2 -d -c bewiki-latest-pages-articles.xml.bz2 >> bewiki.xml
 rm -f bewiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 bewiki.xml
 rm -f bewiki.xml
 
@@ -234,7 +234,7 @@ ${downloader} http://dumps.wikimedia.org/bgwiki/latest/bgwiki-latest-pages-artic
 bzip2 -d -c bgwiki-latest-pages-articles.xml.bz2 >> bgwiki.xml
 rm -f bgwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 bgwiki.xml
 rm -f bgwiki.xml
 
@@ -261,7 +261,7 @@ ${downloader} http://dumps.wikimedia.org/cawiki/latest/cawiki-latest-pages-artic
 bzip2 -d -c cawiki-latest-pages-articles.xml.bz2 >> cawiki.xml
 rm -f cawiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 cawiki.xml
 rm -f cawiki.xml
 
@@ -288,7 +288,7 @@ ${downloader} http://dumps.wikimedia.org/zhwiki/latest/zhwiki-latest-pages-artic
 bzip2 -d -c zhwiki-latest-pages-articles.xml.bz2 >> zhwiki.xml
 rm -f zhwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 zhwiki.xml
 rm -f zhwiki.xml
 
@@ -315,7 +315,7 @@ ${downloader} http://dumps.wikimedia.org/hrwiki/latest/hrwiki-latest-pages-artic
 bzip2 -d -c hrwiki-latest-pages-articles.xml.bz2 >> hrwiki.xml
 rm -f hrwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 hrwiki.xml
 rm -f hrwiki.xml
 
@@ -342,7 +342,7 @@ ${downloader} http://dumps.wikimedia.org/cswiki/latest/cswiki-latest-pages-artic
 bzip2 -d -c cswiki-latest-pages-articles.xml.bz2 >> cswiki.xml
 rm -f cswiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 cswiki.xml
 rm -f cswiki.xml
 
@@ -369,7 +369,7 @@ ${downloader} http://dumps.wikimedia.org/dawiki/latest/dawiki-latest-pages-artic
 bzip2 -d -c dawiki-latest-pages-articles.xml.bz2 >> dawiki.xml
 rm -f dawiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 dawiki.xml
 rm -f dawiki.xml
 
@@ -396,7 +396,7 @@ ${downloader} http://dumps.wikimedia.org/dewiki/latest/dewiki-latest-pages-artic
 bzip2 -d -c dewiki-latest-pages-articles.xml.bz2 >> dewiki.xml
 rm -f dewiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 dewiki.xml
 rm -f dewiki.xml
 
@@ -423,7 +423,7 @@ ${downloader} http://dumps.wikimedia.org/emlwiki/latest/emlwiki-latest-pages-art
 bzip2 -d -c emlwiki-latest-pages-articles.xml.bz2 >> emlwiki.xml
 rm -f emlwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=50000 emlwiki.xml
 rm -f emlwiki.xml
 
@@ -450,7 +450,7 @@ ${downloader} http://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-artic
 bzip2 -d -c enwiki-latest-pages-articles.xml.bz2 >> enwiki.xml
 rm -f enwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=10000000 enwiki.xml
 rm -f enwiki.xml
 
@@ -477,7 +477,7 @@ ${downloader} http://dumps.wikimedia.org/eswiki/latest/eswiki-latest-pages-artic
 bzip2 -d -c eswiki-latest-pages-articles.xml.bz2 >> eswiki.xml
 rm -f eswiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 eswiki.xml
 rm -f eswiki.xml
 
@@ -504,7 +504,7 @@ ${downloader} http://dumps.wikimedia.org/eowiki/latest/eowiki-latest-pages-artic
 bzip2 -d -c eowiki-latest-pages-articles.xml.bz2 >> eowiki.xml
 rm -f eowiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 eowiki.xml
 rm -f eowiki.xml
 
@@ -531,7 +531,7 @@ ${downloader} http://dumps.wikimedia.org/etwiki/latest/etwiki-latest-pages-artic
 bzip2 -d -c etwiki-latest-pages-articles.xml.bz2 >> etwiki.xml
 rm -f etwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=5000000 etwiki.xml
 rm -f etwiki.xml
 
@@ -558,7 +558,7 @@ ${downloader} http://dumps.wikimedia.org/frwiki/latest/frwiki-latest-pages-artic
 bzip2 -d -c frwiki-latest-pages-articles.xml.bz2 >> frwiki.xml
 rm -f frwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=5000000 frwiki.xml
 rm -f frwiki.xml
 
@@ -585,7 +585,7 @@ ${downloader} http://dumps.wikimedia.org/glwiki/latest/glwiki-latest-pages-artic
 bzip2 -d -c glwiki-latest-pages-articles.xml.bz2 >> glwiki.xml
 rm -f glwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 glwiki.xml
 rm -f glwiki.xml
 
@@ -612,7 +612,7 @@ ${downloader} http://dumps.wikimedia.org/gotwiki/latest/gotwiki-latest-pages-art
 bzip2 -d -c gotwiki-latest-pages-articles.xml.bz2 >> gotwiki.xml
 rm -f gotwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 gotwiki.xml
 rm -f gotwiki.xml
 
@@ -639,7 +639,7 @@ ${downloader} http://dumps.wikimedia.org/elwiki/latest/elwiki-latest-pages-artic
 bzip2 -d -c elwiki-latest-pages-articles.xml.bz2 >> elwiki.xml
 rm -f elwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 elwiki.xml
 rm -f elwiki.xml
 
@@ -666,7 +666,7 @@ ${downloader} http://dumps.wikimedia.org/hewiki/latest/hewiki-latest-pages-artic
 bzip2 -d -c hewiki-latest-pages-articles.xml.bz2 >> hewiki.xml
 rm -f hewiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 hewiki.xml
 rm -f hewiki.xml
 
@@ -693,7 +693,7 @@ ${downloader} http://dumps.wikimedia.org/huwiki/latest/huwiki-latest-pages-artic
 bzip2 -d -c huwiki-latest-pages-articles.xml.bz2 >> huwiki.xml
 rm -f huwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 huwiki.xml
 rm -f huwiki.xml
 
@@ -720,7 +720,7 @@ ${downloader} http://dumps.wikimedia.org/gawiki/latest/gawiki-latest-pages-artic
 bzip2 -d -c gawiki-latest-pages-articles.xml.bz2 >> gawiki.xml
 rm -f gawiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 gawiki.xml
 rm -f gawiki.xml
 
@@ -747,7 +747,7 @@ ${downloader} http://dumps.wikimedia.org/itwiki/latest/itwiki-latest-pages-artic
 bzip2 -d -c itwiki-latest-pages-articles.xml.bz2 >> itwiki.xml
 rm -f itwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 itwiki.xml
 rm -f itwiki.xml
 
@@ -801,7 +801,7 @@ ${downloader} http://dumps.wikimedia.org/kowiki/latest/kowiki-latest-pages-artic
 bzip2 -d -c kowiki-latest-pages-articles.xml.bz2 >> kowiki.xml
 rm -f kowiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 kowiki.xml
 rm -f kowiki.xml
 
@@ -828,7 +828,7 @@ ${downloader} http://dumps.wikimedia.org/lawiki/latest/lawiki-latest-pages-artic
 bzip2 -d -c lawiki-latest-pages-articles.xml.bz2 >> lawiki.xml
 rm -f lawiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=50000 lawiki.xml
 rm -f lawiki.xml
 
@@ -855,7 +855,7 @@ ${downloader} http://dumps.wikimedia.org/lijwiki/latest/lijwiki-latest-pages-art
 bzip2 -d -c lijwiki-latest-pages-articles.xml.bz2 >> lijwiki.xml
 rm -f lijwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=50000 lijwiki.xml
 rm -f lijwiki.xml
 
@@ -882,7 +882,7 @@ ${downloader} http://dumps.wikimedia.org/idwiki/latest/idwiki-latest-pages-artic
 bzip2 -d -c idwiki-latest-pages-articles.xml.bz2 >> idwiki.xml
 rm -f idwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 idwiki.xml
 rm -f idwiki.xml
 
@@ -909,7 +909,7 @@ ${downloader} http://dumps.wikimedia.org/ltwiki/latest/ltwiki-latest-pages-artic
 bzip2 -d -c ltwiki-latest-pages-articles.xml.bz2 >> ltwiki.xml
 rm -f ltwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 ltwiki.xml
 rm -f ltwiki.xml
 
@@ -936,7 +936,7 @@ ${downloader} http://dumps.wikimedia.org/lbwiki/latest/lbwiki-latest-pages-artic
 bzip2 -d -c lbwiki-latest-pages-articles.xml.bz2 >> lbwiki.xml
 rm -f lbwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 lbwiki.xml
 rm -f lbwiki.xml
 
@@ -963,7 +963,7 @@ ${downloader} http://dumps.wikimedia.org/mswiki/latest/mswiki-latest-pages-artic
 bzip2 -d -c mswiki-latest-pages-articles.xml.bz2 >> mswiki.xml
 rm -f mswiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 mswiki.xml
 rm -f mswiki.xml
 
@@ -990,7 +990,7 @@ ${downloader} http://dumps.wikimedia.org/napwiki/latest/napwiki-latest-pages-art
 bzip2 -d -c napwiki-latest-pages-articles.xml.bz2 >> napwiki.xml
 rm -f napwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 napwiki.xml
 rm -f napwiki.xml
 
@@ -1017,7 +1017,7 @@ ${downloader} http://dumps.wikimedia.org/nlwiki/latest/nlwiki-latest-pages-artic
 bzip2 -d -c nrwiki-latest-pages-articles.xml.bz2 >> nrwiki.xml
 rm -f nrwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 nrwiki.xml
 rm -f nrwiki.xml
 
@@ -1044,7 +1044,7 @@ ${downloader} http://dumps.wikimedia.org/nowiki/latest/nowiki-latest-pages-artic
 bzip2 -d -c nowiki-latest-pages-articles.xml.bz2 >> nowiki.xml
 rm -f nowiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 nowiki.xml
 rm -f nowiki.xml
 
@@ -1071,7 +1071,7 @@ ${downloader} http://dumps.wikimedia.org/fawiki/latest/fawiki-latest-pages-artic
 bzip2 -d -c fawiki-latest-pages-articles.xml.bz2 >> fawiki.xml
 rm -f fawiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 fawiki.xml
 rm -f fawiki.xml
 
@@ -1098,7 +1098,7 @@ ${downloader} http://dumps.wikimedia.org/pmswiki/latest/pmswiki-latest-pages-art
 bzip2 -d -c pmswiki-latest-pages-articles.xml.bz2 >> pmswiki.xml
 rm -f pmswiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=50000 pmswiki.xml
 rm -f pmswiki.xml
 
@@ -1125,7 +1125,7 @@ ${downloader} http://dumps.wikimedia.org/plwiki/latest/plwiki-latest-pages-artic
 bzip2 -d -c plwiki-latest-pages-articles.xml.bz2 >> plwiki.xml
 rm -f plwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 plwiki.xml
 rm -f plwiki.xml
 
@@ -1152,7 +1152,7 @@ ${downloader} http://dumps.wikimedia.org/ptwiki/latest/ptwiki-latest-pages-artic
 bzip2 -d -c ptwiki-latest-pages-articles.xml.bz2 >> ptwiki.xml
 rm -f ptwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 ptwiki.xml
 rm -f ptwiki.xml
 
@@ -1179,7 +1179,7 @@ ${downloader} http://dumps.wikimedia.org/rowiki/latest/rowiki-latest-pages-artic
 bzip2 -d -c rowiki-latest-pages-articles.xml.bz2 >> rowiki.xml
 rm -f rowiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 rowiki.xml
 rm -f rowiki.xml
 
@@ -1206,7 +1206,7 @@ ${downloader} http://dumps.wikimedia.org/ruwiki/latest/ruwiki-latest-pages-artic
 bzip2 -d -c ruwiki-latest-pages-articles.xml.bz2 >> ruwiki.xml
 rm -f ruwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 ruwiki.xml
 rm -f ruwiki.xml
 
@@ -1233,7 +1233,7 @@ ${downloader} http://dumps.wikimedia.org/gdwiki/latest/gdwiki-latest-pages-artic
 bzip2 -d -c gdwiki-latest-pages-articles.xml.bz2 >> gdwiki.xml
 rm -f gdwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=50000 gdwiki.xml
 rm -f gdwiki.xml
 
@@ -1260,7 +1260,7 @@ ${downloader} http://dumps.wikimedia.org/srwiki/latest/srwiki-latest-pages-artic
 bzip2 -d -c srwiki-latest-pages-articles.xml.bz2 >> srwiki.xml
 rm -f srwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 srwiki.xml
 rm -f srwiki.xml
 
@@ -1287,7 +1287,7 @@ ${downloader} http://dumps.wikimedia.org/skwiki/latest/skwiki-latest-pages-artic
 bzip2 -d -c skwiki-latest-pages-articles.xml.bz2 >> skwiki.xml
 rm -f skwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 skwiki.xml
 rm -f skwiki.xml
 
@@ -1314,7 +1314,7 @@ ${downloader} http://dumps.wikimedia.org/skwiki/latest/skwiki-latest-pages-artic
 bzip2 -d -c skwiki-latest-pages-articles.xml.bz2 >> skwiki.xml
 rm -f skwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 skwiki.xml
 rm -f skwiki.xml
 
@@ -1341,7 +1341,7 @@ ${downloader} http://dumps.wikimedia.org/slwiki/latest/slwiki-latest-pages-artic
 bzip2 -d -c slwiki-latest-pages-articles.xml.bz2 >> slwiki.xml
 rm -f slwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 slwiki.xml
 rm -f slwiki.xml
 
@@ -1368,7 +1368,7 @@ ${downloader} http://dumps.wikimedia.org/svwiki/latest/svwiki-latest-pages-artic
 bzip2 -d -c svwiki-latest-pages-articles.xml.bz2 >> svwiki.xml
 rm -f svwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 svwiki.xml
 rm -f svwiki.xml
 
@@ -1395,7 +1395,7 @@ ${downloader} http://dumps.wikimedia.org/swwiki/latest/swwiki-latest-pages-artic
 bzip2 -d -c swwiki-latest-pages-articles.xml.bz2 >> swwiki.xml
 rm -f swwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 swwiki.xml
 rm -f swwiki.xml
 
@@ -1422,7 +1422,7 @@ ${downloader} http://dumps.wikimedia.org/roa-tarawiki/latest/roa-tarawiki-latest
 bzip2 -d -c roa-tarawiki-latest-pages-articles.xml.bz2 >> roa-tarawiki.xml
 rm -f roa-tarawiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 roa-tarawiki.xml
 rm -f roa-tarawiki.xml
 
@@ -1449,7 +1449,7 @@ ${downloader} http://dumps.wikimedia.org/trwiki/latest/trwiki-latest-pages-artic
 bzip2 -d -c trwiki-latest-pages-articles.xml.bz2 >> trwiki.xml
 rm -f trwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 trwiki.xml
 rm -f trwiki.xml
 
@@ -1476,7 +1476,7 @@ ${downloader} http://dumps.wikimedia.org/ukwiki/latest/ukwiki-latest-pages-artic
 bzip2 -d -c ukwiki-latest-pages-articles.xml.bz2 >> ukwiki.xml
 rm -f ukwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 ukwiki.xml
 rm -f ukwiki.xml
 
@@ -1503,7 +1503,7 @@ ${downloader} http://dumps.wikimedia.org/vecwiki/latest/vecwiki-latest-pages-art
 bzip2 -d -c vecwiki-latest-pages-articles.xml.bz2 >> vecwiki.xml
 rm -f vecwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=50000 vecwiki.xml
 rm -f vecwiki.xml
 
@@ -1530,7 +1530,7 @@ ${downloader} http://dumps.wikimedia.org/viwiki/latest/viwiki-latest-pages-artic
 bzip2 -d -c viwiki-latest-pages-articles.xml.bz2 >> viwiki.xml
 rm -f viwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 viwiki.xml
 rm -f viwiki.xml
 
@@ -1557,7 +1557,7 @@ ${downloader} http://dumps.wikimedia.org/vowiki/latest/vowiki-latest-pages-artic
 bzip2 -d -c vowiki-latest-pages-articles.xml.bz2 >> vowiki.xml
 rm -f vowiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 vowiki.xml
 rm -f vowiki.xml
 
@@ -1584,7 +1584,7 @@ ${downloader} http://dumps.wikimedia.org/warwiki/latest/warwiki-latest-pages-art
 bzip2 -d -c warwiki-latest-pages-articles.xml.bz2 >> warwiki.xml
 rm -f warwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 warwiki.xml
 rm -f warwiki.xml
 
@@ -1611,7 +1611,7 @@ ${downloader} http://dumps.wikimedia.org/yiwiki/latest/yiwiki-latest-pages-artic
 bzip2 -d -c yiwiki-latest-pages-articles.xml.bz2 >> yiwiki.xml
 rm -f yiwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 yiwiki.xml
 rm -f yiwiki.xml
 
@@ -1638,7 +1638,7 @@ ${downloader} http://dumps.wikimedia.org/zutwiki/latest/zutwiki-latest-pages-art
 bzip2 -d -c zutwiki-latest-pages-articles.xml.bz2 >> zutwiki.xml
 rm -f zutwiki-latest-pages-articles.xml.bz2
 
-echo "[*] Spliting ..."
+echo "[*] Splitting ..."
 split --lines=500000 zutwiki.xml
 rm -f zutwiki.xml
 
@@ -1658,6 +1658,8 @@ echo
 
 }
 
+
+
 downloader=axel
 
 hash axel &> /dev/null
@@ -1665,11 +1667,31 @@ if [ $? -eq 1 ]; then
     downloader=wget
 fi
 
-echo -en "Select the output dir (es: /home/user/wikiwordlist) : "
-read out
+flag=true
 
-echo -en "Select a temporal dir (es: /tmp) : "
-read tmp
+while ($flag); do
+	echo -en "Select the output dir (es: /home/user/wikiwordlist) : "
+	read out
+	if [ ! -d $out ]; then
+		echo "Error, Output Dir Not Found!!!"
+		echo ""
+	else
+		flag=false
+	fi
+done
+
+flag=true
+
+while ($flag); do
+	echo -en "Select a temporal dir (es: /tmp) : "
+	read tmp
+	if [ ! -d $tmp ]; then
+		echo "Error, TMPdir Not Found!!!"
+		echo ""
+	else 
+		flag=false
+	fi
+done
 
 cd $tmp
 
@@ -1684,16 +1706,16 @@ f_bg
 f_ca
 f_cs
 f_da
-f_de &
+f_de
 f_el
 f_eml
-f_en &
+f_en
 f_eo
 f_es
 f_et
 f_eu
 f_fa
-f_fr &
+f_fr
 f_ga
 f_gd
 f_gl
