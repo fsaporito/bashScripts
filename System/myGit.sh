@@ -56,6 +56,7 @@ cd UniversityProject
 
 git clone ${Algo}
 git clone ${Dist}
+git clone ${Prolog}
 git clone ${ProgI}
 git clone ${ProgII}
 
