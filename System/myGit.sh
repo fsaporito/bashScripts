@@ -19,6 +19,7 @@ TicTacToe="https://github.com/sapo93/TicTacToe.git"
 #University
 Algo="https://github.com/UniversityProjects/Algorithms.git"
 Dist="https://github.com/UniversityProjects/DistributedSystems.git"
+Lisp="https://github.com/UniversityProjects/Lisp.git"
 Prolog="https://github.com/UniversityProjects/Prolog.git"
 ProgI="https://github.com/UniversityProjects/ProgrammingI.git"
 ProgII="https://github.com/UniversityProjects/ProgrammingII.git"
@@ -56,6 +57,7 @@ cd UniversityProject
 
 git clone ${Algo}
 git clone ${Dist}
+git clone ${Lisp}
 git clone ${Prolog}
 git clone ${ProgI}
 git clone ${ProgII}
