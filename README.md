@@ -29,6 +29,8 @@ SYSTEM
 
 iso_edit.sh -> script that let the user edits a Linux Live ISO [require root]
 
+myGit.sh -> clone all of y git repositories
+
 myip.sh -> find local and external IP
 
 linux_version.sh -> finds the current linux distribution's name and version
