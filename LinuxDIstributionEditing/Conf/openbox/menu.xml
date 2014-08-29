@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+	<item label="RoxTerm"><action name="Execute"><execute>roxterm</execute></action></item>
+	<item label="WebBrowser"><action name="Execute"><execute>midori -p</execute></action></item>
+	<item label="Gmrun"><action name="Execute"><execute>gmrun</execute></action></item>
+	<separator/>
+	<item label="Update"><action name="Execute"><execute>roxterm -e bash /opt/darkeffe/update.sh</execute></action></item>
+	<separator/>
+	<menu id="Myscript" label="Myscript">
+		<item label="CompileC"><action name="Execute"><execute>roxterm -e compilec</execute></action></item>
+		<item label="Darkuntu"><action name="Execute"><execute>roxterm -e darkuntu</execute></action></item>
+		<item label="FamousIP"><action name="Execute"><execute>roxterm -e famousip</execute></action></item>
+		<item label="Fenrir"><action name="Execute"><execute>roxterm -e fenrir</execute></action></item>
+		<item label="Firewall"><action name="Execute"><execute>roxterm -e firewall</execute></action></item>
+		<item label="DelFirewall"><action name="Execute"><execute>roxterm -e delfirewall</execute></action></item>
+		<item label="HiddenServices"><action name="Execute"><execute>roxterm -e hiddenservices</execute></action></item>
+		<item label="IsoEdit"><action name="Execute"><execute>roxterm -e isoedit</execute></action></item>
+		<item label="LinuxVersion"><action name="Execute"><execute>roxterm -e linuxversion</execute></action></item>
+		<item label="MyIP"><action name="Execute"><execute>roxterm -e myip</execute></action></item>
+		<item label="RamDisk"><action name="Execute"><execute>roxterm -e ramdisk</execute></action></item>
+		<item label="Update"><action name="Execute"><execute>roxterm -e update</execute></action></item>
+		<item label="UpdateNvidia"><action name="Execute"><execute>roxterm -e updatenvidia</execute></action></item>
+		<item label="UpdateAti"><action name="Execute"><execute>roxterm -e updateati</execute></action></item>
+		<item label="Wiki"><action name="Execute"><execute>roxterm -e wiki</execute></action></item>
+		<item label="WordlistEd"><action name="Execute"><execute>roxterm -e worldisted</execute></action></item>
+		<item label="WordlistGen"><action name="Execute"><execute>roxterm -e wordlistgen</execute></action></item>
+		<separator/>
+		<item label="Edit Myscript"><action name="Execute"><execute>geany /opt/darkeffe/*.sh</execute></action></item>
+	</menu>
+	<separator/>
+	<menu id="client-list-menu" />
+	<separator/>
+	<menu execute="obm-nav / thunar roxterm" id="/" label="/"/>
+	<separator/>
+	<item label="Connected Client"><action name="Execute"><execute>roxterm -e arp -a && sleep 5</execute></action></item>
+	<separator/>
+	<menu id="Audacious Controller" label="Audacious" execute="$HOME/.config/openbox/scripts/audacious.py" />
+	<separator/>
+	<menu id="News" label="News">
+	   <item label="Travaglio Passaparola"><action name="Execute"><execute>midori -p http://www.beppegrillo.it/iniziative/passaparola/</execute></action></item>
+	   <item label="Grillo's Blog"><action name="Execute"><execute>midori -p http://www.beppegrillo.it/</execute></action></item>
+	   <item label="Ansa"><action name="Execute"><execute>midori -p http://www.ansa.it/</execute></action></item>
+	   <item label="Linux"><action name="Execute"><execute>midori -p http://www.linux.com//</execute></action></item>
+	   <item label="TomsHw"><action name="Execute"><execute>midori -p http://www.tomshw.it/</execute></action></item>
+	   <item label="TheHackerNews"><action name="Execute"><execute>midori -p http://www.thehackernews.com</execute></action></item>
+	</menu>
+	<menu id="Sites" label="Sites">
+		<menu id="root-menu-100-1" label="Search Engines">
+			<menu id="root-menu-100-1-1" label="Google">
+				<item label="Google (Web)"><action name="Execute"><execute>midori -p https://www.google.com/</execute></action></item>
+				<item label="Google (Immagini)"><action name="Execute"><execute>midori -p http://www.google.com/imghp?hl=en=wi/</execute></action></item>
+				<item label="Google (Video)"><action name="Execute"><execute>midori -p http://video.google.com/?hl=en=wv//</execute></action></item>
+				<item label="Gmaps"><action name="Execute"><execute>midori -p http://maps.google.com/maps?hl=en=wl/</execute></action></item>
+			</menu>
+			<item label="Yahoo"><action name="Execute"><execute>midori -p http://www.yahoo.com/</execute></action></item>
+			<item label="Bing"><action name="Execute"><execute>midori -p http://www.bing.com/</execute></action></item>
+			<item label="DuckDuckGo"><action name="Execute"><execute>midori -p http://www.duckduckgo.com/</execute></action></item>
+		</menu>
+		<item label="Youtube"><action name="Execute"><execute>midori -p http://www.youtube.com/</execute></action></item>
+		<item label="Facebook"><action name="Execute"><execute>midori -p http://www.facebook.com/</execute></action></item>
+		<menu id="root-menu-100-2" label="Mobile Telephone Operators">
+			<item label="TIM"><action name="Execute"><execute>midori -p http://www.tim.it</execute></action></item>
+			<item label="Vodafone"><action name="Execute"><execute>midori -p http://www.vodafone.it/</execute></action></item>
+			<item label="Wind"><action name="Execute"><execute>midori -p http://www.wind.it</execute></action></item>
+			<item label="Tre"><action name="Execute"><execute>midori -p http://www.tre.it</execute></action></item>
+		</menu>
+		<item label="Social Engineer"><action name="Execute"><execute>midori -p http://www.social-engineer.org/</execute></action></item>
+		<menu id="root-menu-100-3" label="Wiki">
+			<item label="Wikipedia"><action name="Execute"><execute>midori -p http://www.wikipedia.com/</execute></action></item>
+			<item label="Nonciclopedia"><action name="Execute"><execute>midori -p http://nonciclopedia.wikia.com/wiki/Pagina_principale</execute></action></item>
+		</menu>
+		<menu id="root-menu-100-4" label="E-shops">
+			<item label="Ebay"><action name="Execute"><execute>midori -p http://www.ebay.it/</execute></action></item>
+			<item label="TrovaPrezzi"><action name="Execute"><execute>midori -p http://www.trovaprezzi.it/</execute></action></item>
+			<item label="SecondaMano"><action name="Execute"><execute>midori -p http://www.secondamano.it/</execute></action></item>
+			<item label="Mediaworld"><action name="Execute"><execute>midori -p http://www.mediaworld.it</execute></action></item>
+			<item label="Prokoo"><action name="Execute"><execute>midori -p http://www.prokoo.it/</execute></action></item>
+		</menu>
+		<menu id="root-menu-100-5" label="Dist">
+			<item label="Ubuntu"><action name="Execute"><execute>midori -p http://www.ubuntu.com/</execute></action></item>
+			<item label="Kubuntu"><action name="Execute"><execute>midori -p http://www.kubuntu.org/</execute></action></item>
+			<item label="Xubuntu"><action name="Execute"><execute>midori -p http://www.xubuntu.org/</execute></action></item>
+			<item label="Lubuntu"><action name="Execute"><execute>midori -p http://www.lubuntu.net/</execute></action></item>
+			<item label="BackTrack"><action name="Execute"><execute>midori -p http://www.backtrack-linux.org/</execute></action></item>
+			<item label="Debian"><action name="Execute"><execute>midori -p http://www.debian.org/</execute></action></item>
+			<item label="Arch"><action name="Execute"><execute>midori -p http://www.archlinux.com/</execute></action></item>
+			<item label="Gentoo"><action name="Execute"><execute>midori -p http://www.gentoo.org/</execute></action></item>
+		</menu>
+		<menu id="root-menu-100-6" label="ComputerHacking">
+			<menu id="root-menu-100-6-1" label="Info / Tutorial">
+				<item label="Hack Geek"><action name="Execute"><execute>midori -p http://www.hackgeek.it/</execute></action></item>
+				<item label="HackItCafe"><action name="Execute"><execute>midori -p http://www.hackitcafe.com</execute></action></item>
+				<item label="Hack Repository"><action name="Execute"><execute>midori -p http://www.hacktoolrepository.com/</execute></action></item>
+				<item label="Hash Tables"><action name="Execute"><execute>midori -p http://hak5.org/forums/index.php?showtopic=12708</execute></action></item>
+				<item label="Metasploit"><action name="Execute"><execute>midori -p http://www.metasploit.com/</execute></action></item>
+				<item label="Metasploit Unleashed"><action name="Execute"><execute>midori -p http://www.offensive-security.com/metasploit-unleashed/Metasploit_Unleashed_Information_Security_Training</execute></action></item>
+				<item label="Aircrack Tutorial"><action name="Execute"><execute>midori -p http://www.aircrack-ng.org/doku.php?id=tutorial</execute></action></item>
+				<item label="Nmap"><action name="Execute"><execute>midori -p http://nmap.org/</execute></action></item>
+				<item label="Pyrit"><action name="Execute"><execute>midori -p http://code.google.com/p/pyrit/</execute></action></item>
+				<item label="Durandal Distributed Cracker"><action name="Execute"><execute>midori -p http://durandal-project.org/index.html</execute></action></item>
+	            <item label="Bash Guide"><action name="Execute"><execute>midori -p http://bash.cyberciti.biz/guide/Main_Page</execute></action></item>
+			</menu>
+			<menu id="root-menu-100-6--2" label="Online crackers and tools">
+				<item label="Awlg"><action name="Execute"><execute>midori -p http://awlg.org/index.gen</execute></action></item>
+				<item label="MD5 rednoize"><action name="Execute"><execute>midori -p http://md5.rednoize.com/</execute></action></item>
+				<item label="Hash-Cracker.com | MD5 | SHA1 | NTLM"><action name="Execute"><execute>midori -p http://www.hash-cracker.com/</execute></action></item>
+				<item label="Multi Site Hash"><action name="Execute"><execute>midori -p http://www.hashchecker.de/find.html</execute></action></item>
+				<item label="YouGetSignal"><action name="Execute"><execute>midori -p http://www.yougetsignal.com/</execute></action></item>
+				<item label="WhoIsHostingThis"><action name="Execute"><execute>midori -p http://www.whoishostingthis.com/</execute></action></item>
+				<item label="UrlToIp"><action name="Execute"><excute>midori -p http://freelabs.info/UrlToIpOnline.aspx</excute></action></item>
+				<item label="IpGeoLocator"><action name="Execute"><execute>midori -p http://www.ipligence.com/geolocation</execute></action></item>
+				<item label="CallSpoofer"><action name="Execute"><execute>midori -p http://crazycall.net/</execute></action></item>
+			</menu>
+		</menu>
+		<menu id="root-menu-100-7" label="Programming">
+			<item label="Html http://www.w3schools.com"><action name="Execute"><execute>midori -p http://www.w3schools.com/</execute></action></item>
+			<item label="Python.org"><action name="Execute"><execute>midori -p http://www.python.org/</execute></action></item>
+			<item label="Wiki Python"><action name="Execute"><execute>midori -p http://wiki.python.org/</execute></action></item>
+		</menu>
+		<menu id="root-menu-100-8" label="RealityHacking">
+			<item label="Instructables"><action name="Execute"><execute>midori -p http://www.instructables.com/</execute></action></item>
+			<item label="LifeHacker"><action name="Execute"><execute>midori -p http://lifehacker.com</execute></action></item>
+			<item label="Hack A Day"><action name="Execute"><execute>midori -p http://hackaday.com</execute></action></item>
+			<item label="Art Of Malice"><action name="Execute"><execute>midori -p http://artofmanliness.com</execute></action></item>
+		</menu>
+		<menu id="root-menu-100-9" label="Web People Search">
+			<item label="Pipl"><action name="Execute"><execute>midori -p https://pipl.com//</execute></action></item>
+			<item label="123People"><action name="Execute"><execute>midori -p http://www.123people.com///</execute></action></item>
+			<item label="Pagine Bianche"><action name="Execute"><execute>midori -p http://www.paginebianche.it/index.html/</execute></action></item>
+		</menu>
+		<item label="File Crop"><action name="Execute"><execute>midori -p http://www.filecrop.com/</execute></action></item>
+		<item label="Email Temporanea"><action name="Execute"><execute>midori -p http://www.emailtemporanea.net/</execute></action></item>
+		<item label="Devian Art"><action name="Execute"><execute>midori -p http://www.deviantart.com/</execute></action></item>
+		<item label="Linux Musicians"><action name="Execute"><execute>midori -p http://wiki.linuxMusicaians.com/doku.php</execute></action></item>
+		<item label="KhanAcademy"><action name="Execute"><execute>midori -p http://www.khanacademy.org/</execute></action></item>
+		<item label="CleverBot"><action name="Execute"><execute>midori -p http://www.cleverbot.com/</execute></action></item>
+	</menu>
+	<separator/>
+	<menu id="root-menu-1" label="Places">
+		<menu id="root-menu-1-1" label="User">
+			<item label="Home"><action name="Execute"><execute>thunar $HOME</execute></action></item>
+			<item label="Scripts"><action name="Execute"><execute>thunar $HOME/Scripts</execute></action></item>
+			<item label="Musica"><action name="Execute"><execute>thunar $HOME/Musica</execute></action></item>
+			<item label="Immagini"><action name="Execute"><execute>thunar $HOME/Immagini</execute></action></item>
+			<item label="Video"><action name="Execute"><execute>thunar $HOME/Video</execute></action></item>
+			<item label="Documenti"><action name="Execute"><execute>thunar $HOME/Documenti</execute></action></item>
+			<item label="Scaricati"><action name="Execute"><execute>thunar $HOME/Scaricati</execute></action></item>
+			<item label="Pentest"><action name="Execute"><execute>thunar /pentest</execute></action></item>
+			<item label="Iso"><action name="Execute"><execute>thunar $HOME/Iso</execute></action></item>
+		</menu>
+		<menu id="root-menu-1-2" label="File System">
+			<item label="Bin"><action name="Execute"><execute>thunar /bin</execute></action></item>
+			<item label="Dev"><action name="Execute"><execute>thunar /dev</execute></action></item>
+			<item label="Etc"><action name="Execute"><execute>thunar /etc</execute></action></item>
+			<item label="Home"><action name="Execute"><execute>thunar /home</execute></action></item>
+			<item label="Media"><action name="Execute"><execute>thunar /media</execute></action></item>
+			<item label="Tmp"><action name="Execute"><execute>thunar /tmp</execute></action></item>
+			<item label="Usr"><action name="Execute"><execute>thunar /usr</execute></action></item>
+			<item label="Var"><action name="Execute"><execute>thunar /var</execute></action></item>
+		</menu>
+		<menu id="root-menu-1-3" label="File Sharing">
+			<item label="Amule Incoming"><action name="Execute"><execute>thunar $HOME/.aMule/Incoming</execute></action></item>
+			<item label="Amule Temp"><action name="Execute"><execute>thunar $HOME/.aMule/Temp</execute></action></item>
+			<item label="FrostWire Saved"><action name="Execute"><execute>thunar $HOME/FrostWire/Saved</execute></action></item>
+		</menu>
+		<item label="Octave"><action name="Execute"><execute>thunar /usr/share/octave/3.2.4/m/school</execute></action></item>
+		<item label="Mounted Iso"><action name="Execute"><execute>thunar $HOME/Iso/Mount</execute></action></item>
+	</menu>
+	<menu id="root-menu-2" label="Accessori">
+		<item label="Thunar"><action name="Execute"><execute>thunar</execute></action></item>
+		<item label="Xarchiver"><action name="Execute"><execute>xarchiver</execute></action></item>
+		<item label="Geany"><action name="Execute"><execute>geany</execute></action></item>
+		<item label="Gmountiso"><action name="Execute"><execute>gmountiso</execute></action></item>
+		<item label="Isomaster"><action name="Execute"><execute>isomaster</execute></action></item>
+		<item label="Htop"><action name="Execute"><execute>roxterm -e htop</execute></action></item>
+		<item label="Meld File Comparator"><action name="Execute"><execute>meld</execute></action></item>
+		<item label="MpiRun"><action name="Execute"><execute>roxterm -e echo "mpirun -n [n. threads] program"</execute></action></item>
+		<item label="StopWatch"><action name="Execute"><execute>stopwatch></execute></action></item>
+		<item label="Virtualbox (4.1)"><action name="Execute"><execute>virtualbox-4.1</execute></action></item>
+	</menu>
+	<menu id="root-menu-3" label="Amministrazione">
+		<menu id="root-menu-3-1" label="Apt-get">
+			<item label="Update"><action name="Execute"><execute>roxterm -e proxychains apt-get update</execute></action></item>
+			<item label="Upgrade"><action name="Execute"><execute>roxterm -e proxychains apt-get upgrade -y</execute></action></item>
+			<item label="Dist-Upgrade"><action name="Execute"><execute></execute>roxterm -e proxychains apt-get dist-upgrade -y</action></item>
+			<item label="Autoremove"><action name="Execute"><execute>roxterm -e apt-get autoremove -y</execute></action></item>
+			<item label="Autoremove --purge"><action name="Execute"><execute>roxterm -e apt-get autoremove --purge -y</execute></action></item>
+			<item label="Clean"><action name="Execute"><execute>roxterm -e apt-get clean</execute></action></item>
+			<item label="Autoclean"><action name="Execute"><execute>roxterm -e apt-get autoclean</execute></action></item>
+			<item label="Install -f"><action name="Execute"><execute>roxterm -e apt-get -f install -y</execute></action></item>
+			<item label="Delete /var/lib/dpkg/lock"><action name="Execute"><execute>roxterm rm -f /var/lib/dpkg/lock</execute></action></item>
+			<item label="Delete /var/cache/apt/archives/lock"><action name="Execute"><execute>roxterm rm -f /var/cache/apt/archives/lock</execute></action></item>
+			<item label="Apt-Get Search"><action name="Execute"><execute>roxterm -e echo apt-cache search [package]</execute></action></item>
+			<item label="Dpkg Reconfigure"><action name="Execute"><execute>roxterm -e dpkg-reconfigure</execute></action></item>
+			<item label="Dpkg Configure -a"><action name="Execute"><execute>roxterm -e dpkg --configure -a</execute></action></item>
+			<item label="Dpkg Purge Configuration"><action name="Execute"><execute>roxterm -e dpkg --purge</execute></action></item>
+			<item label="Edit Sources.list"><action name="Execute"><execute> geany /etc/apt/sources.list</execute></action></item>
+		</menu>
+		<item label="Synaptic"><action name="Execute"><execute>proxychains synaptic</execute></action></item>
+		<item label="Gparted"><action name="Execute"><execute>gparted</execute></action></item>
+		<menu id="root-menu-3-2" label="Mount">
+			<item label="Mount Device"><action name="Execute"><execute>roxterm -e echo "mount [-t filesystem] [-o force]/Dev/sdX /media/MountPoint"</execute></action></item>
+			<item label="Unmount Device"><action name="Execute"><execute>roxterm -e echo "unmount /Dev/sdX"</execute></action></item>
+			<item label="Unmount MountPoint"><action name="Execute"><execute>roxterm -e echo "unmount /media/MountPoint"</execute></action></item>
+			<item label="Mount Iso"><action name="Execute"><execute>roxterm -e echo "mount -o loop immagine.iso /media/MountPoint"</execute></action></item>
+			<item label="List Mounted Device"><action name="Execute"><execute>roxterm -e mount</execute></action></item>
+		</menu>
+		<item label="Disk Utility (palimpsest)"><action name="Execute"><execute>palimpsest</execute></action></item>
+		<item label="Boot Manager (bum)"><action name="Execute"><execute>bum</execute></action></item>
+		<item label="Htop"><action name="Execute"><execute>roxterm -e htop</execute></action></item>
+		<item label="Utenti-Gruppi"><action name="Execute"><execute>user-admins</execute></action></item>
+		<item label="Additional Drivers"><action name="Execute"><execute>jockey-gtk</execute></action></item>
+		<item label="Nvidia-Settings"><action name="Execute"><execute>nvidia-settings</execute></action></item>
+		<item label="Nvidia Overclock"><action name="Execute"><execute>nvclock_gtk</execute></action></item>
+	</menu>
+	<menu id="root-menu-4" label="Office">
+		<menu id="root-menu-4-1" label="LibreOffice">
+			<item label="Writer"><action name="Execute"><execute>libreoffice -writer</execute></action></item>
+			<item label="Calc"><action name="Execute"><execute>libreoffice -calc </execute></action></item>
+			<item label="Impress"><action name="Execute"><execute>libreoffice -impress</execute></action></item>
+			<item label="Draw"><action name="Execute"><execute>libreoffice -draw</execute></action></item>
+			<item label="Math"><action name="Execute"><execute>libreoffice -math</execute></action></item>
+		</menu>
+		<item label="Epdfview"><action name="Execute"><execute>epdfview</execute></action></item>
+		<item label="PdfEdit"><action name="Execute"><execute>pdfedit</execute></action></item>
+		<menu id="root-menu-4-2" label="Math">
+			<item label="Geogebra"><action name="Execute"><execute>geogebra</execute></action></item>
+			<menu id="root-menu-4-2-1" label="Octave">
+				<item label="Octave-3.2"><action name="Execute"><execute>roxterm -e octave-3.2</execute></action></item>
+				<item label="cd Octave's Script"><action name="Execute"><execute>thunar /usr/share/octave/3.2.4/m/school</execute></action></item>
+				<menu id="root-menu-4-2-1-1" label="Open Octave's Script">
+					<item label="3"><action name="Execute"><execute>geany /usr/share/octave/3.2.4/m/school/3/*.m</execute></action></item>
+					<item label="4"><action name="Execute"><execute>geany /usr/share/octave/3.2.4/m/school/4/*.m</execute></action></item>
+				</menu>
+			</menu>
+			<item label="Calcoo"><action name="Execute"><execute></execute>calcoo</action></item>
+			<item label="Gbase"><action name="Execute"><execute>gbase</execute></action></item>
+			<item label="Gperiodic"><action name="Execute"><execute>gperiodic</execute></action></item>
+		</menu>
+	</menu>
+	<menu id="root-menu-5" label="Audio-Video">
+		<item label="Gnome-Mplayer"><action name="Execute"><execute>gnome-mplayer</execute></action></item>
+		<item label="Audacity"><action name="Execute"><execute>audacity</execute></action></item>
+		<item label="Alsamixergui"><action name="Execute"><execute>alsamixergui</execute></action></item>
+		<item label="AconnectGui"><action name="Execute"><execute>aconnectgui</execute></action></item>
+		<item label="Xfburn"><action name="Execute"><execute>xfburn</execute></action></item>
+		<item label="AcidRip"><action name="Execute"><execute>acidrip</execute></action></item>
+		<item label="EasyTag"><action name="Execute"><execute>easytag</execute></action></item>
+		<item label="Osdlyrics"><action name="Execute"><execute>proxychains osd-lyrics</execute></action></item>
+		<item label="Mixxx (Playing Live)"><action name="Execute"><execute>mixxx</execute></action></item>
+		<separator/>
+		<menu id="root-menu-5-1" label="Convertitors">
+			<item label="WinFF"><action name="Execute"><execute>winff</execute></action></item>
+			<item label="Gnac"><action name="Execute"><execute>gnac</execute></action></item>
+			<item label="HandBrake"><action name="Execute"><execute>handbrake-gtk</execute></action></item>
+			<item label="Lame"><action name="Execute"><execute>roxterm -e echo "lame -h [file input] [file output]"</execute></action></item>
+		</menu>
+		<menu id="root-menu-5-2" label="VideoEditors">
+			<item label="Pitivi"><action name="Execute"><execute>pitivi</execute></action></item>
+			<item label="Kino"><action name="Execute"><execute>kino</execute></action></item>
+			<item label="Stopmotion"><action name="Execute"><execute>stopmotion</execute></action></item>
+		</menu>
+	</menu>
+	<menu id="root-menu-6" label="Grafica">
+		<item label="Gimp"><action name="Execute"><execute>gimp</execute></action></item>
+		<item label="Mirage"><action name="Execute"><execute>mirage</execute></action></item>
+	</menu>
+	<menu id="root-menu-7" label="Internet">
+		<item label="midori -p"><action name="Execute"><execute>midori -p</execute></action></item>
+		<item label="Lynx"><action name="Execute"><execute>roxterm -e proxychains lynx</execute></action></item>
+		<item label="Skype"><action name="Execute"><execute>proxychains skype</execute></action></item>
+		<item label="Amsn"><action name="Execute"><execute>proxychains amsn</execute></action></item>
+		<item label="Pidgin"><action name="Execute"><execute>proxychains pidgin</execute></action></item>
+		<menu id="root-menu-7-1" label="Amule">
+			<item label="Amuled start"><action name="Execute"><execute>amuled -f</execute></action></item>
+			<item label="Amuled stop"><action name="Execute"><execute>pkill amuled</execute></action></item>
+			<item label="AmuleWeb"><action name="Execute"><execute>amuleweb</execute></action></item>
+			<item label="Amule remote controll"><action name="Execute"><execute>roxterm -e echo "midori -p http://IP:4711"</execute></action></item>
+			<item label="AmuleGui"><action name="Execute"><execute>amule</execute></action></item>
+			<item label="Edit amule.conf"><action name="Execute"><execute>geany $HOME/.aMule/amule.conf</execute></action></item>
+			<item label="Edit rc.conf"><action name="Execute"><execute>geany $HOME/.aMule/rc.conf</execute></action></item>
+			<item label="Edit amule-daemon"><action name="Execute"><execute>geany /etc/default/amule-daemon</execute></action></item>
+		</menu>
+		<item label="Frostwire"><action name="Execute"><execute>proxychains frostwire</execute></action></item>
+		<item label="Filezilla"><action name="Execute"><execute>proxychains filezilla</execute></action></item>
+		<item label="Vinagre"><action name="Execute"><execute>proxychains vinagre</execute></action></item>
+		<item label="Gigolo"><action name="Execute"><execute>gigolo</execute></action></item>
+		<item label="pyNeighborhood"><action name="Execute"><execute>pyNeighborhood</execute></action></item>
+		<item label="Telnet"><action name="Execute"><execute>roxterm -e proxychains telnet</execute></action></item>
+		<separator/>
+		<menu id="root-menu-7-2" label="Proxy">
+			<item label="Edit proxychains.conf"><action name="Execute"><execute>geany /etc/proxychains.conf</execute></action></item>
+			<menu id="root-menu-7-2-1" label="Tor (porta 8118)">
+				<item label="Tor Start"><action name="Execute"><execute>roxterm -e /etc/init.d/tor start</execute></action></item>
+				<item label="Tor Stop"><action name="Execute"><execute>roxterm -e /etc/init.d/tor stop</execute></action></item>
+				<item label="Tor Restart"><action name="Execute"><execute>roxterm -e /etc/init.d/tor restart</execute></action></item>
+			</menu>
+			<menu id="root-menu-7-2-2" label="Privoxy (porta 8118)">
+				<item label="Privoxy Start"><action name="Execute"><execute>roxterm -e /etc/init.d/privoxy start</execute></action></item>
+				<item label="Privoxy Stop"><action name="Execute"><execute>roxterm -e /etc/init.d/privoxy stop</execute></action></item>
+				<item label="Privoxy Restart"><action name="Execute"><execute>roxterm -e /etc/init.d/privoxy restart</execute></action></item>
+				<item label="Edit Privoxy Config"><action name="Execute"><execute>geany /etc/privoxy/config</execute></action></item>
+			</menu>
+		</menu>
+	</menu>
+	<separator/>
+	<menu id="root-menu-8" label="Programmazione">
+		glade ---> gtk interface creator
+	</menu>
+	<separator/>
+	<menu id="root-menu-9" label="Server">
+		<menu id="root-menu-9-1" label="Mysql Server">
+			<item label="Mysql Start"><action name="Execute"><execute>roxterm -e service mysql start</execute></action></item>
+			<item label="Mysql Stop"><action name="Execute"><execute>roxterm -e service mysql stop</execute></action></item>
+			<item label="Mysql Restart"><action name="Execute"><execute>roxterm -e service mysql restart</execute></action></item>
+		</menu>
+		<menu id="root-menu-9-2" label="Samba">
+			<item label="Samba Start"><action name="Execute"><execute>roxterm -e /etc/init.d/samba start</execute></action></item>
+			<item label="Samba Stop"><action name="Execute"><execute>roxterm -e /etc/init.d/samba stop</execute></action></item>
+			<item label="Samba Restart"><action name="Execute"><execute>roxterm -e /etc/init.d/samba restart</execute></action></item>
+			<item label="Submount"><action name="Execute"><action>roxterm -e echo "smbmount //SERVER/condivisione  /media/share"</action></action></item>
+			<item label="Cd /media/share"><action name="Execute"><action>thunar /media/Share</action></action></item>
+			<menu id="root-menu-9-2-1" label="SmbClient">
+				<item label="Smbclient --help"><action name="Execute"><action>roxterm -e smbclient --help</action></action></item>
+				<item label="SmbClient Server Connection"><action name="Execute"><action>roxterm -e echo "smbclient //SERVER/condivisione"</action></action></item>
+				<item label="SmbClient List Shared Folder On SERVER"><action name="Execute"><action>roxterm -e echo "smbclient -L IPServer"</action></action></item>
+			</menu>
+			<item label="Access To Swat"><action name="Execute"><action>midori -p http://localhost:901</action></action></item>
+			<item label="Gadmin-Samba"><action name="Execute"><action>/usr/sbin/gadmin-samba</action></action></item>
+			<item label="Edit Smb.conf"><action name="Execute"><action>geany /etc/samba/smb.conf</action></action></item>
+			<item label="Edit Smb.conf.original"><action name="Execute"><action>geany /etc/samba/smb.conf.original</action></action></item>
+			<item label="View Log"><action name="Execute"><action>geany /var/log/samba/log.%m</action></action></item>
+		</menu>
+	</menu>
+	<menu id="root-menu-10" label="Connessioni">
+		<menu id="root-menu-10-1" label="Eth0">
+			<item label="Eth0 Down"><action name="Execute"><execute>roxterm -e ifconfig eth0 down</execute></action></item>
+			<item label="Eth0 Up"><action name="Execute"><execute>roxterm -e ifconfig eth0 up</execute></action></item>
+			<item label="Eth0 Mode Managed"><action name="Execute"><execute>roxterm -e ifconfig eth0 mode managed</execute></action></item>
+			<item label="Dhclient Eth0"><action name="Execute"><execute>roxterm -e dhclient eth0</execute></action></item>
+		</menu>
+		<menu id="root-menu-10-2" label="Wlan0">
+			<item label="Wlan0 Down"><action name="Execute"><execute>roxterm -e ifconfig wlan0 down</execute></action></item>
+			<item label="Wlan0 Up"><action name="Execute"><execute>roxterm -e ifconfig wlan0 up</execute></action></item>
+			<item label="Wlan0 Mode Managed"><action name="Execute"><execute>roxterm -e iwconfig wlan0 mode managed</execute></action></item>
+			<item label="Connessione WEP"><action name="Execute"><execute>roxterm -e echo "iwconfig wlan0 essid [nome_rete] key [chiave-wep] mode managed"</execute></action></item>
+			<item label="Dhclient Wlan0"><action name="Execute"><execute>roxterm -e dhclient wlan0</execute></action></item>
+			<menu id="root-menu-10-2-1" label="Connection Without Dhclient">
+				<item label="Wlan0 Down"><action name="Execute"><execute>roxterm -e ifconfig wlan0 down</execute></action></item>
+				<item label="Find Essid-MAC-Channel"><action name="Execute"><execute>roxterm -e iwlist wlan0 scanning | egrep 'Channel|Address|ESSID'</execute></action></item>
+				<item label="Set wlan0 parametres"><action name="Execute"><execute>roxterm -e echo "iwconfig wlan0 channel [channel] essid [essid] ap [MAC]"</execute></action></item>
+				<item label="Wlan0 Up"><action name="Execute"><execute>roxterm -e ifconfig wlan0 up</execute></action></item>
+				<item label="Obtaining IP"><action name="Execute"><execute>roxterm -e echo "ifconfig wlan0 [IP] netmask 255.255.255.0"</execute></action></item>
+				<item label="Add Default Gateway"><action name="Execute"><execute>roxterm -e echo "route add default gateway [IP Gateway]"</execute></action></item>
+				<item label="Add DNS (208.67.222.222)"><action name="Execute"><execute>roxterm -e sh -c "echo nameserver 87.118.111.215 > /etc/resolv.conf"</execute></action></item>
+			</menu>
+		</menu>
+		<menu id="root-menu-10-3" label="Wicd">
+			<item label="Wicd Daemon"><action name="Execute"><execute>wicd</execute></action></item>
+			<item label="Wicd-Client"><action name="Execute"><execute>roxterm -e wicd-client --no-tray</execute></action></item>
+			<item label="Wicd-Curses"><action name="Execute"><execute>roxterm -e wicd-curses</execute></action></item>
+			<item label="Kill Wicd"><action name="Execute"><execute>killall wicd</execute></action></item>
+			<item label="Edit manager-settings.conf"><action name="Execute"><execute>geany /etc/wicd/manager-settings.conf</execute></action></item>
+			<item label="Edit wired-settings.conf"><action name="Execute"><execute>geany /etc/wicd/wired-settings.conf</execute></action></item>
+			<item label="Edit wireless-settings.conf"><action name="Execute"><execute>geany /etc/wicd/wireless-settings.conf</execute></action></item>
+		</menu>
+		<item label="Ifconfig"><action name="Execute"><execute>roxterm -e ifconfig</execute></action></item>
+		<item label="Iwconfig"><action name="Execute"><execute>roxterm -e iwconfig</execute></action></item>
+		<item label="Etherape"><action name="Execute"><execute>etherape</execute></action></item>
+		<item label="Iwlist Scan"><action name="Execute"><execute>roxterm -e iwlist scan</execute></action></item>
+		<item label="Find Essid-MAC-Channel"><action name="Execute"><execute>roxterm -e iwlist scan | egrep 'Channel|Address|ESSID'</execute></action></item>
+	</menu>
+	<separator/>
+	<menu id="root-menu-11" label="Pentest">
+		<item label="IP Forward"><action name="Execute"><execute>roxterm -e echo "1" > /proc/sys/net/ipv4/ip_forward</execute></action></item>
+		<menu id="root-menu-11-1" label="Bluetooth">
+			<item label="BlueDiving"><action name="Execute"><execute>roxterm -e perl /pentest/bluediving-0.9/bluediviNG.pl</execute></action></item>
+			<item label="BluemanWho"><action name="Execute"><execute>bluemanWho</execute></action></item>
+			<item label="Bluetooth Settings"><action name="Execute"><execute>bluetooth-properties</execute></action></item>
+			<menu id="root-menu-11-1-1" label="Hci">
+				<item label="Hciconfig"><action name="Execute"><execute>roxterm -e hciconfig</execute></action></item>
+				<item label="Hci0 Down"><action name="Execute"><execute>roxterm -e hciconfig hci0 down</execute></action></item>
+				<item label="Hci0 Up"><action name="Execute"><execute>roxterm -e hciconfig hci0 up</execute></action></item>
+				<item label="Thunar /etc/bluetooth"><action name="Execute"><execute>thunar /etc/bluetooth</execute></action></item>
+				<menu id="root-menu-11-1-1-1" label="HciTool">
+					<item label="hcitool -h"><action name="Execute"><execute>roxterm hcitool -h</execute></action></item>
+					<item label="Hcitool Scan"><action name="Execute"><execute>roxterm -e hcitool scan</execute></action></item>
+					<item label="Hcitool Inquire"><action name="Execute"><execute>roxterm -e hcitool inq</execute></action></item>
+					<item label="Hcitool Info"><action name="Execute"><execute>roxterm -e echo "hcitool info [mac adress dispositivo bluetooth]"</execute></action></item>
+					<item label="Hcitool Received Signal Strenght"><action name="Execute"><execute>roxterm -e echo "hcitool rssi [mac adress dispositivo bluetooth]"</execute></action></item>
+					<item label="Hcitool LinkQuality"><action name="Execute"><execute>roxterm -e echo "hcitool lq [mac adress dispositivo bluetooth]"</execute></action></item>
+				</menu>
+			</menu>
+		</menu>
+		<menu id="root-menu-11-2" label="Crackers">
+			<menu id="root-menu-11-2-1" label="Offline">
+				<menu id="root-menu-11-2-1-1" label="Chntpw">
+					<item label="Chntpw --help"><action name="Execute"><execute>roxterm -e chntpw --help</execute></action></item>
+					<item label="Chtnpw List Users"><action name="Execute"><execute>roxterm -e echo "chntpw -l /media/windows/WINDOWS/system32/config/SAM"</execute></action></item>
+					<item label="Chtnpw List Users (Interactive)"><action name="Execute"><execute>roxterm -e echo "chntpw -i /media/windows/WINDOWS/system32/config/SAM"</execute></action></item>
+					<menu id="root-menu-11-2-1-1" label="Registry Editor">
+						<item label="SYSTEM"><action name="Execute"><execute>roxterm -e echo "chntpw -e /media/windows/WINDOWS/system32/config/SYSTEM"</execute></action></item>
+						<item label="NTuser.dat"><action name="Execute"><execute>roxterm -e echo "chntpw -e /media/windows/WINDOWS/system32/config/NTuser.dat"</execute></action></item>
+						<item label="SAM"><action name="Execute"><execute>roxterm -e echo "chntpw -e /media/windows/WINDOWS/system32/config/SAM"</execute></action></item>
+						<item label="SECURITY"><action name="Execute"><execute>roxterm -e echo "chntpw -e /media/windows/WINDOWS/system32/config/SECURITY"</execute></action></item>
+						<item label="SOFTWARE"><action name="Execute"><execute>roxterm -e echo "chntpw -e /media/windows/WINDOWS/system32/config/SOFTWARE"</execute></action></item>
+						<item label="DEFAULT"><action name="Execute"><execute>roxterm -e echo "chntpw -e /media/windows/WINDOWS/system32/config/DEFAULT"</execute></action></item>
+					</menu>
+				</menu>
+				<menu id="root-menu-11-2-1-2" label="John The Ripper">
+					<item label="John"><action name="Execute"><execute>roxterm -e echo "john --single [--wordlist=FILE] --show --format=[DES | BSDI | MD5 | BF | AFS | LM | NT | mscash | NETLM | NETNTLM | bfegg | DOMINOSEC | lotus5 | raw-MD5 | raw-sha1 | IPB2 | nsldap | openssha | HDAA] [hash file]"</execute></action></item>
+					<item label="View Installed Patches"><action name="Execute"><execute>geany /pentest/john/patches.list</execute></action></item>
+					<item label="John Bruteforce Single Crack Mode"><action name="Execute"><execute>roxterm -e echo "john -single [--wordlist=FILE | --stdin] [percorso file hash]"</execute></action></item>
+					<item label="John Bruteforce Wordlist Mode"><action name="Execute"><execute>roxterm -e echo "john --wordlist=FILE [percorso file hash]"</execute></action></item>
+					<item label="John restore"><action name="Execute"><execute>roxterm -e echo john -restore:restore</execute></action></item>
+					<item label="John Test"><action name="Execute"><execute>roxterm -e echo john -test</execute></action></item>
+					<menu id="root-menu-11-2-1-2-1" label="Window">
+						<item label="John Bruteforce SAM (Windows)"><action name="Execute"><execute>roxterm -e echo "john [-single | --wordlist=FILE] /media/windows/WINDOWS/system32/config/SAM"</execute></action></item>
+					</menu>
+					<menu id="root-menu-11-2-1-2-2" label="Linux">
+						<item label="Unshadow"><action name="Execute"><execute>roxterm -e echo "unshadow /media/Linux/etc/passwd /media/Linux/etc/shadow > psswd[l]"</execute></action></item>
+						<item label="John Bruteforce psswd[l]"><action name="Execute"><execute>roxterm -e echo "john [-single | --wordlist=FILE] psswd[l]"</execute></action></item>
+					</menu>
+					<item label="Drar"><action name="Execute"><execute>roxterm -e echo "drar [file rar]"</execute></action></item>
+				</menu>
+				<item label="Pdfcrack"><action name="Execute"><execute>roxterm -e echo "pdfcrack [percorso file pdf]"</execute></action></item>
+				<item label="Rarcrack"><action name="Execute"><execute>roxterm -e echo "rarcrack -t [threads 2/12] [percorso file rar/zip/7z]"</execute></action></item>
+				<menu id="root-menu-11-2-1-3" label="RainbowTables">
+					<menu id="root-menu-11-2-1-3-1" label="Drcrack">
+						<item label="Drcrack Attack"><action name="Execute"><execute>roxterm -e echo "drcrack [rainbowntablesn | -d rainbowntables dictionary] [-h hash | -l hash_list | -f pwdump_file]"</execute></action></item>
+						<item label="Dr_Rules"><action name="Execute"><execute>roxterm -e dr_rules</execute></action></item>
+						<menu id="root-menu-11-2-1-3-1-1" label="Drtgen">
+							<item label="Drtgen help"><action name="Execute"><execute>roxterm -e drtgen</execute></action></item>
+							<item label="Supported Hash Type"><action name="Execute"><execute>roxterm -e bash /pentest/drcrack/supported_hash_type.sh</execute></action></item>
+							<item label="Drtgen Bench"><action name="Execute"><execute>roxterm -e echo "drtgen -bench -hash [hash type] -cLen -cCount [chain n] -threads [n]"</execute></action></item>
+							<item label="Drtgen Generic"><action name="Execute"><execute>roxterm -e echo "drtgen -file [rtable name] -hash [hash type] -cLen [chain length] -cCount [chain n] -threads [n] -charset [byte-256c] -lmin -lmax"</execute></action></item>
+							<item label="Drtgen Dictionary"><action name="Execute"><execute>roxterm -e echo "drtgen -file [rtable name] -hash [hash type] -cLen [chain length] -cCount [chain n] -threads [n] -d -dic [wordlist] -rules [mangling rule file]"</execute></action></item>
+						</menu>
+						<item label="Rcalc_Raw"><action name="Execute"><execute>roxterm -e echo "rcalc_raw [chainlen] [chains] [tables] [parts] [keyspace]"</execute></action></item>
+						<item label="Rtdump"><action name="Execute"><execute>roxterm -e echo "rtdump [rainbow_table_pathname] [rainbow_chain_index]"</execute></action></item>
+						<item label="Rtsort"><action name="Execute"><execute>roxterm -e echo "rtsort [rainbow_table_pathname]"</execute></action></item>
+					</menu>
+				</menu>
+				<menu id="root-menu-11-2-1-4" label="GPGPU">
+					<menu id="root-menu-11-2-1-4-1" label="Cuda">
+						<menu id="root-menu-11-2-1-4-1-1" label="Crark">
+							<item label="Crark"><action name="Execute"><execute>roxterm -e echo "crark [percorso file rar]"</execute></action></item>
+							<item label="Crark-hp"><action name="Execute"><execute>roxterm -e echo "crark-hp [percorso file rar]"</execute></action></item>
+						</menu>
+						<item label="Cuda-Multiforcer"><action name="Execute"><execute>roxterm -e echo "cuda-multiforcer -C charsets/charset[full/lower/lowernumeric/lowerupper/numeric/uppernumeric] -f [file hash] --min [1] --max [14)] -h [NTLM/MD4/MD5]"</execute></action></item>
+					</menu>
+					<menu id="root-menu-11-2-1-4-2" label="OpenCl">
+					</menu>
+				</menu>
+			</menu>
+			<menu id="root-menu-11-2-2" label="Online">
+				<item label="BruteSSH"><action name="Execute"><execute>roxterm -e echo "(proxychains) python /pentest/brutessh/brutessh.py -h [targethost] -u [user] -d [passwordict] -t [threads]"</execute></action></item>
+				<menu id="root-menu-11-2-2-1" label="Hydra">
+					<item label="Hydra Help"><action name="Execute"><execute>roxterm -e hydra</execute></action></item>
+					<item label="Hydra Gui"><action name="Execute"><execute>roxterm -e proxychains xhydra</execute></action></item>
+					<item label="Hydra"><action name="Execute"><execute>roxterm -e echo "(proxychains) hydra [[[-l LOGIN|-L FILE] [-p PASS|-P FILE]] | [-C FILE]] [-e ns] [-o FILE] [-t TASKS] [-M FILE [-T TASKS]] [-w TIME] [-f] [-s PORT] [-S] [-vV] [-4|-6] [-x MIN:MAX:CHARSET] [server service [OPT]]|[service://server[:PORT][/pentest]]"</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-2-2-2" label="Medusa">
+					<item label="Medua Help"><action name="Execute"><execute>roxterm -e medusa -h</execute></action></item>
+					<item label="Medusa Router Attack"><action name="Execute"><execute>roxterm -e echo "(proxychains) medusa -h [ip router] -U [username list] -P [password list] -e ns -f -M http -v 6"</execute></action></item>
+					<item label="Medusa"><action name="Execute"><execute>roxterm -e echo "(proxychains) medusa [-h host|-H file] [-u username|-U file] [-p password|-P file] [-C file] -M module [OPT]"</execute></action></item>
+				</menu>
+			</menu>
+		</menu>
+		<menu id="root-menu-11-3" label="Database">
+			<item label="HexorBase"><action name="Execute"><execute>roxterm -e python /pentest/Database/hexorbase/execute.py</execute></action></item>
+			<menu id="root-menu-11-3-1" label="SQL Map">
+				<item label="SQL Map Help"><action name="Execute"><execute>roxterm -e proxychains python /pentest/Database/sqlmap/sqlmap.py -h</execute></action></item>
+				<item label="Edit sqlmap.conf"><action name="Execute"><execute>geany /pentest/SQL/sqlmap/sqlmap.conf</execute></action></item>
+			</menu>
+			<menu id="root-menu-11-3-2" label="SQL Ninja">
+				<item label="SQL Ninja"><action name="Execute"><execute>roxterm -e echo "(proxychains) sqlninja [IP]"</execute></action></item>
+				<item label="Edit sqlninja.conf"><action name="Execute"><execute>geany /pentest/SQL/sqlninja-0.2.5/sqlninja.conf</execute></action></item>
+			</menu>
+		</menu>
+		<menu id="root-menu-11-4" label="Exploiting">
+			<menu id="root-menu-11-4-1" label="Inguma">
+				<item label="IngumaGui"><action name="Execute"><execute>roxterm -e proxychains python /pentestinguma/inguma.py</execute></action></item>
+				<item label="IngumaCli"><action name="Execute"><execute>roxterm -e proxychains python /pentest/inguma/ingumagui.py</execute></action></item>
+				<item label="Inguma TUTORIAL.txt"><action name="Execute"><execute>geany /pentest/inguma/TUTORIAL.txt</execute></action></item>
+			</menu>
+			<menu id="root-menu-11-4-2" label="Metasploit">
+				<item label="Mysql Start"><action name="Execute"><execute>roxterm -e /etc/init.d/mysql start</execute></action></item>
+				<menu id="root-menu-11-4-2-1" label="Armitage (Metasploit GUI)">
+					<item label="Msfrpcd"><action name="Execute"><execute>roxterm -e ruby /pentest/metasploit/msf3/msfrpcd -f -U msf -P test -t Basic</execute></action></item>
+					<item label="Armitage (Metasploit GUI)"><action name="Execute"><execute>java -jar /pentest/metasploit3/armitage/armitage.jar</execute></action></item>
+				</menu>
+				<item label="MsfCli"><action name="Execute"><execute>roxterm -e proxychains ruby /pentest/metasploit3/msf3/msfcli</execute></action></item>
+				<item label="MsfConsole"><action name="Execute"><execute>roxterm -e proxychains ruby /pentest/metasploit3/msf3/msfconsole</execute></action></item>
+				<item label="MsfGui"><action name="Execute"><execute>roxterm -e proxychains ruby /pentest/metasploit3/msf3/msfgui</execute></action></item>
+				<item label="MsfUpdate"><action name="Execute"><execute>roxterm -e proxychains ruby /pentest/metasploit3/msf3/msfupdate</execute></action></item>
+			</menu>
+			<menu id="root-menu-11-4-3" label="Social Engineer Toolkit">
+				<item label="Start SET"><action name="Execute"><execute>roxterm -e bash /pentest/set/set</execute></action></item>
+				<item label="Edit set_config"><action name="Execute"><execute>geany /pentest/set/config/set_config</execute></action></item>
+			</menu>
+		</menu>
+		<menu id="root-menu-11-5" label="Forensic">
+			<menu id="root-menu-11-5-1" label="Fuzzers">
+				<menu id="root-menu-11-5-1-1" label="Union Fuzzer">
+					<item label="Union Fuzzer Help"><action name="Execute"><execute>roxterm -e echo "python /pentest/unionfuzzer/uniofuzz.py --help"</execute></action></item>
+					<item label="Union Fuzzer Browser"><action name="Execute"><execute>roxterm -e echo "python /pentest/unionfuzzer/uniofuzz.py -b [template.html] -m [number of files] -e [extension: html/php/aspx] -o [output folder: /var/www]"</execute></action></item>
+					<item label="Union Fuzzer File"><action name="Execute"><execute>roxterm -e echo "python /pentest/unionfuzzer/uniofuzz.py -f -m [number of files] -e [extension: m3u/ini/pdf] -o [output folder: /home/user/files]"</execute></action></item>
+					<item label="Union Fuzzer Net Service"><action name="Execute"><execute>roxterm -e echo "python /pentest/unionfuzzer/uniofuzz.py -n -i [interval: 0.01] -ip [victim IP] -port [port number] "</execute></action></item>
+					<item label="Union Fuzzer Pipe to Program"><action name="Execute"><execute>roxterm -e echo "python /pentest/unionfuzzer/uniofuzz.py -p -m [number of files] -i [interval: 1.5] -d [program to execute: '/bin/ls -n']"</execute></action></item>
+				</menu>
+			</menu>
+			<item label="Geoedge"><action name="Execute"><execute>roxterm -e echo "python /pentest/geoedge.py [IP/Url]"</execute></action></item>
+			<item label="MediaInfo (GUI)"><action name="Execute"><execute>mediainfo-gui</execute></action></item>
+			<item label="TheHarvester"><action name="Execute"><execute>roxterm -e echo "python /pentest/theHarvester-ng/theHarvester.py -d [Domain] -b [google | bing | bingapi | pgp | linkedin | google-profiles | exalead | all]"</execute></action></item>
+		</menu>
+		<menu id="root-menu-11-6" label="Net">
+			<menu id="root-menu-11-6-1" label="Netcat">
+				<item label="Netcat Help"><action name="Execute"><execute>roxterm -e nc -h</execute></action></item>
+				<menu id="root-menu.10-5-1-1" label="File transfer">
+					<item label="Destinatario"><action name="Execute"><execute>roxterm -e echo "nc -l -vv -p [Porta] -w [seconds] -x -o [file log]> [file di output]"</execute></action></item>
+					<item label="Mittente"><action name="Execute"><execute>roxterm -e echo "(proxychains) nc -vv -n [IP Destinatario] [port/ports' range] [reverse >] [file input]"</execute></action></item>
+				</menu>
+				<item label="Netcat PortScanning TCP"><action name="Execute"><execute>roxterm -e echo "(proxychains) nc -vv -n -z [Target IP] [range porte]"</execute></action></item>
+				<item label="Netcat PortScanning UDP"><action name="Execute"><execute>roxterm -e echo "(proxychains) nc -vv -n -u -z [Target IP] [range porte]"</execute></action></item>
+				<item label="Netcat Banner Grabbing"><action name="Execute"><execute>roxterm -e echo "(proxychains) nc -vv [target IP] [port] | HEAD / HTTP/1.0"</execute></action></item>
+				<menu id="root-menu.10-5-1-2" label="Bind Shell">
+					<item label="Server"><action name="Execute"><execute>roxterm -e echo "nc -lp [port] -e [program] -x -o [file log]</execute></action></item>
+					<item label="Client"><action name="Execute"><execute>roxterm -e echo "(proxychains) nc -vv [target IP] [port]</execute></action></item>
+				</menu>
+				<menu id="root-menu.10-5-1-1" label="Reverse Shell">
+					<item label="Server"><action name="Execute"><execute>roxterm -e echo "nc -l -p [port]"</execute></action></item>
+					<item label="Client"><action name="Execute"><execute>roxterm -e echo "(proxychains) nc -vv [Target IP] -p [porta] -c [shell path | /bin/bash</execute></action></item>
+				</menu>
+			</menu>
+			<menu id="root-menu-11-6-2" label="Netdiscover">
+				<item label="Netdiscover"><action name="Execute"><execute>roxterm -e echo "netdiscover [-i device] [-r range | -p] [-s time] [-n node] [-c count] [-f (Fast)] [-S (HardCore)]"</execute></action></item>
+				<item label="Netdiscover Help"><action name="Execute"><execute>roxterm -e netdiscover --help</execute></action></item>
+				<menu id="root-menu-11-6-2-1" Label="Interfaces">
+					<item label="Netdiscover Eth0"><action name="Execute"><execute>roxterm -e netdiscover -i eth0 -f</execute></action></item>
+					<item label="Netdiscover Eth1"><action name="Execute"><execute>roxterm -e netdiscover -i eth1 -f</execute></action></item>
+					<item label="Netdiscover Wlan0"><action name="Execute"><execute>roxterm -e netdiscover -i wlan0 -f</execute></action></item>
+					<item label="Netdiscover Mon0"><action name="Execute"><execute>roxterm -e netdiscover -i mon0 -f</execute></action></item>
+				</menu>
+			</menu>
+			<menu id="root-menu-11-6-3" label="Nmap">
+				<item label="Zenmap (Nmap GUI)"><action name="Execute"><execute>zenmap</execute></action></item>
+				<item label="Nmap -h"><action name="Execute"><execute>roxterm -e nmap -h</execute></action></item>
+				<item label="Nmap 192.168.0.0-255 (-sP Ping)"><action name="Execute"><execute>roxterm -e nmap -sP 192.168.0.0-255</execute></action></item>
+				<item label="Nmap 192.168.1.0-255 (-sP Ping)"><action name="Execute"><execute>roxterm -e nmap -sP 192.168.1.0-255</execute></action></item>
+				<item label="Nmap Connect Scan (-sT)"><action name="Execute"><execute>roxterm -e echo "(proxychains) nmap -vvv -sT [targetIP]"</execute></action></item>
+				<item label="Nmap Version Scan (-sV -T AGGRESSIVE)"><action name="Execute"><execute>roxterm -e echo "(proxychains) nmap -vvv -sV -T AGGRESSIVE [targetIP]"</execute></action></item>
+				<item label="Nmap Udp Connection (-sU)"><action name="Execute"><execute>roxterm -e echo "(proxychains) nmap -vvv -sU [targetIP]"</execute></action></item>
+				<item label="Nmap Syn Stealth (-sS)"><action name="Execute"><execute>roxterm -e echo "(proxychains) nmap -vvv -sS -T AGGRESSIVE [targetIP]"</execute></action></item>
+				<item label="Nmap Decoy (-D)"><action name="Execute"><execute>roxterm -e echo "(proxychains) nmap -D [falseIPs] [targetIP]"</execute></action></item>
+				<item label="Nmap Full Scan(-sT -sR -sV -O -F -A -D -T AGGRESSIVE -vvv)"><action name="Execute"><execute>roxterm -e echo "(proxychains) nmap -sT -sR -sV -O -F -A -D [falseIPs] -T AGGRESSIVE -vvv [targetIP]"</execute></action></item>
+			</menu>
+		</menu>
+		<menu id="root-menu-11-7" label="Sniffers">
+			<menu id="root-menu-11-7-1" label="Driftnet">
+				<item label="Driftnet Eth0"><action name="Execute"><execute>roxterm -e driftnet -i eth0 -v</execute></action></item>
+				<item label="Driftnet Eth1"><action name="Execute"><execute>roxterm -e driftnet -i eth1 -v</execute></action></item>
+				<item label="Driftnet Wlan0"><action name="Execute"><execute>roxterm -e driftnet -i wlan0 -v</execute></action></item>
+				<item label="Driftnet Mon0"><action name="Execute"><execute>roxterm -e driftnet -i mon0 -v</execute></action></item>
+				<item label="Driftnet --help"><action name="Execute"><execute>roxterm -e driftnet --help</execute></action></item>
+			</menu>
+			<menu id="root-menu-11-7-2" label="Dsniff Pack">
+				<menu id="root-menu-11-7-2-1" label="Arpspoof">
+					<item label="Arpspoof"><action name="Execute"><execute>roxterm -e echo "arpspoof -i [interface] -t [targetip] [routerip]"</execute></action></item>
+					<item label="Arpspoof Help"><action name="Execute"><execute>roxterm -e arpspoof --help"</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-7-2-2" label="Dsniff">
+					<item label="Dsniff Options"><action name="Execute"><execute>roxterm -e echo "dsniff [-cdmn] [-i interface | -p pcapfile] [-s snaplen] [-f services] [-t trigger[,...]] [-r|-w savefile] [expression]"</execute></action></item>
+					<menu id="root-menu-11-7-2-2-1" label="Interfaces">
+						<item label="Dsniff Eth0"><action name="Execute"><execute>roxterm -e dsniff -i eth0</execute></action></item>
+						<item label="Dsniff Eth1"><action name="Execute"><execute>roxterm -e dsniff -i eth1</execute></action></item>
+						<item label="Dsniff Wlan0"><action name="Execute"><execute>roxterm -e dsniff -i wlan0</execute></action></item>
+						<item label="Dsniff Mon0"><action name="Execute"><execute>roxterm -e dsniff -i mon0</execute></action></item>
+					</menu>
+				</menu>
+				<menu id="root-menu-11-7-2-3" label="Filesnarf">
+					<item label="Filesnarf Options"><action name="Execute"><execute>roxterm -e echo "filesnarf [-i interface | -p pcapfile] [[-v] pattern [expression]"</execute></action></item>
+					<menu id="root-menu-11-7-2-3-1" label="Interfaces">
+						<item label="Filesnarf Eth0"><action name="Execute"><execute>roxterm -e filesnarf -i eth0</execute></action></item>
+						<item label="Filesnarf Eth1"><action name="Execute"><execute>roxterm -e filesnarf -i eth1</execute></action></item>
+						<item label="Filesnarf Wlan0"><action name="Execute"><execute>roxterm -e filesnarf -i wlan0</execute></action></item>
+						<item label="Filesnarf Mon0"><action name="Execute"><execute>roxterm -e filesnarf -i mon0</execute></action></item>
+					</menu>
+				</menu>
+				<menu id="root-menu-11-7-2-4" label="Macof">
+					<item label="Macof Options"><action name="Execute"><execute>roxterm -e echo "macof [-s src] [-d dst] [-e tha] [-x sport] [-y dport] [-i interface] [-n times]"</execute></action></item>
+					<menu id="root-menu-11-7-2-4-1" label="Interfaces">
+						<item label="Macof Eth0"><action name="Execute"><execute>roxterm -e macof -i eth0</execute></action></item>
+						<item label="Macof Eth1"><action name="Execute"><execute>roxterm -e macof -i eth1</execute></action></item>
+						<item label="Macof Wlan0"><action name="Execute"><execute>roxterm -e macof -i wlan0</execute></action></item>
+						<item label="Macof Mon0"><action name="Execute"><execute>roxterm -e macof -i mon0</execute></action></item>
+					</menu>
+				</menu>
+				<menu id="root-menu-11-7-2-5" label="Mailsnarf">
+					<item label="Mailsnarf Options"><action name="Execute"><execute>roxterm -e echo "mailsnarf [-i interface | -p pcapfile] [[-v] pattern [expression]]"</execute></action></item>
+					<menu id="root-menu-11-7-2-5-1" label="Interfaces">
+						<item label="Mailsnarf Eth0"><action name="Execute"><execute>roxterm -e mailsnarf -i eth0</execute></action></item>
+						<item label="Mailsnarf Eth1"><action name="Execute"><execute>roxterm -e mailsnarf -i eth1</execute></action></item>
+						<item label="Mailsnarf Wlan0"><action name="Execute"><execute>roxterm -e mailsnarf -i wlan0</execute></action></item>
+						<item label="Mailsnarf Mon0"><action name="Execute"><execute>roxterm -e mailsnarf -i mon0</execute></action></item>
+					</menu>
+				</menu>
+				<menu id="root-menu-11-7-2-6" label="Msgsnarf">
+					<item label="Msgsnarf Options"><action name="Execute"><execute>roxterm -e echo "msgsnarf [-i interface | -p pcapfile] [[-v] pattern [expression]]"</execute></action></item>
+					<menu id="root-menu-11-7-2-6-1" label="Interfaces">
+						<item label="Msgsnarf Eth0"><action name="Execute"><execute>roxterm -e msgsnarf -i eth0</execute></action></item>
+						<item label="Msgsnarf Eth1"><action name="Execute"><execute>roxterm -e msgsnarf -i eth1</execute></action></item>
+						<item label="Msgsnarf Wlan0"><action name="Execute"><execute>roxterm -e msgsnarf -i wlan0</execute></action></item>
+						<item label="Msgsnarf Mon0"><action name="Execute"><execute>roxterm -e msgsnarf -i mon0</execute></action></item>
+					</menu>
+				</menu>
+				<menu id="root-menu-11-7-2-7" label="Urlsnarf">
+					<item label="Urlsnarf Options"><action name="Execute"><execute>roxterm -e echo "urlsnarf  [-n] [-i interface | -p pcapfile] [[-v] pattern [expression]]"</execute></action></item>
+					<menu id="root-menu-11-7-2-7-1" label="Interfaces">
+						<item label="Urlsnarf Eth0"><action name="Execute"><execute>roxterm -e urlsnarf -i eth0</execute></action></item>
+						<item label="Urlsnarf Eth1"><action name="Execute"><execute>roxterm -e urlsnarf -i eth1</execute></action></item>
+						<item label="Urlsnarf Wlan0"><action name="Execute"><execute>roxterm -e urlsnarf -i wlan0</execute></action></item>
+						<item label="Urlsnarf Mon0"><action name="Execute"><execute>roxterm -e urlsnarf -i mon0</execute></action></item>
+					</menu>
+				</menu>
+				<menu id="root-menu-11-7-2-8" label="Webspy">
+					<item label="Webspy"><action name="Execute"><execute>roxterm -e echo "(proxychains) webspy -i [interface] [targetip]"</execute></action></item>
+					<item label="Webspy --help"><action name="Execute"><execute>roxterm -e webspy --help</execute></action></item>
+				</menu>
+			</menu>
+			<menu id="root-menu-11-7-3" label="Ettercap">
+				<item label="Ettercap-gtk"><action name="Execute"><execute>ettercap-gtk</execute></action></item>
+				<menu id="root-menu-11-7-3-1" label="Sniffing-Logging">
+					<item label="Ettercap Eth0"><action name="Execute"><execute>roxterm -e ettercap -i eth0 -Tq -l $HOME/LOG/logeth0 -M ARP /192.168.0.1/ // // -P autoadd</execute></action></item>
+					<item label="Ettercap Eth1"><action name="Execute"><execute>roxterm -e ettercap -i eth1 -Tq -l $HOME/LOG/logeth1 -M ARP /192.168.0.1/ // // -P autoadd</execute></action></item>
+					<item label="Ettercap Wlan0"><action name="Execute"><execute>roxterm -e ettercap -i wlan0 -Tq -l $HOME/LOG/logwlan0 -M ARP /192.168.0.1/ // // -P autoadd</execute></action></item>
+					<item label="Ettercap Mon0"><action name="Execute"><execute>roxterm -e ettercap -i mon0 -Tq -l $HOME/LOG/logmon0 -M ARP /192.168.0.1/ // // -P autoadd</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-7-3-2" label="Ettercap Log">
+					<item label="Eth0"><action name="Execute"><execute>roxterm -e etterlog $HOME/LOG/logeth0.eci</execute></action></item>
+					<item label="Eth1"><action name="Execute"><execute>roxterm -e etterlog $HOME/LOG/logeth1.eci</execute></action></item>
+					<item label="Wlan0"><action name="Execute"><execute>roxterm -e etterlog $HOME/LOG/logwlan0.eci</execute></action></item>
+					<item label="Mon0"><action name="Execute"><execute>roxterm -e etterlog $HOME/LOG/logmon0.eci</execute></action></item>
+				</menu>
+			</menu>
+			<menu id="root-menu-11-7-4" label="Ferret-Hamster">
+				<item label="Airmon-ng Start Wlan0"><action name="Execute"><execute>roxterm -e airmon-ng start wlan0</execute></action></item>
+				<item label="Airodump-ng dump"><action name="Execute"><execute>roxterm -e echo "airodump-­ng --bssid [mac address access bersaglio] -c [channel] ­-w [nome file cap] [interfaccia]"</execute></action></item>
+				<item label="Airdecap-ng"><action name="Execute"><execute>roxterm -e echo "airdecap-ng [file cap] -e ESSID -p WPA_PASSWORD"</execute></action></item>
+				<item label="Ferret"><action name="Execute"><execute>roxterm -e echo "ferret -r [file dec cap]"</execute></action></item>
+				<item label="Hamster"><action name="Execute"><execute>roxterm -e hamster</execute></action></item>
+				<item label="Hamster Web"><action name="Execute"><execute>midori -p http://hamster"</execute></action></item>
+			</menu>
+			<item label="Ghost Phisher"><action name="Exxecute"><execute>python /pentest/Ghost-Phisher/ghost.py</execute></action></item>
+			<menu id="root-menu-11-7-5" label="Sslstrip">
+				<item label="Sslstrip"><action name="Execute"><execute>roxterm -e ssltrip -l 10000 -a -w $HOME/LOG/.sslstrip.log</execute></action></item>
+				<item label="Arpspoof"><action name="Execute"><execute>roxterm -e echo "arpspoof -i [interface] -t [targetip] [routerip]"</execute></action></item>
+				<item label="Sslstrip -h"><action name="Execute"><execute>roxterm -e sslstrip -h</execute></action></item>
+				<menu id="root-menu-11-7-5-1" label="Prerouting">
+					<item label="80 (http) --> 10000"><action name="Execute"><execute>roxterm -e iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000</execute></action></item>
+					<item label="443 (https) --> 10000"><action name="Execute"><execute>roxterm -e iptables -t nat -A PREROUTING -p tcp --destination-port 443 -j REDIRECT --to-port 10000</execute></action></item>
+					<item label="20 (ssh) --> 10000"><action name="Execute"><execute>roxterm -e iptables -t nat -A PREROUTING -p tcp --destination-port 20 -j REDIRECT --to-port 10000</execute></action></item>
+					<item label="21 (ftp) --> 10000"><action name="Execute"><execute>roxterm -e iptables -t nat -A PREROUTING -p tcp --destination-port 21 -j REDIRECT --to-port 10000</execute></action></item>
+					<item label="22 (ftp) --> 10000"><action name="Execute"><execute>roxterm -e iptables -t nat -A PREROUTING -p tcp --destination-port 22 -j REDIRECT --to-port 10000</execute></action></item>
+					<item label="990 (ftp ssl)--> 10000"><action name="Execute"><execute>roxterm -e iptables -t nat -A PREROUTING -p tcp --destination-port 990 -j REDIRECT --to-port 10000</execute></action></item>
+				</menu>
+				<item label="LOG"><action name="Execute"><execute>geany /pentest/LOG/.sslstrip.log</execute></action></item>
+			</menu>
+			<item label="Videosnarf"><action name="Execute"><execute>roxterm -e echo "videosnarf -i input.pcap"</execute></action></item>
+			<item label="Wireshark"><action name="Execute"><execute>wireshark</execute></action></item>
+		</menu>
+		<menu id="root-menu-11-8" label="Web Scanners">
+			<menu id="root-menu-11-8-1" label="Nikto">
+				<item label="Nikto Update"><action name="Execute"><execute>roxterm -e proxychains perl /pentest/nikto/nikto.pl -update</execute></action></item>
+				<item label="Nikto List Plugins"><action name="Execute"><execute>roxterm -e perl /pentest/nikto/nikto.pl -list-plugins"</execute></action></item>
+				<item label="Nikto Base Attack"><action name="Execute"><execute>roxterm -e echo "proxychains perl /pentest/nikto/nikto.pl -host [target IP/Url] -p [ports, default 80]"</execute></action></item>
+			</menu>
+			<menu id="root-menu-11-8-2" label="Openvas">
+				<item label="GSD"><action name="Execute"><execute>roxterm -e gsd</execute></action></item>
+				<item label="Openvas Web Interface (Chrome-GSA)"><action name="Execute"><execute>midori -p https://localhost:8000/</execute></action></item>
+				<menu id="root-menu-11-8-2-1" label="Openvas Scanner (9391)">
+					<item label="Openvas Scanner Start"><action name="Execute"><execute>roxterm -e openvassd</execute></action></item>
+					<item label="Openvas Scanner Stop"><action name="Execute"><execute>roxterm -e killall openvassd</execute></action></item>
+					<item label="Openvas Scanner User Creation"><action name="Execute"><execute>roxterm -e openvas-adduser</execute></action></item>
+					<item label="Openvas Scanner Sync"><action name="Execute"><execute>roxterm -e proxychains openvas-nvt-sync</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-8-2-2" label="Openvas Manager (9390)">
+					<item label="Openvas Manager Start"><action name="Execute"><execute>roxterm -e openvasmd</execute></action></item>
+					<item label="Openvas Manager Stop"><action name="Execute"><execute>roxterm -e killall openvasmd</execute></action></item>
+					<item label="Database Reinitialisation [require openvassd]"><action name="Execute"><execute>roxterm -e openvasmd --rebuild</execute></action></item>
+					<item label="Openvas Manager help"><action name="Execute"><execute>roxterm -e openvasmd --help</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-8-2-3" label="Openvas Administrator">
+					<item label="Openvas Administrator Start"><action name="Execute"><execute>roxterm -e openvasad</execute></action></item>
+					<item label="Openvas Administrator Stop"><action name="Execute"><execute>roxterm -e killall openvasad</execute></action></item>
+					<item label="Openvas Administrator help"><action name="Execute"><execute>roxterm -e openvasad --help</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-8-2-4" label="Greenbone-Security-Assistant (8000)">
+					<item label="GSA Start"><action name="Execute"><execute>roxterm -e gsad</execute></action></item>
+					<item label="GSA Stop"><action name="Execute"><execute>roxterm -e killall gsad</execute></action></item>
+					<item label="GSA Help"><action name="Execute"><execute>roxterm -e gsad --help</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-8-2-5" label="OpenVAS-CLI">
+					<item label="OpenVas-CLI Start"><action name="Execute"><execute>roxterm -e omp</execute></action></item>
+					<item label="OpenVas-CLI Help"><action name="Execute"><execute>roxterm -e omp --help</execute></action></item>
+					<item label="Edit omp.config"><action name="Execute"><execute>geany omp.config</execute></action></item>
+				</menu>
+			</menu>
+			<menu id="root-menu-11-8-3" label="Pyloris">
+				<item label="Pyloris"><action name="Execute"><execute>roxterm -e echo "proxychains python /pentest/pyloris/pyloris.py [sito web/IP]</execute></action></item>
+				<item label="Pyloris Doc"><action name="Execute"><execute>geany /pentest/pyloris/doc/httploris.txt</execute></action></item>
+			</menu>
+			<menu id="root-menu-11-8-4" label="W3af">
+				<item label="W3af_Cli"><action name="Execute"><execute>roxterm -e echo proxychains python /pentest/w3af/w3af_console</execute></action></item>
+				<item label="W3af_Cli Help"><action name="Execute"><execute>roxterm -e python /pentest/w3af/w3af_console --help</execute></action></item>
+				<item label="W3af_GUI"><action name="Execute"><execute>roxterm -e proxychains python /pentest/w3af/w3af_gui</execute></action></item>
+			</menu>
+		</menu>
+		<menu id="root-menu-11-9" label="Wireless">
+			<menu id="root-menu-11-9-1" label="Aircrack-ng">
+				<menu id="root-menu-11-9-1-1" label="Airbase-ng">
+					<item label="Airbase-ng"><action name="Execute"><execute>roxterm -e echo "airbase-ng -e [Essid] -c [Channel] -v (-w [Chiave Wep])  (-x [hidden]) [interface]"</execute></action></item>
+					<item label="Airbase-ng Help"><action name="Execute"><execute>roxterm -e airbase-ng --help</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-9-1-2" label="Airmon-ng">
+					<item label="Airmon-ng Start Eth0"><action name="Execute"><execute>roxterm -e airmon-ng start eth0</execute></action></item>
+					<item label="Airmon-ng Stop Eth0"><action name="Execute"><execute>roxterm -e airmon-ng stop eth0</execute></action></item>
+					<item label="Airmon-ng Start Wlan0"><action name="Execute"><execute>roxterm -e airmon-ng start wlan0</execute></action></item>
+					<item label="Airmon-ng Stop Wlan0"><action name="Execute"><execute>roxterm -e airmon-ng stop wlan0</execute></action></item>
+					<item label="Airmon-ng -h"><action name="Execute"><execute>roxterm -e airmon-ng -h</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-9-1-3" label="Airodump-ng">
+					<menu id="root-menu-11-9-1-3-1" label="Interfaces">
+						<item label="Eth0"><action name="Execute"><execute>roxterm -e airodump-ng eth0 -o cap -w $HOME/Caps/Rete.cap</execute></action></item>
+						<item label="Eth1"><action name="Execute"><execute>roxterm -e airodump-ng eth1 -o cap $HOME/Caps/Rete.cap</execute></action></item>
+						<item label="Wlan0"><action name="Execute"><execute>roxterm -e airodump-ng wlan0 -o cap $HOME/Caps/Rete.cap</execute></action></item>
+						<item label="Mon0"><action name="Execute"><execute>roxterm -e airodump-ng mon0 -o cap $HOME/Caps/Rete.cap</execute></action></item>
+					</menu>
+					<item label="Airodump-ng dump"><action name="Execute"><execute>roxterm -e echo "airodump-­ng --bssid [mac address access bersaglio] -c [channel] ­-w [nome file cap] [interfaccia]"</execute></action></item>
+					<item label="Airodump-ng --help"><action name="Execute"><execute>roxterm -e airodump airodump-ng --help</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-9-1-4" label="Airplay-ng">
+					<item label="Airplay-ng Falsa Autenticazione"><action name="Execute"><execute>roxterm -e echo "aireplay­-ng ­0 -1 ­-a [mac address access bersaglio] -­h [your mac adress] [interfaccia]"</execute></action></item>
+					<item label="Airplay-ng Scansione Pacchetti ARP"><action name="Execute"><execute>roxterm -e echo "aireplay­-ng -­3 ­-a [mac address access bersaglio] -­h [your mac adress] [interfaccia]"</execute></action></item>
+					<item label="Airplay-ng Creazione Pacchetti ARP"><action name="Execute"><execute>roxterm -e echo "aireplay­-ng ­-4 ­-a [mac address access bersaglio] -­h [your mac adress] [interfaccia]"</execute></action></item>
+					<item label="PacketFoge Creazione File xor"><action name="Execute"><execute>roxterm -e echo "packetforge-ng 0 ­-a [mac address access bersaglio] -­h [your mac adress] -k 255.255.255.255 -l 255.255.255.255 -y [file .xor] -w [nome file arp]"</execute></action></item>
+					<item label="Airplay-ng Inietamento Pacchetto ARP "><action name="Execute"><execute>roxterm -e echo "aireplay­-ng ­-2 ­-r [pacchetto arp] mon0"</execute></action></item>
+					<item label="Airplay-ng Deutenticazione del Client"><action name="Execute"><execute>roxterm -e echo "aireplay­-ng 0 -1 ­-a [mac address access point bersaglio] -­c [mac adress victim] mon0"</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-9-1-5" label="Wesside-ng (Wep Passive Attack)">
+					<item label="Wesside-ng help"><action name="Execute"><execute>roxterm -e wesside-ng -h</execute></action></item>
+					<item label="Wesside-ng (Automatic Accesspoint Selection)"><action name="Execute"><execute>roxterm -e echo "wesside-ng -i [inteface]"</execute></action></item>
+					<item label="Wesside-ng (Manual Accesspoint Selection)"><action name="Execute"><execute>roxterm -e echo "wesside-ng -i [interface] -v [mac adress acces point]"</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-9-1-6" label="Aircrack-ng">
+					<item label="Aircrack-ng List Processor"><action name="Execute"><execute>roxterm -e aircrack-ng -u</execute></action></item>
+					<item label="Aircrack-ng Benchmark"><action name="Execute"><execute>roxterm -e aircrack-ng -S</execute></action></item>
+					<item label="Aircrack-ng"><action name="Execute"><execute>roxterm -e echo "aircrack-ng -a [ 1 [wep] | 2 [wpa] ] -e [essid] -b [bssid] -p [n. treads] (-q [no output]) -l [keyfile] [-w [wordlist] | -r [airolib-ng database] ]"</execute></action></item>
+				</menu>
+			</menu>
+			<menu id="root-menu-11-9-2" label="Cowpatty">
+				<item label="Cowpatty Attack"><action name="Execute"><execute>roxterm -e echo "cowpatty -r [capture file .dump] -f [wordlist] -s [essid]"</execute></action></item>
+				<item label="Cowpatty Help"><action name="Execute"><execute>roxterm -e cowpatty --help</execute></action></item>
+				<menu id="root-meu-10-9-2-1" label="Genpwk">
+					<item label="Genpwk Help"><action name="Execute"><execute>roxterm -e genpwk --help</execute></action></item>
+					<item label="Genpwk"><action name="Execute"><execute>roxterm -e echo "genpmk -f [wordlist] -d [hash output] -s [essid]"</execute></action></item>
+					<item label="Cowpatty Hash Attack"><action name="Execute"><execute>roxterm -e echo "cowpatty -r [capture file .dump] -d [hashfile] -s [essid]"</execute></action></item>
+				</menu>
+			</menu>
+			<item label="Fern Wifi Cracker Gui"><action name="Execute"><execute>python /pentest/Fern-Wifi-Cracker/execute.py</execute></action></item>
+			<item label="Macchanger-gtk"><action name="Execute"><execute>macchanger-gtk</execute></action></item>
+			<menu id="root-menu-11-9-3" label="Pyrit">
+				<item label="Pyrit"><action name="Execute"><execute>roxterm -e pyrit</execute></action></item>
+				<menu id="root-menu-11-10-9-3-1" label="List">
+					<item label="Pyrit List_Cores"><action name="Execute"><execute>roxterm -e pyrit list_cores</execute></action></item>
+					<item label="Pyrit List Essids"><action name="Execute"><execute>roxterm -e pyrit list_essids</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-10-9-3-2" label="Test">
+					<item label="Pyrit Benchmark"><action name="Execute"><execute>roxterm -e pyrit benchmark</execute></action></item>
+					<item label="Pyrit Benchmark Long"><action name="Execute"><execute>roxterm -e pyrit benchmark_long</execute></action></item>
+					<item label="Pyrit Eval"><action name="Execute"><execute>roxterm -e pyrit eval</execute></action></item>
+					<item label="Pyrit Check DB"><action name="Execute"><execute>roxterm -e pyrit check_db</execute></action></item>
+					<item label="Pyrit SelfTest"><action name="Execute"><execute>roxterm -e pyrit selftest</execute></action></item>
+					<item label="Pyrit Verify"><action name="Execute"><execute>roxterm -e pyrit verify</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-10-9-3-3" label="Analize Cap">
+					<item label="Pyrit Analize Cap"><action name="Execute"><execute>roxterm -e echo "pyrit -r [percorso file .cap] analyze"</execute></action></item>
+					<item label="Pyrit Analize Strip"><action name="Execute"><execute>roxterm -e echo "pyrit -r [percorso file .cap] strip"</execute></action></item>
+					<item label="Pyrit Analize StripLive"><action name="Execute"><execute>roxterm -e echo "pyrit -r [percorso file .cap] striplive"</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-10-9-3-4" label="Creazione Database">
+					<item label="Pyrit Create_Essid"><action name="Execute"><execute>roxterm -e echo "pyrit -e [nome essid] create_essid"</execute></action></item>
+					<item label="Pyrit Delete_Essid"><action name="Execute"><execute>roxterm -e echo "pyrit -e [nome essid] delete_essid"</execute></action></item>
+					<item label="Pyrit Import_Passwords"><action name="Execute"><execute>roxterm -e echo "pyrit -i [percorso wordlist.txt] import_passwords"</execute></action></item>
+					<item label="Pyrit Batch"><action name="Execute"><execute></execute>roxterm -e pyrit batch</action></item>
+				</menu>
+				<menu id="root-menu-11-10-9-3-5" label="Export">
+					<item label="Pyrit Export_Cowpatty"><action name="Execute"><execute>roxterm -e echo "pyrit -o [percorso file cowpatty] export_cowpatty"</execute></action></item>
+					<item label="Pyrit Export_Hashdb (airolib database)"><action name="Execute"><execute>roxterm -e echo "pyrit -o [percorso file airolib] export_hashdb"s</execute></action></item>
+					<item label="Pyrit Export_Passwords"><action name="Execute"><execute>roxterm -e echo "pyrit -o [percorso file passwords] export_passwords"</execute></action></item>
+				</menu>
+				<menu id="root-menu-11-10-9-3-6" label="Attack">
+					<item label="Pyrit Attack_Batch"><action name="Execute"><execute>roxterm -e echo "pyrit -e [nome essid] -i [percorso wordlist.txt] -r [percorso file .cap] attack_batch"</execute></action></item>
+					<item label="Pyrit Attack_DB"><action name="Execute"><execute>roxterm -e echo "pyrit -e [nome essid] -i [percorso wordlist.txt] -r [percorso file .cap] attack_db"</execute></action></item>
+					<item label="Pyrit Attack_Cowpatty"><action name="Execute"><execute>roxterm -e echo "pyrit -e [nome essid] -i [percorso wordlist.txt] -r [percorso file .cap] attack_cowpatty"</execute></action></item>
+					<item label="Pyrit Attack_Passthrough"><action name="Execute"><execute>roxterm -e echo "pyrit -e [nome essid] -i [percorso wordlist.txt] -r [percorso file .cap] attack_passthrough"</execute></action></item>
+				</menu>
+				<item label="Pyrit Serve"><action name="Execute"><execute>roxterm -e pyrit serve</execute></action></item>
+				<item label="Geany Pyrit Config"><action name="Execute"><execute>geany $HOME/.pyrit/config</execute></action></item>
+			</menu>
+			<item label="Reaver-WPS"><action name="Execute"><execute>roxterm -e echo "reaver -i monitorinterface -b apbssid [-c channel] [-e essid] -vv"</execute></action></item>
+			<menu id="root-menu-11-9-4" label="Wifite">
+				<item label="Wifite Upgrade"><action name="Execute"><execute>roxterm -e proxychains python /pentest/wifite_r38.py -upgrade</execute></action></item>
+				<item label="Wifite Help"><action name="Execute"><execute>roxterm -e python /pentest/wifite_r38.py --help</execute></action></item>
+				<item label="Wifite Wep Attack"><action name="Execute"><execute>roxterm -e echo "python /pentest/wifite_r38.py -i [interface] -e [essid] -c [channel] --anon -pps [max packet/sec] --force-fake --autocrack [min ivs] -wepw [min(max attack time)] --no-wpa -p [min db]"</execute></action></item>
+				<item label="Wifite Wpa Attack"><action name="Execute"><execute>roxterm -e echo "python /pentest/wifite_r38.py -i [interface] -e [essid] -c [channel] --anon -d [wordlist] -wpaw [min(time for handshake)] --no-strip --pyrit [pyrit/cowpatty attack] --no-wep -p [min db]"</execute></action></item>
+			</menu>
+		</menu>
+		<menu id="root-menu-11-10" label="Wordlist">
+			<menu id="root-menu-11-10-1" label="Convertitors">
+				<item label="Word to Text"><action name="Execute"><execute>roxterm -e echo "catdoc"</execute></action></item>
+				<item label="Exel to Text"><action name="Execute"><execute>roxterm -e echo "xls2csv"</execute></action></item>
+				<item label="Powerpoint to Text"><action name="Execute"><execute>roxterm -e echo "catppt"</execute></action></item>
+				<item label="Pdf to Textl"><action name="Execute"><execute>roxterm -e echo "pdftotext"</execute></action></item>
+				<item label="Html to Text"><action name="Execute"><execute>roxterm -e echo "html2text"</execute></action></item>
+				<item label="Musical Tag to Text"><action name="Execute"><execute>roxterm -e echo "id3v2"</execute></action></item>
+			</menu>
+			<menu id="root-menu-11-10-2" label="Generators">
+				<item label="Crunch"><action name="Execute"><execute>roxterm -e echo "crunch [min] [max] [charset] [-q [file to permute] | -t [@@@kk (@ change k constant)] ] -o [file output]"</execute></action></item>
+				<item label="Wyd"><action name="Execute"><execute>roxterm -e echo "perl /pentest/wyd-0.2/wyd.pl -n -o [file] [input]"</execute></action></item>
+				<item label="Cewl"><action name="Execute"><execute>roxterm -e echo "ruby /pentest/cewl/cewl.rb --depth x -o [go offsite] --min_word_lenght [def 3] [--write [file output] | --no-words] --meta [file] --email [file]"</execute></action></item>
+				<item label="John Incremental"><action name="Execute"><execute>roxterm -e echo "john --incremental=[charset] [ --stdout | --stodut=[maxlenght] ] >> [incrementalwordlist]"</execute></action></item>
+				<item label="Text to Wordlist"><action name="Execute"><execute>roxterm -e echo "cat [file.txt] | sed -e 's/[^a-zA-Z]/ /g' | tr '[:lower:]' '[:upper:]' | tr ' ' '\012' | sed -e '/^$/d' | sort -u >> [wordlist.txt]"</execute></action></item>
+				<item label="Joining Files"><action name="Execute"><execute>roxterm -e echo "cat * | sed -e 's/[^a-zA-Z]/ /g' | tr -cd '\11\12\40-\176' | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | sed -e '/aaa/d' | sed -e '/bbb/d' | sed -e '/ccc/d' | sed -e '/ddd/d' | sed -e '/eee/d' | sed -e '/fff/d' | sed -e '/ggg/d' | sed -e '/hhh/d' | sed -e '/iii/d' | sed -e '/jjj/d' | sed -e '/kkk/d' | sed -e '/lll/d' | sed -e '/mmm/d' | sed -e '/nnn/d' | sed -e '/ooo/d' | sed -e '/ppp/d' | sed -e '/qqq/d' | sed -e '/rrr/d' | sed -e '/sss/d' | sed -e '/ttt/d' | sed -e '/uuu/d' | sed -e '/vvv/d' | sed -e '/www/d' | sed -e '/xxx/d' | sed -e '/yyy/d' | sed -e '/zzz/d' | sed -e '/aa/d' | sed -e '/ee/d' | sed -e '/ii/d' | sed -e '/oo/d' | sed -e '/uu/d' | sed -e '/jj/d' | sed -e '/kk/d' | sed -e '/ww/d' | sed -e '/xx/d' | sed -e '/yy/d' | sed -e '/^$/d' | sort -u >> [wordlist.txt]</execute></action></item>
+			</menu>
+			<menu id="root-menu-11-10-3" label="Permutators">
+				<item label="Leetify"><action name="Execute"><execute>roxterm -e echo "perl /pentest/leetify.pl [wordlist] >> [file output] "</execute></action></item>
+				<item label="John Wordlist Permutation"><action name="Execute"><execute>roxterm -e echo "john --rules [--wordlist=[wordlist] | --stdin] --stdout | sort -u >> [permwordlist]"</execute></action></item>
+			</menu>
+			<menu id="root-menu-11-10-4" label="Editing">
+				<item label="Sort"><action name="Execute"><execute>roxterm -e echo "cat [input.txt] | sort -u [ --dictionary-order | --general-numeric-sort | --human-numeric-sort ] -f [min to maius] [--reverse] -T [temp dir] >> [output.txt]"</execute></action></item>
+				<item label="Pw-inspector"><action name="Execute"><execute>roxterm -e echo "cat [input] | pw-inspector -m [Minimum Lenght] -M [Maximum Lenght] >> [output.txt]"</execute></action></item>
+				<item label="Delete parentesis and text included in them"><action name="Execute"><execute>roxterm -e echo "cat [parentesis.txt] | sed -e 's/(.*)//g'" >> [unparentesised.txt[ </execute></action></item>
+				<item label="Delete the first word"><action name="Execute"><execute>roxterm -e echo "cat [input.txt] | sed -e 's/^ *[^ ]* //' >> [output.txt]"</execute></action></item>
+				<item label="Spaces to return"><action name="Execute"><execute>roxterm -e echo "cat [spaces.txt] | tr ' ' '\012' >> [return.txt]"</execute></action></item>
+				<item label="Delet endlines Spaces"><action name="Execute"><execute>roxterm -e echo "cat [file1.txt] | sed -e 's/ *$//' >> [file2.txt]"</execute></action></item>
+				<item label="Remove NonPrintable Characters"><action name="Execute"><execute>roxterm -e echo "cat [inputfile] | sed -e 's/[:print:]^//g' | sed -e 's/[:cntrl:]*//g' >> [outputfile]</execute></action></item>
+				<item label="Remove NonAscii Chars"><action name="Execute"><execute>roxterm -e echo "cat [input.txt] | tr -cd '\11\12\40-\176' >> [output.txt]"</execute></action></item>
+				<item label="Capitalize First Letter"><action name="Execute"><execute>roxterm -e echo "cat [wordlist.txt] | sed -r 's/\b(.)/\U\1/g' >> [Capitalised.txt]"</execute></action></item>
+				<item label="LowerAlpha To UpperAlpha"><action name="Execute"><execute>roxterm -e echo "cat lower.txt | tr '[:lower:]' '[:upper:]' >> upper.txt</execute></action></item>
+				<item label="UpperAlpha To LowerAlpha"><action name="Execute"><execute>roxterm -e echo "cat lower.txt | tr '[:upper:]' '[:lower:]' >> upper.txt</execute></action></item>
+            </menu>
+			<item label="Wc -l"><action name="Execute"><execute>roxterm -e echo "wc -l wordlist"</execute></action></item>
+			<item label="View First X Lines"><action name="Execute"><execute>roxterm -e echo "head -n [n. lines] wordlist.txt"</execute></action></item>
+			<item label="View Last X Lines"><action name="Execute"><execute>roxterm -e echo "tail -n [n. lines] wordlist.txt"</execute></action></item>
+		</menu>
+	</menu>
+	<separator/>
+	<menu id="root-menu-12" label="Configure">
+		<menu id="root-menu-12-1" label="OpenBox">
+			<item label="Edit menu.xml"><action name="Execute"><execute>geany $HOME/.config/openbox/menu.xml	</execute></action></item>
+			<item label="Edit autostart.sh"><action name="Execute"><execute>geany $HOME/.config/openbox/autostart.sh</execute></action></item>
+			<item label="Edit rc.xml"><action name="Execute"><execute>geany $HOME/.config/openbox/rc.xml</execute></action></item>
+			<separator/>
+			<item label="ObConf"><action name="Execute"><execute>obconf</execute></action></item>
+			<item label="ObMenu"><action name="Execute"><execute>obmenu</execute></action></item>
+		</menu>
+		<menu id="root-menu-12-3" label="Nitrogen">
+			<item label="Default"><action name="Execute"><execute>nitrogen /usr/share/backgrounds</execute></action></item>
+			<item label="Immagini 1920x1080"><action name="Execute"><execute>nitrogen $HOME/Immagini/Sfondi/1920x1080</execute></action></item>
+			<item label="Immagini 1680x1050"><action name="Execute"><execute>nitrogen $HOME/Immagini/Sfondi/1680x1050</execute></action></item>
+			<item label="Immagini 1024x700"><action name="Execute"><execute>nitrogen $HOME/Immagini/Sfondi/1024x700</execute></action></item>
+			<item label="Immagini 800x600"><action name="Execute"><execute>nitrogen $HOME/Immagini/Sfondi/800x600</execute></action></item>
+			<menu id="root-menu-12-3-1" label="Conf">
+				<item label="Edit nitrogen.cfg"><action name="Execute"><execute>geany $HOME/.config/nitrogen/nitrogen.cfg</execute></action></item>
+				<item label="Edit bg-saved.cfg"><action name="Execute"><execute>geany $HOME/.config/nitrogen/bg-saved.cfg</execute></action></item>
+				<item label="Edit bg-saved.conf"><action name="Execute"><execute>geany $HOME/.config/nitrogen/bg-saved.conf</execute></action></item>
+			</menu>
+		</menu>
+		<menu id="root-menu-12-4" label="Conky">
+			<item label="Conky"><action name="Execute"><execute>conky -c $HOME/.config/conky/conkyrc</execute></action></item>
+			<item label="Kill Conky"><action name="Execute"><execute>pkill conky</execute></action></item>
+			<item label="ConkyGUI"><action name="Execute"><execute>java -jar /opt/conkygui/conkygui.jar</execute></action></item>
+			<item label="Edit conkyrc"><action name="Execute"><execute>geany $HOME/.config/conky/conkyrc</execute></action></item>
+		</menu>
+		<menu id="root-menu-12-7" label="Tint2">
+			<item label="Tint2"><action name="Execute"><execute>tint2</execute></action></item>
+			<item label="Pkill Tint2"><action name="Execute"><execute>pkill tint2</execute></action></item>
+			<item label="Edit tint2rc"><action name="Execute"><execute>geany $HOME/.config/tint2/tint2rc</execute></action></item>
+		</menu>
+		<menu id="root-menu-12-8" label="Awn">
+			<item label="Awn"><action name="Execure"><execute>avant-window-navigator</execute></action></item>
+			<item label="Awn Settings"><action name="Execure"><execute>python /usr/share/avant-window-navigator/awn-settings/awnSettings.py</execute></action></item>
+		</menu>
+		<item label="Edit Xorg.conf"><action name="Execute"><execute>geany /etc/X11/xorg.conf</execute></action></item>
+		<item label="Input Device Preferences (Lxinput)"><action name="Execute"><execute>lxinput</execute></action></item>
+		<item label="Keymap"><action name="Execute"><execute>lxkeymap</execute></action></item>
+		<item label="Lxappearance"><action name="Execute"><execute>lxappearance</execute></action></item>
+		<item label="LxRandr"><action name="Execute"><execute>lxrandr</execute></action></item>
+		<item label="Thunar Volman Settings"><action name="Execute"><execute>/usr/lib/thunar-volman/thunar-volman-settings</execute></action></item>
+		<item label="Gconf-Editor"><action name="Execute"><execute>gconf-editor</execute></action></item>
+	</menu>
+	<separator/>
+	<item label="Reconfigure OpenBox"><action name="Reconfigure"/></item>
+	<item label="Restart OpenBox"><action name="Restart"/></item>
+	<separator/>
+	<item label="Svuota Cestino"><action name="Execute"><execute>rm -fr $HOME/.local/share/Trash/files/*</execute></action></item>
+	<separator/>
+	<menu id="root-menu-12" label="PowerManager">
+		<item label="Halt"><action name="Execute"><execute>roxterm -e halt </execute></action></item>
+		<item label="Reboot"><action name="Execute"><execute>roxterm -e reboot</execute></action></item>
+	</menu>
+</menu>
+
+</openbox_menu>

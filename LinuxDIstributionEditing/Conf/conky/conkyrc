@@ -1,0 +1,96 @@
+use_xft yes
+xftfont Sans:size=8
+override_utf8_locale yes
+text_buffer_size 384
+background yes
+update_interval 1
+total_run_times 0
+own_window yes
+own_window_type override
+own_window_transparent yes
+imlib_cache_size 0
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+out_to_ncurses no
+out_to_console no
+alignment top_right
+minimum_size 240 0
+maximum_width 1000
+gap_x 10
+gap_y 33
+short_units yes
+pad_percents 0
+border_inner_margin 4
+top_name_width 6
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 2
+use_spacer left
+
+
+TEXT
+
+${color green}SYSTEM  ${color darkgrey}${hr 2}
+${color white}${sysname} ${kernel}${alignr}${machine}
+${color white}System Uptime${alignr}${uptime_short}
+${color white}Processes ${alignr}$processes ($running_processes running)
+
+${color green}PROCESSORS  ${color darkgrey}${hr 2}
+${color white}CPU1 ${freq_g 1} GHz ${color darkgrey}${cpubar cpu1 8,130}${alignr}${color orange}${cpu cpu1}%
+${color white}CPU2 ${freq_g 2} GHz ${color darkgrey}${cpubar cpu2 8,130}${alignr}${color orange}${cpu cpu2}%
+${color white}CPU3 ${freq_g 3} GHz ${color darkgrey}${cpubar cpu3 8,130}${alignr}${color orange}${cpu cpu3}%
+${color white}CPU4 ${freq_g 4} GHz ${color darkgrey}${cpubar cpu4 8,130}${alignr}${color orange}${cpu cpu4}%
+
+${color green}MEMORY  ${color darkgrey}${hr 2}
+${color white}RAM   ${color orange}${mem} / ${memmax}${alignr}${color red}${memperc}% Used
+${color darkgrey}${membar}
+
+${color green}HDD  ${color darkgrey}${hr 2}${font}
+${color white}ROOT   ${color orange}${fs_used /} / ${fs_size /}${alignr}${color red}${color red}${fs_free_perc /}% Free
+${color darkgrey}${fs_bar /}
+
+${if_mounted /media/sapo93/DATI}
+${color white}DATI   ${color orange}${fs_used /media/sapo93/DATI} / ${fs_size /media/sapo93/DATI}${alignr}${color red}${fs_free_perc /media/sapo93/DATI}% Free
+${color darkgrey}${fs_bar /media/sapo93/DATI}
+${endif}
+
+${if_mounted /media/sapo93/Gdrive}
+${color white}Gdrive   ${color orange}${fs_used /media/sapo93/Gdrive} / ${fs_size /media/sapo93/Gdrive}${alignr}${color red}${fs_free_/media/sapo93/Gdrive}% Free
+${color darkgrey}${fs_bar /media/sapo93/Gdrive}
+${endif}
+
+${if_mounted /media/Wordlist}
+${color white}Wordlist   ${color orange}${fs_used /media/Wordlist} / ${fs_size /media/Wordlist}${alignr}${color red}${fs_free_perc /media/Wordlist}% Free
+${color darkgrey}${fs_bar /media/Wordlist}
+${endif}
+
+
+${color green}NETWORK  ${alignr}${color yellow}${execi 300 /home/sapo93/.config/conky/ip.sh}
+
+${color blue}Eth0  ${alignr}${color yellow}${addr eth0}
+
+${color white}DownSpeed: ${color orange}${downspeed eth0} k/s ${alignr}${color white}UpSpeed: ${color orange}${upspeed eth0} k/s
+${color white}TotalDown: ${color orange}${totaldown eth0} ${alignr}${color white}TotalUp: ${color orange}${totalup eth0}
+
+${color blue}Wlan0  ${alignr}${color yellow}${addr wlan0}
+${color white}AP: ${color orange}${wireless_essid wlan0} ${alignr}${color white}MAC AP: ${color red}${wireless_ap wlan0}
+${color white}Bitrate: ${color orange}${wireless_bitrate wlan0}  ${alignr}${color white}Mode: ${color orange}${wireless_mode wlan0}
+${color white}Link Quality   ${color orange}${wireless_link_qual_perc wlan0}% ${color darkblue}${wireless_link_bar wlan0}
+
+${color white}DownSpeed: ${color orange}${downspeed wlan0} k/s ${alignr}${color white}UpSpeed: ${color orange}${upspeed wlan0} k/s
+${color white}TotalDown: ${color orange}${totaldown wlan0} ${alignr}${color white}TotalUp: ${color orange}${totalup wlan0}
+
+#${if_running mpd}
+#${color green} MPD ${alignr}${color white}Status: ${color orange}${mpd_status}
+
+#${color white}Title: ${color orange}${mpd_title}
+#${color white}Album: ${color orange}${mpd_album}
+#${color white}Artist: ${color orange}${mpd_artist}
+
+#${color white}Random: ${color orange}${mpd_random}            ${color white}Repeat: ${color orange}${mpd_repeat} ${alignr}${color white}Btr: ${color orange}${mpd_bitrate}
+#${color orange} ${mpd_elapsed} / ${mpd_length}    ${color darkgrey}${mpd_bar 8, 150} ${alignr}${color red}${mpd_percent} %
+#${endif}

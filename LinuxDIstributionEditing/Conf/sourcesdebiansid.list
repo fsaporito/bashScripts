@@ -1,0 +1,52 @@
+# Debian Unstable (Sid)
+deb http://ftp.it.debian.org/debian/ sid main non-free contrib
+deb-src http://ftp.it.debian.org/debian/ sid main non-free contrib
+
+# Marillat Sid (unstable) Architetture: alpha, amd64, armel, hppa, i386, ia64, mipsel, powerpc, sparc
+deb http://www.debian-multimedia.org sid main non-free
+deb-src http://www.debian-multimedia.org sid main
+
+# Maxer Multimedia
+deb http://repos.knio.it/ sid main contrib non-free 
+deb-src http://repos.knio.it/ sid main contrib non-free 
+
+# HWraid 
+deb http://hwraid.le-vert.net/debian sid main
+deb-src http://hwraid.le-vert.net/debian sid main
+
+# Unofficial Debian Repository 
+deb http://unofficial.debian-maintainers.org/ sid main contrib non-free restricted
+deb-src http://unofficial.debian-maintainers.org/ sid main contrib non-free restricted
+
+# Skype
+deb http://download.skype.com/linux/repos/debian/ unstable non-free
+
+# Frostwire
+deb http://apt.debianchile.org/frostwire squeeze main
+deb-src http://apt.debianchile.org/frostwire squeeze main
+
+# Repository GetDeb
+deb http://archive.getdeb.net/debian sid-getdeb apps
+
+# Java 6 JRE/SDK (From Official Debian Repository)
+deb http://ftp.bononia.it/debian unstable main contrib non-free  
+
+# Cairo Comprmg
+deb http://download.tuxfamily.org/ccm/debian/ sid main
+
+# VirtualBox
+deb http://www.virtualbox.org/debian squeeze non-free 
+
+
+
+# Key Repository GetDeb
+# wget -q -O- http://archive.getdeb.net/getdeb-archive.key | apt-key add - 1> /dev/null 2> /dev/null
+
+# Frostwire Key 
+# gpg --keyserver hkp://subkeys.pgp.net --recv-keys EFD17969 1> /dev/null 2> /dev/null
+
+# Virtualbox Key
+# wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add - 1> /dev/null 2> /dev/null
+
+# Marillat Key
+# apt-get install -y --force-yes debian-multimedia-keyring 1> /dev/null 2> /dev/null

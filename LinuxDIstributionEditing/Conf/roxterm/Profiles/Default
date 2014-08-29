@@ -1,0 +1,9 @@
+
+[roxterm profile]
+exit_action=1
+browser=firefox
+background_type=2
+saturation=0,990000
+show_tab_status=1
+hide_menubar=1
+always_show_tabs=0

@@ -1,0 +1,73 @@
+# Repository Ubuntu Natty
+deb http://it.archive.ubuntu.com/ubuntu/ natty main restricted
+deb-src http://it.archive.ubuntu.com/ubuntu/ natty main restricted
+deb http://it.archive.ubuntu.com/ubuntu/ natty universe
+deb-src http://it.archive.ubuntu.com/ubuntu/ natty universe
+deb http://it.archive.ubuntu.com/ubuntu/ natty-updates universe
+deb-src http://it.archive.ubuntu.com/ubuntu/ natty-updates universe
+deb http://it.archive.ubuntu.com/ubuntu/ natty multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ natty multiverse
+deb http://it.archive.ubuntu.com/ubuntu/ natty-updates multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ natty-updates multiverse
+deb http://archive.canonical.com/ubuntu natty partner
+deb-src http://archive.canonical.com/ubuntu natty partner
+deb http://it.archive.ubuntu.com/ubuntu/ natty-backports main restricted universe multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ natty-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu natty-security main restricted
+deb-src http://security.ubuntu.com/ubuntu natty-security main restricted
+deb http://security.ubuntu.com/ubuntu natty-security universe
+deb-src http://security.ubuntu.com/ubuntu natty-security universe
+deb http://security.ubuntu.com/ubuntu natty-security multiverse
+deb-src http://security.ubuntu.com/ubuntu natty-security multiverse
+
+# Repository Lubuntu
+deb http://ppa.launchpad.net/lubuntu-desktop/ppa/ubuntu natty main
+deb-src http://ppa.launchpad.net/lubuntu-desktop/ppa/ubuntu natty main
+
+# Repository Mediubuntu
+deb http://packages.medibuntu.org/ natty free non-free
+deb-src http://packages.medibuntu.org/ natty free non-free
+
+# Repository Tor
+deb http://deb.torproject.org/torproject.org lucid main
+
+# Repository GetDeb
+deb http://archive.getdeb.net/ubuntu natty-getdeb apps
+
+# Repository AWN
+deb http://ppa.launchpad.net/awn-testing/ppa/ubuntu natty main
+
+# Repository Virtualbox
+deb http://download.virtualbox.org/virtualbox/debian natty non-free
+
+# Repository Roster Cogburn (Volumeicon)
+deb http://ppa.launchpad.net/rstrcogburn/ppa/ubuntu lucid main
+deb-src http://ppa.launchpad.net/rstrcogburn/ppa/ubuntu lucid main
+
+# Repository Remastersys
+deb http://www.geekconnection.org/remastersys/repository karmic/
+
+
+# Key Repository Lubuntu
+# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CF57B0F4 1> /dev/null 2> /dev/null
+
+# Key Repository Mediubuntu
+# wget -q http://packages.medibuntu.org/medibuntu-key.gpg -O- | apt-key add - 1> /dev/null 2> /dev/null
+
+# Key Repository Tor
+# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 886DDD89 1> /dev/null 2> /dev/null
+
+# Key Repository GetDeb
+# wget -q -O- http://archive.getdeb.net/getdeb-archive.key | apt-key add - 1> /dev/null 2> /dev/null
+
+# Key Repository AWN
+# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BF810CD5 1> /dev/null 2> /dev/null
+
+# Key Repository Virtualbox
+# wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add - 1> /dev/null 2> /dev/null
+
+# Key Repository Roster Cogburn (Volumeicon)
+# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1A6FE5DF 1> /dev/null 2> /dev/null
+
+# Conky Companions
+# apt-add-repository ppa:conky-companions 1> /dev/null 2> /dev/null

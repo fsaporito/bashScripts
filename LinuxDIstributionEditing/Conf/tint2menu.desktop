@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=tint2menu
+Comment=Openbox menu button for tint2
+Exec=xdotool key S+C+A+space
+Terminal=false
+Type=Application
+Icon=printer
+StartupNotify=true
+X-Ubuntu-Gettext-Domain=tint2menu
