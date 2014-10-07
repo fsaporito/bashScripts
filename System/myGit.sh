@@ -2,7 +2,7 @@
 
 clear
 
-#Personal
+# Personal
 Amotep="https://github.com/sapo93/amotep.git"
 Bash="https://github.com/sapo93/bashScripts.git"
 Dijkstra="https://github.com/sapo93/dijkstralog.git"
@@ -17,12 +17,13 @@ ParallelR="https://github.com/sapo93/ParallelRandomGenerator.git"
 TicTacToe="https://github.com/sapo93/TicTacToe.git"
 
 
-#University
+# University
 Algo="https://github.com/UniversityProjects/Algorithms.git"
 Dist="https://github.com/UniversityProjects/DistributedSystems.git"
 Prolog="https://github.com/UniversityProjects/Prolog.git"
 ProgI="https://github.com/UniversityProjects/ProgrammingI.git"
 ProgII="https://github.com/UniversityProjects/ProgrammingII.git"
+RubyBio="https://github.com/UniversityProjects/rubyBio.git"
 
 
 
@@ -44,67 +45,67 @@ git clone ${Amotep}
 echo ""
 echo ""
 echo "##############################################"
-echo "BashScripts:\n"
+echo "BashScripts:"
 git clone ${Bash}
 
 echo ""
 echo ""
 echo "##############################################"
-echo "Dijkstra Prolog:\n"
+echo "Dijkstra Prolog:"
 git clone ${Dijkstra}
 
 echo ""
 echo ""
 echo "##############################################"
-echo "Euler:\n"
+echo "Euler:"
 git clone ${Euler}
 
 echo ""
 echo ""
 echo "##############################################"
-echo "JADS:\n"
+echo "JADS:"
 git clone ${JADS}
 
 echo ""
 echo ""
 echo "##############################################"
-echo "Math Parser:\n"
+echo "Math Parser:"
 git clone ${mathParser}
 
 echo ""
 echo ""
 echo "##############################################"
-echo "numC:\n"
+echo "numC:"
 git clone ${numC}
 
 echo ""
 echo ""
 echo "##############################################"
-echo "numDiploma:\n"
+echo "numDiploma:"
 git clone ${numDiploma}
 
 echo ""
 echo ""
 echo "##############################################"
-echo "Octave Scripts:\n"
+echo "Octave Scripts:"
 git clone ${Octave}
 
 echo ""
 echo ""
 echo "##############################################"
-echo "Lisp OOL:\n"
+echo "Lisp OOL:"
 git clone ${OOL}
 
 echo ""
 echo ""
 echo "##############################################"
-echo "Parallel Random Generator:\n"
+echo "Parallel Random Generator:"
 git clone ${ParallelR}
 
 echo ""
 echo ""
 echo "##############################################"
-echo "Tic Tac Toe:\n"
+echo "Tic Tac Toe:"
 git clone ${TicTacToe}
 
 
@@ -117,11 +118,12 @@ cd UniversityProject
 echo ""
 echo ""
 echo "##############################################"
-echo "University Projects:\n"
+echo "University Projects:"
 git clone ${Algo}
 git clone ${Dist}
 git clone ${ProgI}
 git clone ${ProgII}
+git clone ${RubyBio}
 
 cd ..
 
