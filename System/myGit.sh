@@ -11,7 +11,7 @@ JADS="https://github.com/sapo93/JADS.git"
 mathParser="https://github.com/sapo93/mathParser.git"
 numC="https://github.com/sapo93/numC.git"
 numDiploma="https://github.com/sapo93/num_diploma.git"
-Octave="https://github.com/UniversityProjects/Octave.git"
+Octave="https://github.com/sapo93/OctaveMatlab"
 OOL="https://github.com/sapo93/OOL.git"
 ParallelR="https://github.com/sapo93/ParallelRandomGenerator.git"
 TicTacToe="https://github.com/sapo93/TicTacToe.git"
@@ -115,14 +115,33 @@ mkdir UniversityProject
 
 cd UniversityProject
 
+
+echo "##############################################"
+echo "[University] Algorithms:"
+git clone ${Algo}
+
 echo ""
 echo ""
 echo "##############################################"
-echo "University Projects:"
-git clone ${Algo}
+echo "[University] Distributed Systems:"
 git clone ${Dist}
+
+echo ""
+echo ""
+echo "##############################################"
+echo "[University] Programming I:"
 git clone ${ProgI}
+
+echo ""
+echo ""
+echo "##############################################"
+echo "[University] Programming II:"
 git clone ${ProgII}
+
+echo ""
+echo ""
+echo "##############################################"
+echo "[University] Ruby For Bioinformatics:"
 git clone ${RubyBio}
 
 cd ..
