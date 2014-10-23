@@ -31,9 +31,6 @@ do
 	if [ -d "${i}" ]; then
 
 		cd ${i}
-		ls
-		echo ""
-		echo ""
 
 		if [ "${i}" == "UniversityProjects" ]; then
 		 			
@@ -44,9 +41,6 @@ do
 					
 					echo "University: ${j}"	
 					cd ${j}
-					ls
-					echo ""
-					echo ""
 					git pull
 					
 					if [ "${i}" == "2014-15" ]; then
@@ -63,6 +57,9 @@ do
 					fi
 
 					cd ..
+					
+					echo ""
+					echo ""
 
 				fi
 
@@ -72,6 +69,9 @@ do
 
 			git pull
 			cd ..
+			
+			echo ""
+			echo ""
 
 		fi
 
