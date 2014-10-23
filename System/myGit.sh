@@ -19,11 +19,13 @@ TicTacToe="https://github.com/sapo93/TicTacToe.git"
 
 # University
 Algo="https://github.com/UniversityProjects/Algorithms.git"
+BioC="https://github.com/UniversityProjects/2014-15.git"
 Dist="https://github.com/UniversityProjects/DistributedSystems.git"
 Prolog="https://github.com/UniversityProjects/Prolog.git"
 ProgI="https://github.com/UniversityProjects/ProgrammingI.git"
 ProgII="https://github.com/UniversityProjects/ProgrammingII.git"
 RubyBio="https://github.com/UniversityProjects/rubyBio.git"
+
 
 
 
@@ -123,6 +125,12 @@ git clone ${Algo}
 echo ""
 echo ""
 echo "##############################################"
+echo "[University] Bioinformatics Course Projects:"
+git clone ${BioC}
+
+echo ""
+echo ""
+echo "##############################################"
 echo "[University] Distributed Systems:"
 git clone ${Dist}
 
@@ -143,6 +151,8 @@ echo ""
 echo "##############################################"
 echo "[University] Ruby For Bioinformatics:"
 git clone ${RubyBio}
+
+
 
 cd ..
 
