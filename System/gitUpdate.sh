@@ -11,7 +11,7 @@ do
 	echo -n "Input The GitHub Directory: "
 	read DIR
 	
-	if [ -nd ${DIR}]; then
+	if [ -nd "${DIR}" ]; then
 		
 		echo "Error: Not A Directory!!!"
 		
@@ -32,7 +32,7 @@ do
 
 		cd ${i}
 		ls
-		cho ""
+		echo ""
 		echo ""
 
 		if [ "${i}" == "UniversityProjects" ]; then
