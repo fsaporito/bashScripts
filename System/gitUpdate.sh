@@ -2,7 +2,7 @@
 
 clear
 
-DIR = ""
+DIR=""
 
 
 until test -d "${DIR}"
