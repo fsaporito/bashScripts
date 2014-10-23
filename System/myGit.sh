@@ -127,6 +127,19 @@ echo ""
 echo "##############################################"
 echo "[University] Bioinformatics Course Projects:"
 git clone ${BioC}
+cd 2014-1015
+cd karp-rabin
+cd miller-rabin
+git submodule init
+git submodule update
+cd ..
+cd klib
+git submodule init
+git submodule update
+cd ..
+cd ..
+cd ..
+
 
 echo ""
 echo ""
