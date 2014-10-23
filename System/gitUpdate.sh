@@ -11,7 +11,7 @@ do
 	echo -n "Input The GitHub Directory: "
 	read DIR
 	
-	if [ -nd "${DIR}" ]; then
+	if [ ! -d "${DIR}" ]; then
 		
 		echo "Error: Not A Directory!!!"
 		
