@@ -127,7 +127,7 @@ echo ""
 echo "##############################################"
 echo "[University] Bioinformatics Course Projects:"
 git clone ${BioC}
-cd 2014-1015
+cd 2014-15
 cd karp-rabin
 cd miller-rabin
 git submodule init
