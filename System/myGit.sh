@@ -113,9 +113,9 @@ git clone ${TicTacToe}
 
 clear
 
-mkdir UniversityProject
+mkdir UniversityProjects
 
-cd UniversityProject
+cd UniversityProjects
 
 
 echo "##############################################"
