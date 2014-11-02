@@ -1,0 +1,122 @@
+#########################################
+Scripts (Nel menu):
+Update
+repositoryUpdate
+gitUpdate
+gitDownload
+Ramdisk
+FirewallOn
+FirewallOf
+elencoFilm
+
+
+
+
+
+#########################################
+Sw Internet:
+Firefox
+Amule
+Tor
+Dropbox
+skype
+filezilla
+putty
+
+
+#########################################
+Sw Grafica:
+Gimp
+Draw
+Inkscape
+Blender
+myPaint
+
+
+#########################################
+Sw Office:
+Writer
+Calc
+Impress
+PdfReader#@@@@@@@@@@@@@@@@@@@@
+Latex#@@@@@@@@@@@@@@@@@@@@@@
+
+
+#########################################
+Sw Multimedia:
+Vlc
+Easytag
+Handbrake
+Audacious
+Clementine
+Mixxx
+Cinelerra
+Avidemux
+
+
+
+#########################################
+Sw Accessori:
+Leafpad
+axel
+tint
+conky
+cairo dock
+
+
+
+#########################################
+Sw Sistema
+Ubuntu Tweak
+Gparted
+Virtualbox
+Remastersys
+synaotic
+BIOS editor #@@@@@@@@@@@@@@@@@@@@
+cpuz #@@@@@@@@@@@@@@@@@@@@@@@@
+(I-next)
+gpuz #@@@@@@@@@@@@@@@@@@@@@@@@
+cuda memetes(gpu memtest)
+
+
+
+#########################################
+Sw Programmazione
+Build essentials
+Python
+Perl
+Ruby
+Common Lisp
+Swi Prolog
+Octave
+opencl
+
+Eclipse
+Geany
+Emacs
+Gdb
+Mysql Suite
+
+
+
+#########################################
+Sw Education
+cain
+geogebra
+octave
+maxima
+magma
+R
+
+
+
+#########################################
+Sw Pentest
+Aircrack
+Kismet
+Pyrit
+Xhydra
+Rarcrack
+Jhon the ripper
+
+

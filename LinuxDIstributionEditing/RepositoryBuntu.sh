@@ -107,6 +107,15 @@ echo "" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A69241F1
 
 
+# Repository I-Next (System Hardware Info)
+echo "# Repository I-Next (System Hardware Info)
+deb http://ppa.launchpad.net/i-nex-development-team/stable/ubuntu utopic main 
+deb-src http://ppa.launchpad.net/i-nex-development-team/stable/ubuntu utopic main" >> /etc/apt/sources.list 
+echo ""  >> /etc/apt/sources.list
+echo ""  >> /etc/apt/sources.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F34CDDAD 
+
+
 # Repository Conky-Companions
 echo "# Repository Conky-Companions
 deb http://ppa.launchpad.net/conky-companions/ppa/ubuntu quantal main 
