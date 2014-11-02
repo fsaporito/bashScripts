@@ -22,6 +22,7 @@ Dropbox
 skype
 filezilla
 putty
+Transmission
 
 
 #########################################
@@ -71,12 +72,9 @@ Ubuntu Tweak
 Gparted
 Virtualbox
 Remastersys
-synaotic
-BIOS editor #@@@@@@@@@@@@@@@@@@@@
-cpuz #@@@@@@@@@@@@@@@@@@@@@@@@
-(I-next)
-gpuz #@@@@@@@@@@@@@@@@@@@@@@@@
-cuda memetes(gpu memtest)
+Synaptic
+I-Next
+HardInfo
 
 
 
