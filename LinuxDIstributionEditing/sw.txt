@@ -92,6 +92,7 @@ opencl
 Eclipse
 Geany
 Emacs
+Ninja IDE
 Gdb
 Mysql Suite
 

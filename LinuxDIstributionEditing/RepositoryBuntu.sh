@@ -226,6 +226,17 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BF810CD5 1> /dev/n
 echo ""
 
 
+# Repository Ninja IDE
+echo -n "      - Added Ninja IDe Repositories ... "
+echo "# Repository Ninja IDe
+deb http://ppa.launchpad.net/ninja-ide-developers/ninja-ide-stable/ubuntu saucy main 
+deb-src http://ppa.launchpad.net/ninja-ide-developers/ninja-ide-stable/ubuntu saucy main" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E6ADFBE0 1> /dev/null 2> $LOG
+echo ""
+
+
 # Repository Virtualbox
 echo -n "      - Added VirtualBox Repositories ... "
 echo "# Repository Virtualbox

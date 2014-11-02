@@ -44,8 +44,9 @@ time_stop () {
 }
 
 
+
 # Java
-f_java_buntu () {
+f_java () {
 
 echo "[*] Java ..."
 
@@ -84,8 +85,9 @@ apt-get install -y --force-yes sun-java7-jdk 2> $LOG
 }
 
 
+
 # Repository
-f_repo_buntu () {
+f_repo () {
 
 echo -n "[*] Repositories "
 
@@ -270,6 +272,17 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BF810CD5 1> /dev/n
 echo ""
 
 
+# Repository Ninja IDE
+echo -n "      - Added Ninja IDe Repositories ... "
+echo "# Repository Ninja IDe
+deb http://ppa.launchpad.net/ninja-ide-developers/ninja-ide-stable/ubuntu saucy main 
+deb-src http://ppa.launchpad.net/ninja-ide-developers/ninja-ide-stable/ubuntu saucy main" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E6ADFBE0 1> /dev/null 2> $LOG
+echo ""
+
+
 # Repository Virtualbox
 echo -n "      - Added VirtualBox Repositories ... "
 echo "# Repository Virtualbox
@@ -327,8 +340,9 @@ echo ""
 }
 
 
+
 # Axel Download Manager
-f_axel_buntu_debian () {
+f_axel () {
 
 echo -n "[*] Installing Axel Download Manager ... "
 
@@ -381,8 +395,9 @@ time_stop
 }
 
 
-# Software&librerie Programmazione (build-essentials | subversion | git | libssl-dev | cmake | python | perl | ruby | gtk)
-f_programming_libraries_buntu_debian () {
+
+# Software&librerie Programmazione (build-essentials | pkg-config | ncurses | git | subversion | mercurial | libssl-dev | cmake | gtk)
+f_programming_libraries () {
 
 echo "[*] Programming Libraries"
 
@@ -531,6 +546,7 @@ f_subversion () {
 
 f_subversion
 
+
 # Mercurial
 f_mercurial () {
 
@@ -648,12 +664,13 @@ cd $home
 }
 
 
-# Programming IDE (eclipse | android SDK | anjuta | emacs| glade)
+
+# Programming IDE (eclipse | android SDK | geany | emacs| glade)
 f_programming_IDE () {
 
 echo "[*] Programming IDE"
 
-# Eclipse  -> Java
+# Eclipse  -> C | C++ | Java
 f_eclipse () {
 
 	echo -n "    - Installing Eclipse ... "
@@ -676,47 +693,39 @@ f_eclipse () {
 f_eclipse
 
 
-# Android SDK  -> Android
-f_android_SDK () {
+# GDB (Gnu Debugger)
+f_gdb () {
 	
-	
-	echo -n "    - Installing Android_SDK ... "
-
-	axel http://dl.google.com/android/android-sdk_r22.3-linux.tgz 1> /dev/null
-	
-	tar xvfz android-sdk_r20-linux.tgz
-	
-	cd android-sdk-linux
-	
-	cd ..
-	
-	rm -f android-sdk_r20-linux.tgz
-	
-	cd $home
-	
-}
-
-f_android_SDK &
-
-
-sleep 3
-
-
-# Anjuta  -> C / C++
-f_anjuta () {
-
-	echo -n "    - Installing Anjuta ... "
+	echo -n "    - Installing GDB (Gnu Debugger) ... "
 
 	timelapsed &
 	
-	apt-get install -y --force-yes g++ 1> /dev/null 2> $LOG # Compilatore C++
+	apt-get install -y --force-yes gdb 1> /dev/null 2> $LOG 
+		
+	time_stop
 	
-	apt-get install -y --force-yes anjuta 1> /dev/null 2> $LOG 
+}
+
+f_gdb
+
+
+# Geany
+f_geany () {
+
+	echo -n "    - Installing Geany ... "
+
+	timelapsed &
+	
+	apt-get install -y --force-yes geany 1> /dev/null 2> $LOG # Geany IDE
+	apt-get install -y --force-yes geany-plugins 1> /dev/null 2> $LOG # Geany Plugins
+	apt-get install -y --force-yes geany-plugin-scope 1> /dev/null 2> $LOG # GDB Graphical Frontend
 		
 	time_stop
 
 
 }
+
+f_geany
 
 
 # Emacs  -> Lisp / Prolog
@@ -738,6 +747,9 @@ f_emacs () {
 }
 
 
+f_emacs
+
+
 # PKG Config
 f_pkg_config () {
 
@@ -754,6 +766,7 @@ f_pkg_config () {
 f_pkg_config
 
 
+
 # Lib GTK Dev
 f_lib_gtk_dev () {
 
@@ -768,6 +781,7 @@ f_lib_gtk_dev () {
 }
 
 f_lib_gtk_dev
+
 
 
 # Glade
@@ -787,7 +801,9 @@ f_glade () {
 f_glade
 
 
+
 }
+
 
 
 # Programming Languages (lisp | perl | prolog | python | ruby)
@@ -984,6 +1000,28 @@ mv /tmp/tty6.conf /etc/init/tty6.conf
 
 #==============================================================================================================================#
 
+f_install () {
+	
+	f_java
+	
+	f_repo
+	
+	f_axel
+	
+	f_dir
+	
+	# Programming	
+	f_programming_libraries
+	f_programming_IDE
+	f_programming_languages
+	
+	# Clean
+	f_clean
+	
+}
+
+
+#==============================================================================================================================#
 
 # Menu
 f_menu () {
@@ -1286,7 +1324,7 @@ f_menu_account
 clear
 
 
-f_buntu
+f_install
 
 
 # Adjusting Permissions
