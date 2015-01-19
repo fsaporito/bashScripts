@@ -118,13 +118,16 @@ R
 
 #########################################
 Sw Pentest
-Aircrack
+Aircrack-ng
+Wifite
 Kismet
 Netdiscover
+Nmap
 Pyrit
 Xhydra
 Rarcrack
 Jhon the ripper
+Burp
 
 
 Pentest Menu:
