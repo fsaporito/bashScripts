@@ -665,7 +665,7 @@ cd $home
 
 
 
-# Programming IDE (eclipse | android SDK | geany | emacs| glade)
+# Programming IDE (eclipse | geany | emacs| glade)
 f_programming_IDE () {
 
 echo "[*] Programming IDE"
@@ -921,6 +921,146 @@ f_ruby
 	
 }
 
+
+# Server
+f_server () {
+	
+f_sqlite3 () {
+
+	echo -n "[*] Installing Sqlite ... "
+
+	timelapsed &
+
+	apt-get install -y --force -yes sqlite3 1> /dev/null 2> $LOG
+
+	time_stop
+
+}
+
+f_sqlite3
+
+f_mysql () {
+
+	echo " [*] Installing MySql ... "
+
+	timelapsed &
+
+	apt-get install -y --force-yes mysql-server mysql-client 1> /dev/null 2> $LOG
+
+	apt-get install -y --force-yes python-pymssql python-mysqldb 1> /dev/null 2> $LOG
+
+	apt-get install -y --force-yes mysql-utilities 1> /dev/null 2> $LOG
+
+	apt-get install -y --force-yes mysql-workbench 1> /dev/null 2> $LOG
+
+	service mysql stop 1> /dev/null
+
+	cd /etc/mysql
+	
+	echo "/etc/mysql" >> $file
+
+	rm -f my.cfn
+	touch my.cfn
+
+	f_writing_mysql_cfn () {
+
+echo "
+[client]
+port		= 3306
+socket		= /var/run/mysqld/mysqld.sock
+
+[mysqld_safe]
+socket		= /var/run/mysqld/mysqld.sock
+nice		= 0
+
+[mysqld]
+user		= mysql
+socket		= /var/run/mysqld/mysqld.sock
+port		= 3306
+basedir		= /usr
+datadir		= /var/lib/mysql
+tmpdir		= /tmp
+skip-external-locking
+
+bind-address		= 127.0.0.1
+
+key_buffer		= 16M
+max_allowed_packet	= 128M
+thread_stack		= 192K
+thread_cache_size       = 8
+
+myisam-recover         = BACKUP
+#max_connections        = 100
+#table_cache            = 64
+#thread_concurrency     = 10
+
+query_cache_limit	= 1M
+query_cache_size        = 16M
+
+#general_log_file        = /var/log/mysql/mysql.log
+#general_log             = 1
+
+log_error                = /var/log/mysql/error.log
+
+#log_slow_queries	= /var/log/mysql/mysql-slow.log
+#long_query_time = 2
+#log-queries-not-using-indexes
+
+#server-id		= 1
+#log_bin			= /var/log/mysql/mysql-bin.log
+expire_logs_days	= 10
+max_binlog_size         = 100M
+#binlog_do_db		= include_database_name
+#binlog_ignore_db	= include_database_name
+
+# chroot = /var/lib/mysql/
+
+# For generating SSL certificates I recommend the OpenSSL GUI: tinyca
+# ssl-ca=/etc/mysql/cacert.pem
+# ssl-cert=/etc/mysql/server-cert.pem
+# ssl-key=/etc/mysql/server-key.pem
+
+[mysqldump]
+quick
+quote-names
+max_allowed_packet	= 64M
+
+[mysql]
+#no-auto-rehash	# faster start of mysql but no tab completition
+
+[isamchk]
+key_buffer		= 16M
+
+!includedir /etc/mysql/conf.d/
+
+" >> my.cfn
+
+}
+
+	f_writing_mysql_cfn
+
+	echo "/etc/mysql/my.cfn" >> $file
+
+	cd $home
+
+	sleep 3
+
+	service mysql start 1> /dev/null
+
+	time_stop
+
+}
+
+f_mysql
+	
+}
+
+
+# Pentest
+f_pentest () {
+	
+	
+}
 
 
 # Clean&Customize

@@ -9767,6 +9767,10 @@ apt-get install -y --force-yes mysql-server mysql-client 1> /dev/null 2> $LOG
 
 apt-get install -y --force-yes python-pymssql python-mysqldb 1> /dev/null 2> $LOG
 
+apt-get install -y --force-yes mysql-utilities 1> /dev/null 2> $LOG
+
+apt-get install -y --force-yes mysql-workbench 1> /dev/null 2> $LOG
+
 service mysql stop 1> /dev/null
 
 cd /etc/mysql
@@ -9798,7 +9802,7 @@ skip-external-locking
 bind-address		= 127.0.0.1
 
 key_buffer		= 16M
-max_allowed_packet	= 16M
+max_allowed_packet	= 128M
 thread_stack		= 192K
 thread_cache_size       = 8
 

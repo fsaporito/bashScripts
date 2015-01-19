@@ -22,6 +22,14 @@ Dropbox
 skype
 filezilla
 putty
+transmission
+
+
+#########################################
+Sw Privoxy Internet: (Menu)
+Firefox
+Amule
+Skype
 Transmission
 
 
@@ -45,11 +53,10 @@ Latex#@@@@@@@@@@@@@@@@@@@@@@
 
 #########################################
 Sw Multimedia:
+Audacious
 Vlc
 Easytag
 Handbrake
-Audacious
-Clementine
 Mixxx
 Cinelerra
 Avidemux
@@ -113,9 +120,15 @@ R
 Sw Pentest
 Aircrack
 Kismet
+Netdiscover
 Pyrit
 Xhydra
 Rarcrack
 Jhon the ripper
+
+
+Pentest Menu:
+pyrit -u sqlite:////absolute/path/of/database.db
+pyrit -u sqlite:///mydb #if in home
 
 
