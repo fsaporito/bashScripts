@@ -8,6 +8,7 @@ Bash="https://github.com/sapo93/bashScripts.git"
 Dijkstra="https://github.com/sapo93/dijkstralog.git"
 Euler="https://github.com/sapo93/EulerOdeSolver.git"
 JADS="https://github.com/sapo93/JADS.git"
+JnODE="https://github.com/sapo93/JnODE.git"
 mathParser="https://github.com/sapo93/MathParser.git"
 numC="https://github.com/sapo93/numC.git"
 numDiploma="https://github.com/sapo93/num_diploma.git"
@@ -69,6 +70,12 @@ echo ""
 echo "##############################################"
 echo "JADS:"
 git clone ${JADS}
+
+echo ""
+echo ""
+echo "##############################################"
+echo "JnODE:"
+git clone ${JnODE}
 
 echo ""
 echo ""
