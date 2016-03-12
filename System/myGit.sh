@@ -22,6 +22,7 @@ TicTacToe="https://github.com/sapo93/TicTacToe.git"
 Algo="https://github.com/UniversityProjects/Algorithms.git"
 BioC="https://github.com/UniversityProjects/2014-15.git"
 Dist="https://github.com/UniversityProjects/DistributedSystems.git"
+FEMe="https://github.com/UniversityProjects/FEMElliptic.git"
 Numerical="https://github.com/UniversityProjects/NumericalAnalysis.git"
 Prolog="https://github.com/UniversityProjects/Prolog.git"
 ProgI="https://github.com/UniversityProjects/ProgrammingI.git"
@@ -155,6 +156,12 @@ echo "##############################################"
 echo "[University] Distributed Systems:"
 git clone ${Dist}
 
+
+echo ""
+echo ""
+echo "##############################################"
+echo "[University] FEM Elliptic:"
+git clone ${FEMe}
 
 echo ""
 echo ""
