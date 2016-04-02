@@ -60,29 +60,29 @@ sudo touch /etc/apt/sources.list
 sudo chmod 775 /etc/apt/sources.list
 
 
-# Repository Ubuntu Utopic (Base+Universe+Multiverse+Canonical+Backports)
-echo -n "      - Added Ubuntu Repositories (Utopic) ... "
-echo "# Repository Ubuntu [Utopic]
-deb http://it.archive.ubuntu.com/ubuntu/ utopic main restricted
-deb-src http://it.archive.ubuntu.com/ubuntu/ utopic main restricted
-deb http://it.archive.ubuntu.com/ubuntu/ utopic universe
-deb-src http://it.archive.ubuntu.com/ubuntu/ utopic universe
-deb http://it.archive.ubuntu.com/ubuntu/ utopic-updates universe
-deb-src http://it.archive.ubuntu.com/ubuntu/ utopic-updates universe
-deb http://it.archive.ubuntu.com/ubuntu/ utopic multiverse
-deb-src http://it.archive.ubuntu.com/ubuntu/ utopic multiverse
-deb http://it.archive.ubuntu.com/ubuntu/ utopic-updates multiverse
-deb-src http://it.archive.ubuntu.com/ubuntu/ utopic-updates multiverse
-deb http://archive.canonical.com/ubuntu utopic partner
-deb-src http://archive.canonical.com/ubuntu utopic partner
-deb http://it.archive.ubuntu.com/ubuntu/ utopic-backports main restricted universe multiverse
-deb-src http://it.archive.ubuntu.com/ubuntu/ utopic-backports main restricted universe multiverse
-deb http://security.ubuntu.com/ubuntu utopic-security main restricted
-deb-src http://security.ubuntu.com/ubuntu utopic-security main restricted
-deb http://security.ubuntu.com/ubuntu utopic-security universe
-deb-src http://security.ubuntu.com/ubuntu utopic-security universe
-deb http://security.ubuntu.com/ubuntu utopic-security multiverse
-deb-src http://security.ubuntu.com/ubuntu utopic-security multiverse" >> /etc/apt/sources.list
+# Repository Ubuntu Wily (Base+Universe+Multiverse+Canonical+Backports)
+echo -n "      - Added Ubuntu Repositories (Wily) ... "
+echo "# Repository Ubuntu [Wily]
+deb http://it.archive.ubuntu.com/ubuntu/ wily main restricted
+deb-src http://it.archive.ubuntu.com/ubuntu/ wily main restricted
+deb http://it.archive.ubuntu.com/ubuntu/ wily universe
+deb-src http://it.archive.ubuntu.com/ubuntu/ wily universe
+deb http://it.archive.ubuntu.com/ubuntu/ wily-updates universe main restricted
+deb-src http://it.archive.ubuntu.com/ubuntu/ wily-updates universe
+deb http://it.archive.ubuntu.com/ubuntu/ wily multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ wily multiverse
+deb http://it.archive.ubuntu.com/ubuntu/ wily-updates multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ wily-updates multiverse
+deb http://archive.canonical.com/ubuntu wily partner
+deb-src http://archive.canonical.com/ubuntu wily partner
+deb http://it.archive.ubuntu.com/ubuntu/ wily-backports main restricted universe multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ wily-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu wily-security main restricted
+deb-src http://security.ubuntu.com/ubuntu wily-security main restricted
+deb http://security.ubuntu.com/ubuntu wily-security universe
+deb-src http://security.ubuntu.com/ubuntu wily-security universe
+deb http://security.ubuntu.com/ubuntu wily-security multiverse
+deb-src http://security.ubuntu.com/ubuntu wily-security multiverse" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo ""
@@ -91,7 +91,7 @@ echo ""
 # Repository GetDeb
 echo -n "      - Added GetDeb Repositories ... "
 echo "# Repository GetDeb
-deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list
+deb http://archive.getdeb.net/ubuntu wily-getdeb apps" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add - 1> /dev/null 2> $LOG
@@ -102,7 +102,7 @@ echo ""
 # Repository PlayDeb
 echo -n "      - Added PlayDeb Repositories ... "
 echo "# Repository PlayDeb
-deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list
+deb http://archive.getdeb.net/ubuntu wily-getdeb games" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add - 1> /dev/null 2> $LOG
@@ -123,8 +123,8 @@ echo ""
 # Repository HandBrake
 echo -n "      - Added HandBrake Repositories ... "
 echo "# Repository HandBrake
-deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu raring main 
-deb-src http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu raring main" >> /etc/apt/sources.list
+deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu wily main 
+deb-src http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu wily main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 816950D8 1> /dev/null 2> $LOG
@@ -134,7 +134,7 @@ echo ""
 # Repository Tor
 echo -n "      - Added Tor Repositories ... "
 echo "# Repository Tor
-deb http://deb.torproject.org/torproject.org saucy main" >> /etc/apt/sources.list
+deb http://deb.torproject.org/torproject.org wily main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 886DDD89 1> /dev/null 2> $LOG
@@ -153,8 +153,8 @@ echo ""
 # Repository Firefox 4
 echo -n "      - Added Firefox Repositories ... "
 echo "# Repository Firefox 4
-deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu saucy main
-deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu saucy main" >> /etc/apt/sources.list
+deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu wily main
+deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu wily main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 247510BE 1> /dev/null 2> $LOG
@@ -162,24 +162,24 @@ echo ""
 
 
 # Repository Opera
-echo -n "      - Added Opera Repositories ... "
-echo "# Repository Opera
-deb http://deb.opera.com/opera/ stable non-free" >> /etc/apt/sources.list
-echo "" >> /etc/apt/sources.list
-echo "" >> /etc/apt/sources.list
-wget -q -O- http://deb.opera.com/archive.key | sudo apt-key add - 1> /dev/null 2> $LOG
-echo ""
+# echo -n "      - Added Opera Repositories ... "
+# echo "# Repository Opera
+# deb http://deb.opera.com/opera/ stable non-free" >> /etc/apt/sources.list
+# echo "" >> /etc/apt/sources.list
+# echo "" >> /etc/apt/sources.list
+# wget -q -O- http://deb.opera.com/archive.key | sudo apt-key add - 1> /dev/null 2> $LOG
+# echo ""
 
 
 # Midori
-echo -n "      - Added Midori Repositories ... "
-echo "# Midori
-deb http://ppa.launchpad.net/midori/ppa/ubuntu saucy main 
-deb-src http://ppa.launchpad.net/midori/ppa/ubuntu saucy main" >> /etc/apt/sources.list
-echo "" >> /etc/apt/sources.list
-echo "" >> /etc/apt/sources.list
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A69241F1 1> /dev/null 2> $LOG
-echo ""
+# echo -n "      - Added Midori Repositories ... "
+# echo "# Midori
+# deb http://ppa.launchpad.net/midori/ppa/ubuntu saucy main 
+# deb-src http://ppa.launchpad.net/midori/ppa/ubuntu saucy main" >> /etc/apt/sources.list
+# echo "" >> /etc/apt/sources.list
+# echo "" >> /etc/apt/sources.list
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A69241F1 1> /dev/null 2> $LOG
+# echo ""
 
 
 # Repository I-Next (System Hardware Info)
@@ -207,8 +207,8 @@ echo ""
 # Repository Cairo-Dock
 echo -n "      - Added Cairo-Dock Repositories ... "
 echo "# Repository Cairo-Dock
-deb http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu utopic main 
-deb-src http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu utopic main" >> /etc/apt/sources.list 
+deb http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu vivid main 
+deb-src http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu vivid main" >> /etc/apt/sources.list 
 echo ""  >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E80D6BF5 1> /dev/null 2> $LOG
@@ -240,7 +240,7 @@ echo ""
 # Repository Virtualbox
 echo -n "      - Added VirtualBox Repositories ... "
 echo "# Repository Virtualbox
-deb http://download.virtualbox.org/virtualbox/debian trusty non-free" >> /etc/apt/sources.list
+deb http://download.virtualbox.org/virtualbox/debian wily non-free" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 wget -q -O- http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc | sudo apt-key add - 1> /dev/null 2> $LOG
