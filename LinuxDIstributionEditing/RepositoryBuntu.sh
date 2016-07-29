@@ -141,18 +141,9 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 886DDD89 1> /dev/n
 echo ""
 
 
-# Repository Remastersys
-echo -n "      - Added RematerSys Repositories ... "
-echo "# Repository Remastersys
-deb http://www.geekconnection.org/remastersys/repository karmic/" >> /etc/apt/sources.list
-echo "" >> /etc/apt/sources.list
-echo "" >> /etc/apt/sources.list
-echo ""
-
-
-# Repository Firefox 4
+# Repository Firefox
 echo -n "      - Added Firefox Repositories ... "
-echo "# Repository Firefox 4
+echo "# Repository Firefox
 deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu wily main
 deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu wily main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list

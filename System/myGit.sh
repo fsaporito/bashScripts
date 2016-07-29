@@ -7,6 +7,7 @@ Amotep="https://github.com/sapo93/amotep.git"
 Bash="https://github.com/sapo93/bashScripts.git"
 Dijkstra="https://github.com/sapo93/dijkstralog.git"
 Euler="https://github.com/sapo93/EulerOdeSolver.git"
+Hangman="https://github.com/sapo93/hangman.git"
 JADS="https://github.com/sapo93/JADS.git"
 JnODE="https://github.com/sapo93/JnODE.git"
 mathParser="https://github.com/sapo93/MathParser.git"
@@ -64,6 +65,12 @@ echo ""
 echo "##############################################"
 echo "Euler:"
 git clone ${Euler}
+
+echo ""
+echo ""
+echo "##############################################"
+echo "Hangman:"
+git clone ${Hangman}
 
 echo ""
 echo ""

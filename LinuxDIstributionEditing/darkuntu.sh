@@ -9105,7 +9105,7 @@ touch config
 f_writing_privoxy () {
 
 echo "
-#Tor listens as a SOCKS4a proxy here:
+# Tor listens as a SOCKS4a proxy here:
 forward-socks4a / 127.0.0.1:9050 .
 confdir /etc/privoxy
 logdir /var/log/privoxy
@@ -9293,7 +9293,7 @@ echo " [*] Installing Apache Web Server ... "
 
 timelapsed &
 
-apt-get install -y --force-yes apache2 apache2-doc apache2-mpm-prefork apache2-utils libexpat1 ssl-cert 1> /dev/null 2> $LOG
+apt-get install -y --force-yes apache2 apache2-doc apache2-bin apache2-utils libexpat1 ssl-cert 1> /dev/null 2> $LOG
 
 rm -f /etc/apache2/httpd.conf
 touch /etc/apache2/httpd.conf

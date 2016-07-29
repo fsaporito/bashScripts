@@ -1,13 +1,18 @@
+#Font
 use_xft yes
 xftfont Sans:size=8
 override_utf8_locale yes
+
 text_buffer_size 384
 background yes
 update_interval 1
 total_run_times 0
+
+# Window Definition
 own_window yes
 own_window_type override
 own_window_transparent yes
+
 imlib_cache_size 0
 double_buffer yes
 draw_shades no
@@ -16,11 +21,16 @@ draw_borders no
 draw_graph_borders yes
 out_to_ncurses no
 out_to_console no
+
+# Allignment
 alignment top_right
-minimum_size 240 0
-maximum_width 1000
 gap_x 10
 gap_y 33
+
+# Size
+minimum_size 240 0
+maximum_width 1000
+
 short_units yes
 pad_percents 0
 border_inner_margin 4
@@ -40,6 +50,7 @@ ${color white}System Uptime${alignr}${uptime_short}
 ${color white}Processes ${alignr}$processes ($running_processes running)
 
 ${color green}PROCESSORS  ${color darkgrey}${hr 2}
+${execi 99999 cat /proc/cpuinfo | grep "model name" -m1 | cut -d":" -f2 | cut -d" " -f2- | sed 's#Processor ##'}
 ${color white}CPU1 ${freq_g 1} GHz ${color darkgrey}${cpubar cpu1 8,130}${alignr}${color orange}${cpu cpu1}%
 ${color white}CPU2 ${freq_g 2} GHz ${color darkgrey}${cpubar cpu2 8,130}${alignr}${color orange}${cpu cpu2}%
 ${color white}CPU3 ${freq_g 3} GHz ${color darkgrey}${cpubar cpu3 8,130}${alignr}${color orange}${cpu cpu3}%
@@ -52,21 +63,18 @@ ${color darkgrey}${membar}
 ${color green}HDD  ${color darkgrey}${hr 2}${font}
 ${color white}ROOT   ${color orange}${fs_used /} / ${fs_size /}${alignr}${color red}${color red}${fs_free_perc /}% Free
 ${color darkgrey}${fs_bar /}
+${color white}ROOT: ${fs_type /}   ${color orange}${fs_used /} / ${fs_size /}${alignr}${color red}${color red}${fs_free_perc /}% Free
+${color darkgrey}${fs_bar /}
 
 ${if_mounted /media/sapo93/DATI}
 ${color white}DATI   ${color orange}${fs_used /media/sapo93/DATI} / ${fs_size /media/sapo93/DATI}${alignr}${color red}${fs_free_perc /media/sapo93/DATI}% Free
-${color darkgrey}${fs_bar /media/sapo93/DATI}
-${endif}
-
+${color darkgrey}${fs_bar /media/sapo93/DATI}${endif}
 ${if_mounted /media/sapo93/Gdrive}
 ${color white}Gdrive   ${color orange}${fs_used /media/sapo93/Gdrive} / ${fs_size /media/sapo93/Gdrive}${alignr}${color red}${fs_free_/media/sapo93/Gdrive}% Free
-${color darkgrey}${fs_bar /media/sapo93/Gdrive}
-${endif}
-
+${color darkgrey}${fs_bar /media/sapo93/Gdrive}${endif}
 ${if_mounted /media/Wordlist}
 ${color white}Wordlist   ${color orange}${fs_used /media/Wordlist} / ${fs_size /media/Wordlist}${alignr}${color red}${fs_free_perc /media/Wordlist}% Free
-${color darkgrey}${fs_bar /media/Wordlist}
-${endif}
+${color darkgrey}${fs_bar /media/Wordlist}${endif}
 
 
 ${color green}NETWORK  ${alignr}${color yellow}${execi 300 /home/sapo93/.config/conky/ip.sh}
