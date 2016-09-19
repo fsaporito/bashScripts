@@ -161,7 +161,7 @@ echo -n "    - Replacing Sources.list ... "
 echo ""
 
 # Cleaning sources.list
-sudo rm /etc/apt/sources.list 
+sudo rm /etc/apt/sources.list
 sudo touch /etc/apt/sources.list
 sudo chmod 775 /etc/apt/sources.list
 
@@ -218,7 +218,7 @@ echo ""
 # Repository Tualatrix (UbuntuTweak)
 echo -n "      - Added Tualatrix Repositories (Ubuntu Tweak) ... "
 echo "# Repository Tualatrix (UbuntuTweak)
-deb http://ppa.launchpad.net/tualatrix/next/ubuntu utopic main 
+deb http://ppa.launchpad.net/tualatrix/next/ubuntu utopic main
 deb-src http://ppa.launchpad.net/tualatrix/next/ubuntu utopic main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
@@ -229,7 +229,7 @@ echo ""
 # Repository HandBrake
 echo -n "      - Added HandBrake Repositories ... "
 echo "# Repository HandBrake
-deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu raring main 
+deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu raring main
 deb-src http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu raring main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
@@ -280,7 +280,7 @@ echo ""
 # Midori
 echo -n "      - Added Midori Repositories ... "
 echo "# Midori
-deb http://ppa.launchpad.net/midori/ppa/ubuntu saucy main 
+deb http://ppa.launchpad.net/midori/ppa/ubuntu saucy main
 deb-src http://ppa.launchpad.net/midori/ppa/ubuntu saucy main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
@@ -291,8 +291,8 @@ echo ""
 # Repository I-Next (System Hardware Info)
 echo -n "      - Added I-Next Repositories (System Hardware Info) ... "
 echo "# Repository I-Next (System Hardware Info)
-deb http://ppa.launchpad.net/i-nex-development-team/stable/ubuntu utopic main 
-deb-src http://ppa.launchpad.net/i-nex-development-team/stable/ubuntu utopic main" >> /etc/apt/sources.list 
+deb http://ppa.launchpad.net/i-nex-development-team/stable/ubuntu utopic main
+deb-src http://ppa.launchpad.net/i-nex-development-team/stable/ubuntu utopic main" >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F34CDDAD 1> /dev/null 2> $LOG
@@ -302,8 +302,8 @@ echo ""
 # Repository Conky-Companions
 echo -n "      - Added Conky-Companions Repositories ... "
 echo "# Repository Conky-Companions
-deb http://ppa.launchpad.net/conky-companions/ppa/ubuntu quantal main 
-deb-src http://ppa.launchpad.net/conky-companions/ppa/ubuntu quantal main" >> /etc/apt/sources.list 
+deb http://ppa.launchpad.net/conky-companions/ppa/ubuntu quantal main
+deb-src http://ppa.launchpad.net/conky-companions/ppa/ubuntu quantal main" >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9BF2D8AB 1> /dev/null 2> $LOG
@@ -313,8 +313,8 @@ echo ""
 # Repository Cairo-Dock
 echo -n "      - Added Cairo-Dock Repositories ... "
 echo "# Repository Cairo-Dock
-deb http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu utopic main 
-deb-src http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu utopic main" >> /etc/apt/sources.list 
+deb http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu utopic main
+deb-src http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu utopic main" >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E80D6BF5 1> /dev/null 2> $LOG
@@ -345,7 +345,7 @@ echo ""
 # Repository Akirad (Cinelerra)
 echo -n "      - Added Akirad Repositories (Cinelerra) ... "
 echo "# Repository Akirad (Cinelerra)
-deb http://ppa.launchpad.net/akirad/akirad/ubuntu lucid main 
+deb http://ppa.launchpad.net/akirad/akirad/ubuntu lucid main
 deb-src http://ppa.launchpad.net/akirad/akirad/ubuntu lucid main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
@@ -863,7 +863,7 @@ f_eclipse () {
 
 	apt-get install -y --force-yes build-essential 1> /dev/null 2> $LOG # Gcc + Make
 	apt-get install -y --force-yes g++ 1> /dev/null 2> $LOG # Compilatore C++
-	
+
 	apt-get install -y --force-yes eclipse 1> /dev/null 2> $LOG # Java
 	apt-get install -y --force-yes eclipse-cdt 1> /dev/null 2> $LOG # C/C++
 	apt-get install -y --force-yes eclipse-xsd 1> /dev/null 2> $LOG # XML
@@ -878,23 +878,23 @@ f_eclipse () {
 f_eclipse
 
 f_android_SDK () {
-	
+
 	echo -n "    - Installing Android_SDK ... "
 
 	timelapsed &
-	
+
 	axel http://dl.google.com/android/android-sdk_r20-linux.tgz 1> /dev/null
-	
+
 	tar xvfz android-sdk_r20-linux.tgz
-	
+
 	cd android-sdk-linux
-	
+
 	cd ..
-	
+
 	rm -f android-sdk_r20-linux.tgz
-	
+
 	cd $home
-	
+
 	touch $home/pio.txt
 	sleep 1
 	rm -f $home/pio.txt
@@ -935,14 +935,14 @@ time_stop
 f_lib_gtk_dev
 
 f_glade () {
-	
+
 	echo -n "    - Installing Glade ... "
 
 	timelapsed &
 
 	apt-get install -y --force-yes glade 1> /dev/null 2> $LOG
 	apt-get install -y --force-yes python-gtk2 python-glade2 1> /dev/null 2> $LOG
-	
+
 	touch $home/pio.txt
 	sleep 1
 	rm -f $home/pio.txt
@@ -4259,7 +4259,7 @@ time_stop
 }
 
 f_compiz_buntu_debian () {
-	
+
 echo -n "[*] Installing Compiz ... "
 
 timelapsed &
@@ -4270,7 +4270,7 @@ apt-get install -y --force-yes compiz-fusion-plugins-main 1> /dev/null 2> $LOG
 apt-get install -y --force-yes compiz-fusion-plugins-extra 1> /dev/null 2> $LOG
 apt-get install -y --force-yes librsvg2-common 1> /dev/null 2> $LOG
 apt-get install -y --force-yes fusion-icon 1> /dev/null 2> $LOG
-	
+
 time_stop
 
 }
@@ -6272,7 +6272,7 @@ f_logkeys
 
 # Ntfs-3g
 f_ntfs_3g () {
-	
+
 echo -n "[*] Installing Ntfs-3G ... "
 
 timelapsed &
@@ -7846,7 +7846,7 @@ f_amsn
 
 # Pidgin
 f_pidgin () {
-	
+
 echo -n "  [*] Installing Pidgin ... "
 
 timelapsed &
@@ -7893,7 +7893,7 @@ touch accounts.xml
 echo "$home/.purple/accounts.xml" >> $file
 
 f_writing_pidgin_accounts () {
-	
+
 echo "<?xml version='1.0' encoding='UTF-8' ?>
 
 <account version='1.0'>
@@ -8034,7 +8034,7 @@ touch prefs.xml
 echo "$home/.purple/prefs.xml" >> $file
 
 f_writing_pidgin_prefs () {
-	
+
 echo "<?xml version='1.0' encoding='UTF-8' ?>
 
 <pref version='1' name='/'>
@@ -8753,7 +8753,7 @@ touch status.xml
 echo "$home/.purple/status.xml" >> $file
 
 f_writing_pidgin_status () {
-	
+
 echo "<?xml version='1.0' encoding='UTF-8' ?>
 
 <statuses version='1.0'>
@@ -8836,7 +8836,7 @@ f_etherape
 
 # Youtube-Dl
 f_youtube_dl () {
-	
+
 echo -n "  [*] Installing EasyTag ... "
 
 timelapsed &
@@ -21310,7 +21310,7 @@ f_buntu () {
 			fi
 		fi
 	fi
-	
+
 	if [ $composite != $nocomposite ]; then
 		if [ $gui != $nogui ] || [ $gui != $openboxstand ]; then
 			if [ $compiz = 'yes' ] || [ $compiz = 'YES' ]; then
@@ -21846,7 +21846,7 @@ f_debian () {
 			fi
 		fi
 	fi
-	
+
 	if [ $composite != $nocomposite ]; then
 		if [ $gui != $nogui ] || [ $gui != $openboxstand ]; then
 			if [ $compiz = 'yes' ] || [ $compiz = 'YES' ]; then

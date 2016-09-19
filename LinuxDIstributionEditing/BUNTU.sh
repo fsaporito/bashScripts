@@ -101,7 +101,7 @@ echo -n "    - Replacing Sources.list ... "
 echo ""
 
 # Cleaning sources.list
-sudo rm /etc/apt/sources.list 
+sudo rm /etc/apt/sources.list
 sudo touch /etc/apt/sources.list
 sudo chmod 775 /etc/apt/sources.list
 
@@ -109,26 +109,26 @@ sudo chmod 775 /etc/apt/sources.list
 # Repository Ubuntu Wily (Base+Universe+Multiverse+Canonical+Backports)
 echo -n "      - Added Ubuntu Repositories (Wily) ... "
 echo "# Repository Ubuntu [Wily]
-deb http://it.archive.ubuntu.com/ubuntu/ wily main restricted
-deb-src http://it.archive.ubuntu.com/ubuntu/ wily main restricted
-deb http://it.archive.ubuntu.com/ubuntu/ wily universe
-deb-src http://it.archive.ubuntu.com/ubuntu/ wily universe
-deb http://it.archive.ubuntu.com/ubuntu/ wily-updates universe main restricted
-deb-src http://it.archive.ubuntu.com/ubuntu/ wily-updates universe
-deb http://it.archive.ubuntu.com/ubuntu/ wily multiverse
-deb-src http://it.archive.ubuntu.com/ubuntu/ wily multiverse
-deb http://it.archive.ubuntu.com/ubuntu/ wily-updates multiverse
-deb-src http://it.archive.ubuntu.com/ubuntu/ wily-updates multiverse
-deb http://archive.canonical.com/ubuntu wily partner
-deb-src http://archive.canonical.com/ubuntu wily partner
-deb http://it.archive.ubuntu.com/ubuntu/ wily-backports main restricted universe multiverse
-deb-src http://it.archive.ubuntu.com/ubuntu/ wily-backports main restricted universe multiverse
-deb http://security.ubuntu.com/ubuntu wily-security main restricted
-deb-src http://security.ubuntu.com/ubuntu wily-security main restricted
-deb http://security.ubuntu.com/ubuntu wily-security universe
-deb-src http://security.ubuntu.com/ubuntu wily-security universe
-deb http://security.ubuntu.com/ubuntu wily-security multiverse
-deb-src http://security.ubuntu.com/ubuntu wily-security multiverse" >> /etc/apt/sources.list
+deb http://it.archive.ubuntu.com/ubuntu/ xenial main restricted
+deb-src http://it.archive.ubuntu.com/ubuntu/ xenial main restricted
+deb http://it.archive.ubuntu.com/ubuntu/ xenial universe
+deb-src http://it.archive.ubuntu.com/ubuntu/ xenial universe
+deb http://it.archive.ubuntu.com/ubuntu/ xenial-updates universe main restricted
+deb-src http://it.archive.ubuntu.com/ubuntu/ xenial-updates universe
+deb http://it.archive.ubuntu.com/ubuntu/ xenial multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ xenial multiverse
+deb http://it.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
+deb http://archive.canonical.com/ubuntu xenial partner
+deb-src http://archive.canonical.com/ubuntu xenial partner
+deb http://it.archive.ubuntu.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu xenial-security main restricted
+deb-src http://security.ubuntu.com/ubuntu xenial-security main restricted
+deb http://security.ubuntu.com/ubuntu xenial-security universe
+deb-src http://security.ubuntu.com/ubuntu xenial-security universe
+deb http://security.ubuntu.com/ubuntu xenial-security multiverse
+deb-src http://security.ubuntu.com/ubuntu xenial-security multiverse" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo ""
@@ -137,7 +137,7 @@ echo ""
 # Repository GetDeb
 echo -n "      - Added GetDeb Repositories ... "
 echo "# Repository GetDeb
-deb http://archive.getdeb.net/ubuntu wily-getdeb apps" >> /etc/apt/sources.list
+deb http://archive.getdeb.net/ubuntu xenial-getdeb apps" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add - 1> /dev/null 2> $LOG
@@ -148,7 +148,7 @@ echo ""
 # Repository PlayDeb
 echo -n "      - Added PlayDeb Repositories ... "
 echo "# Repository PlayDeb
-deb http://archive.getdeb.net/ubuntu wily-getdeb games" >> /etc/apt/sources.list
+deb http://archive.getdeb.net/ubuntu xenial-getdeb games" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add - 1> /dev/null 2> $LOG
@@ -158,7 +158,7 @@ echo ""
 # Repository Tualatrix (UbuntuTweak)
 echo -n "      - Added Tualatrix Repositories (Ubuntu Tweak) ... "
 echo "# Repository Tualatrix (UbuntuTweak)
-deb http://ppa.launchpad.net/tualatrix/next/ubuntu utopic main 
+deb http://ppa.launchpad.net/tualatrix/next/ubuntu utopic main
 deb-src http://ppa.launchpad.net/tualatrix/next/ubuntu utopic main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
@@ -169,8 +169,8 @@ echo ""
 # Repository HandBrake
 echo -n "      - Added HandBrake Repositories ... "
 echo "# Repository HandBrake
-deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu wily main 
-deb-src http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu wily main" >> /etc/apt/sources.list
+deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main
+deb-src http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 816950D8 1> /dev/null 2> $LOG
@@ -180,7 +180,7 @@ echo ""
 # Repository Tor
 echo -n "      - Added Tor Repositories ... "
 echo "# Repository Tor
-deb http://deb.torproject.org/torproject.org wily main" >> /etc/apt/sources.list
+deb http://deb.torproject.org/torproject.org xenial main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 886DDD89 1> /dev/null 2> $LOG
@@ -190,8 +190,8 @@ echo ""
 # Repository Firefox
 echo -n "      - Added Firefox Repositories ... "
 echo "# Repository Firefox
-deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu wily main
-deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu wily main" >> /etc/apt/sources.list
+deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu xenial main
+deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu xenial main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 247510BE 1> /dev/null 2> $LOG
@@ -211,7 +211,7 @@ echo ""
 # Midori
 # echo -n "      - Added Midori Repositories ... "
 # echo "# Midori
-# deb http://ppa.launchpad.net/midori/ppa/ubuntu saucy main 
+# deb http://ppa.launchpad.net/midori/ppa/ubuntu saucy main
 # deb-src http://ppa.launchpad.net/midori/ppa/ubuntu saucy main" >> /etc/apt/sources.list
 # echo "" >> /etc/apt/sources.list
 # echo "" >> /etc/apt/sources.list
@@ -222,8 +222,8 @@ echo ""
 # Repository I-Next (System Hardware Info)
 echo -n "      - Added I-Next Repositories (System Hardware Info) ... "
 echo "# Repository I-Next (System Hardware Info)
-deb http://ppa.launchpad.net/i-nex-development-team/stable/ubuntu utopic main 
-deb-src http://ppa.launchpad.net/i-nex-development-team/stable/ubuntu utopic main" >> /etc/apt/sources.list 
+deb http://ppa.launchpad.net/i-nex-development-team/stable/ubuntu utopic main
+deb-src http://ppa.launchpad.net/i-nex-development-team/stable/ubuntu utopic main" >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F34CDDAD 1> /dev/null 2> $LOG
@@ -233,8 +233,8 @@ echo ""
 # Repository Conky-Companions
 echo -n "      - Added Conky-Companions Repositories ... "
 echo "# Repository Conky-Companions
-deb http://ppa.launchpad.net/conky-companions/ppa/ubuntu quantal main 
-deb-src http://ppa.launchpad.net/conky-companions/ppa/ubuntu quantal main" >> /etc/apt/sources.list 
+deb http://ppa.launchpad.net/conky-companions/ppa/ubuntu quantal main
+deb-src http://ppa.launchpad.net/conky-companions/ppa/ubuntu quantal main" >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9BF2D8AB 1> /dev/null 2> $LOG
@@ -244,8 +244,8 @@ echo ""
 # Repository Cairo-Dock
 echo -n "      - Added Cairo-Dock Repositories ... "
 echo "# Repository Cairo-Dock
-deb http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu vivid main 
-deb-src http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu vivid main" >> /etc/apt/sources.list 
+deb http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu vivid main
+deb-src http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu vivid main" >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 echo ""  >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E80D6BF5 1> /dev/null 2> $LOG
@@ -266,7 +266,7 @@ echo ""
 # Repository Ninja IDE
 echo -n "      - Added Ninja IDe Repositories ... "
 echo "# Repository Ninja IDe
-deb http://ppa.launchpad.net/ninja-ide-developers/ninja-ide-stable/ubuntu saucy main 
+deb http://ppa.launchpad.net/ninja-ide-developers/ninja-ide-stable/ubuntu saucy main
 deb-src http://ppa.launchpad.net/ninja-ide-developers/ninja-ide-stable/ubuntu saucy main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
@@ -277,7 +277,7 @@ echo ""
 # Repository Virtualbox
 echo -n "      - Added VirtualBox Repositories ... "
 echo "# Repository Virtualbox
-deb http://download.virtualbox.org/virtualbox/debian wily non-free" >> /etc/apt/sources.list
+deb http://download.virtualbox.org/virtualbox/debian xenial non-free" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 wget -q -O- http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc | sudo apt-key add - 1> /dev/null 2> $LOG
@@ -287,7 +287,7 @@ echo ""
 # Repository Akirad (Cinelerra)
 echo -n "      - Added Akirad Repositories (Cinelerra) ... "
 echo "# Repository Akirad (Cinelerra)
-deb http://ppa.launchpad.net/akirad/akirad/ubuntu lucid main 
+deb http://ppa.launchpad.net/akirad/akirad/ubuntu lucid main
 deb-src http://ppa.launchpad.net/akirad/akirad/ubuntu lucid main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
@@ -670,7 +670,7 @@ f_eclipse () {
 
 	apt-get install -y --force-yes build-essential 1> /dev/null 2> $LOG # Gcc + Make
 	apt-get install -y --force-yes g++ 1> /dev/null 2> $LOG # Compilatore C++
-	
+
 	apt-get install -y --force-yes eclipse 1> /dev/null 2> $LOG # Java
 	apt-get install -y --force-yes eclipse-cdt 1> /dev/null 2> $LOG # C/C++
 	apt-get install -y --force-yes eclipse-egit 1> /dev/null 2> $LOG # Git Plugin
@@ -686,15 +686,15 @@ f_eclipse
 
 # GDB (Gnu Debugger)
 f_gdb () {
-	
+
 	echo -n "    - Installing GDB (Gnu Debugger) ... "
 
 	timelapsed &
-	
-	apt-get install -y --force-yes gdb 1> /dev/null 2> $LOG 
-		
+
+	apt-get install -y --force-yes gdb 1> /dev/null 2> $LOG
+
 	time_stop
-	
+
 }
 
 f_gdb
@@ -706,11 +706,11 @@ f_geany () {
 	echo -n "    - Installing Geany ... "
 
 	timelapsed &
-	
+
 	apt-get install -y --force-yes geany 1> /dev/null 2> $LOG # Geany IDE
 	apt-get install -y --force-yes geany-plugins 1> /dev/null 2> $LOG # Geany Plugins
 	apt-get install -y --force-yes geany-plugin-scope 1> /dev/null 2> $LOG # GDB Graphical Frontend
-		
+
 	time_stop
 
 
@@ -725,13 +725,13 @@ f_emacs () {
 	echo -n "    - Installing Emacs ... "
 
 	timelapsed &
-	
-	apt-get install -y --force-yes emacs 1> /dev/null 2> $LOG 
+
+	apt-get install -y --force-yes emacs 1> /dev/null 2> $LOG
 	apt-get install -y --force-yes elib 1> /dev/null 2> $LOG
 	apt-get install -y --force-yes emacs-godies-el 1> /dev/null 2> #Godies
 	apt-get install -y --force-yes emacs-window-layout 1> /dev/null 2> $LOG
-	
-	
+
+
 	time_stop
 
 
@@ -777,14 +777,14 @@ f_lib_gtk_dev
 
 # Glade
 f_glade () {
-	
+
 	echo -n "    - Installing Glade ... "
 
 	timelapsed &
 
 	apt-get install -y --force-yes glade 1> /dev/null 2> $LOG
 	apt-get install -y --force-yes python-gtk2 python-glade2 1> /dev/null 2> $LOG
-	
+
 	time_stop ()
 
 }
@@ -799,7 +799,7 @@ f_glade
 
 # Programming Languages (lisp | perl | prolog | python | ruby)
 f_programming_languages () {
-	
+
 echo "[*] Programming Languages"
 
 # Common Lisp
@@ -808,21 +808,21 @@ f_lisp () {
 	echo -n "    - Installing Lisp () ... "
 
 	timelapsed &
-	
-	echo -n "    	=> SBCL, Major Lisp Interpreter ... "	
+
+	echo -n "    	=> SBCL, Major Lisp Interpreter ... "
 	apt-get install -y --force-yes sbcl 1> /dev/null 2> $LOG
-	
-	echo -n "    	=> ECL, C Integration ... "	
+
+	echo -n "    	=> ECL, C Integration ... "
 	apt-get install -y --force-yes ecl 1> /dev/null 2> $LOG
-	
+
 	echo -n "    	=> ABCL, Java Integration ... "
 	apt-get install -y --force-yes abcl 1> /dev/null 2> $LOG
 	cp /usr/share/abcl/abcl.jar $home/abcl.jar 1> /dev/null 2> $LOG
-	
-	
+
+
 	time_stop
-		
-	
+
+
 }
 
 f_lisp
@@ -835,7 +835,7 @@ f_prolog () {
 	timelapsed &
 
 	apt-get install -y --force-yes swipl 1> /dev/null 2> $LOG
-	
+
 	time_stop
 
 }
@@ -909,13 +909,13 @@ time_stop
 }
 
 f_ruby
-	
+
 }
 
 
 # Server
 f_server () {
-	
+
 f_sqlite3 () {
 
 	echo -n "[*] Installing Sqlite ... "
@@ -947,7 +947,7 @@ f_mysql () {
 	service mysql stop 1> /dev/null
 
 	cd /etc/mysql
-	
+
 	echo "/etc/mysql" >> $file
 
 	rm -f my.cfn
@@ -1043,14 +1043,14 @@ key_buffer		= 16M
 }
 
 f_mysql
-	
+
 }
 
 
 # Pentest
 f_pentest () {
-	
-	
+
+
 }
 
 
@@ -1132,23 +1132,23 @@ mv /tmp/tty6.conf /etc/init/tty6.conf
 #==============================================================================================================================#
 
 f_install () {
-	
+
 	f_java
-	
+
 	f_repo
-	
+
 	f_axel
-	
+
 	f_dir
-	
-	# Programming	
+
+	# Programming
 	f_programming_libraries
 	f_programming_IDE
 	f_programming_languages
-	
+
 	# Clean
 	f_clean
-	
+
 }
 
 

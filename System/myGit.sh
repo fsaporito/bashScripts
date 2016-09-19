@@ -9,6 +9,7 @@ Dijkstra="https://github.com/sapo93/dijkstralog.git"
 Euler="https://github.com/sapo93/EulerOdeSolver.git"
 Hangman="https://github.com/sapo93/hangman.git"
 JADS="https://github.com/sapo93/JADS.git"
+JGMail="https://github.com/sapo93/JGMail.git"
 JnODE="https://github.com/sapo93/JnODE.git"
 mathParser="https://github.com/sapo93/MathParser.git"
 numC="https://github.com/sapo93/numC.git"
@@ -77,6 +78,12 @@ echo ""
 echo "##############################################"
 echo "JADS:"
 git clone ${JADS}
+
+echo ""
+echo ""
+echo "##############################################"
+echo "JADS:"
+git clone ${JGMail}
 
 echo ""
 echo ""
