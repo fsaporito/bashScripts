@@ -23,6 +23,7 @@ TicTacToe="https://github.com/sapo93/TicTacToe.git"
 # University
 Algo="https://github.com/UniversityProjects/Algorithms.git"
 BioC="https://github.com/UniversityProjects/2014-15.git"
+Cineca_Parallel="https://github.com/UniversityProjects/Cineca_Parallel_Computing.git"
 Dist="https://github.com/UniversityProjects/DistributedSystems.git"
 FEM1="https://github.com/UniversityProjects/FEM1.git"
 FEM2="https://github.com/UniversityProjects/FEM2.git"
@@ -163,6 +164,13 @@ git submodule update
 cd ..
 cd ..
 cd ..
+
+
+echo ""
+echo ""
+echo "##############################################"
+echo "[University] Cineca Parallel Computing Course:"
+git clone ${Cineca_Parallel}
 
 
 echo ""
