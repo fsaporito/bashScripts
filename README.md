@@ -42,6 +42,8 @@ ramdisk.sh -> crypted ramdisk creation and elimination [require root]
 ===========
 WORDLIST
 
+pdf.sh -> generate a wordlist from a pdf folder (part of wordlist_gen, updated version)
+
 wiki.sh -> generate a wordlist from all the articles on wikipedia (all languages)
 
 wordlist_edit.sh -> wordlist editor
