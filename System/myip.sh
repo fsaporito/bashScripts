@@ -2,7 +2,7 @@
 
 clear
 
-localip=$( ifconfig | grep "indirizzo inet:" | grep -v "127.0.0.1" | sed -e 's/indirizzo inet://g' | awk '{printf $1}' )
+localip=$( ifconfig | grep "inet " | grep -v "127.0.0.1" | sed -e 's/inet //g' | awk '{printf $1}' )
 
 externalip=$( wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )
 
