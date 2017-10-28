@@ -3,21 +3,22 @@
 clear
 
 # Personal
-Amotep="https://github.com/sapo93/amotep.git"
-Bash="https://github.com/sapo93/bashScripts.git"
-Dijkstra="https://github.com/sapo93/dijkstralog.git"
-Euler="https://github.com/sapo93/EulerOdeSolver.git"
-Hangman="https://github.com/sapo93/hangman.git"
-JADS="https://github.com/sapo93/JADS.git"
-JGMail="https://github.com/sapo93/JGMail.git"
-JnODE="https://github.com/sapo93/JnODE.git"
-mathParser="https://github.com/sapo93/MathParser.git"
-numC="https://github.com/sapo93/numC.git"
-numDiploma="https://github.com/sapo93/num_diploma.git"
-Octave="https://github.com/sapo93/OctaveMatlab"
-OOL="https://github.com/sapo93/OOL.git"
-ParallelR="https://github.com/sapo93/ParallelRandomGenerator.git"
-TicTacToe="https://github.com/sapo93/TicTacToe.git"
+Amotep="https://github.com/fsaporito/amotep.git"
+Bash="https://github.com/fsaporito/bashScripts.git"
+Dijkstra="https://github.com/fsaporito/dijkstralog.git"
+Euler="https://github.com/fsaporito/EulerOdeSolver.git"
+Hangman="https://github.com/fsaporito/hangman.git"
+JADS="https://github.com/fsaporito/JADS.git"
+JGMail="https://github.com/fsaporito/JGMail.git"
+JnODE="https://github.com/fsaporito/JnODE.git"
+mathParser="https://github.com/fsaporito/MathParser.git"
+numC="https://github.com/fsaporito/numC.git"
+numDiploma="https://github.com/fsaporito/num_diploma.git"
+Octave="https://github.com/fsaporito/OctaveMatlab"
+OOL="https://github.com/fsaporito/OOL.git"
+ParallelR="https://github.com/fsaporito/ParallelRandomGenerator.git"
+RMplates="https://github.com/fsaporito/RMplates.git"
+TicTacToe="https://github.com/fsaporito/TicTacToe.git"
 
 
 # University
@@ -32,7 +33,6 @@ Prolog="https://github.com/UniversityProjects/Prolog.git"
 ProgI="https://github.com/UniversityProjects/ProgrammingI.git"
 ProgII="https://github.com/UniversityProjects/ProgrammingII.git"
 RubyBio="https://github.com/UniversityProjects/rubyBio.git"
-
 
 
 
@@ -128,6 +128,12 @@ echo ""
 echo "##############################################"
 echo "Parallel Random Generator:"
 git clone ${ParallelR}
+
+echo ""
+echo ""
+echo "##############################################"
+echo "RM plates:"
+git clone ${RMplates}
 
 echo ""
 echo ""
