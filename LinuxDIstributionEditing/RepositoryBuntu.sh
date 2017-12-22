@@ -60,29 +60,29 @@ sudo touch /etc/apt/sources.list
 sudo chmod 775 /etc/apt/sources.list
 
 
-# Repository Ubuntu zesty (Base+Universe+Multiverse+Canonical+Backports)
-echo -n "      - Added Ubuntu Repositories (zesty) ... "
-echo "# Repository Ubuntu [zesty]
-deb http://it.archive.ubuntu.com/ubuntu/ zesty main restricted
-deb-src http://it.archive.ubuntu.com/ubuntu/ zesty main restricted
-deb http://it.archive.ubuntu.com/ubuntu/ zesty universe
-deb-src http://it.archive.ubuntu.com/ubuntu/ zesty universe
-deb http://it.archive.ubuntu.com/ubuntu/ zesty-updates universe main restricted
-deb-src http://it.archive.ubuntu.com/ubuntu/ zesty-updates universe
-deb http://it.archive.ubuntu.com/ubuntu/ zesty multiverse
-deb-src http://it.archive.ubuntu.com/ubuntu/ zesty multiverse
-deb http://it.archive.ubuntu.com/ubuntu/ zesty-updates multiverse
-deb-src http://it.archive.ubuntu.com/ubuntu/ zesty-updates multiverse
-deb http://archive.canonical.com/ubuntu zesty partner
-deb-src http://archive.canonical.com/ubuntu zesty partner
-deb http://it.archive.ubuntu.com/ubuntu/ zesty-backports main restricted universe multiverse
-deb-src http://it.archive.ubuntu.com/ubuntu/ zesty-backports main restricted universe multiverse
-deb http://security.ubuntu.com/ubuntu zesty-security main restricted
-deb-src http://security.ubuntu.com/ubuntu zesty-security main restricted
-deb http://security.ubuntu.com/ubuntu zesty-security universe
-deb-src http://security.ubuntu.com/ubuntu zesty-security universe
-deb http://security.ubuntu.com/ubuntu zesty-security multiverse
-deb-src http://security.ubuntu.com/ubuntu zesty-security multiverse" >> /etc/apt/sources.list
+# Repository Ubuntu artful (Base+Universe+Multiverse+Canonical+Backports)
+echo -n "      - Added Ubuntu Repositories (artful) ... "
+echo "# Repository Ubuntu [artful]
+deb http://it.archive.ubuntu.com/ubuntu/ artful main restricted
+deb-src http://it.archive.ubuntu.com/ubuntu/ artful main restricted
+deb http://it.archive.ubuntu.com/ubuntu/ artful universe
+deb-src http://it.archive.ubuntu.com/ubuntu/ artful universe
+deb http://it.archive.ubuntu.com/ubuntu/ artful-updates universe main restricted
+deb-src http://it.archive.ubuntu.com/ubuntu/ artful-updates universe
+deb http://it.archive.ubuntu.com/ubuntu/ artful multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ artful multiverse
+deb http://it.archive.ubuntu.com/ubuntu/ artful-updates multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ artful-updates multiverse
+deb http://archive.canonical.com/ubuntu artful partner
+deb-src http://archive.canonical.com/ubuntu artful partner
+deb http://it.archive.ubuntu.com/ubuntu/ artful-backports main restricted universe multiverse
+deb-src http://it.archive.ubuntu.com/ubuntu/ artful-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu artful-security main restricted
+deb-src http://security.ubuntu.com/ubuntu artful-security main restricted
+deb http://security.ubuntu.com/ubuntu artful-security universe
+deb-src http://security.ubuntu.com/ubuntu artful-security universe
+deb http://security.ubuntu.com/ubuntu artful-security multiverse
+deb-src http://security.ubuntu.com/ubuntu artful-security multiverse" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo ""
@@ -91,7 +91,7 @@ echo ""
 # Repository GetDeb
 echo -n "      - Added GetDeb Repositories ... "
 echo "# Repository GetDeb
-deb http://archive.getdeb.net/ubuntu zesty-getdeb apps" >> /etc/apt/sources.list
+deb http://archive.getdeb.net/ubuntu artful-getdeb apps" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add - 1> /dev/null 2> $LOG
@@ -102,7 +102,7 @@ echo ""
 # Repository PlayDeb
 echo -n "      - Added PlayDeb Repositories ... "
 echo "# Repository PlayDeb
-deb http://archive.getdeb.net/ubuntu zesty-getdeb games" >> /etc/apt/sources.list
+deb http://archive.getdeb.net/ubuntu artful-getdeb games" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add - 1> /dev/null 2> $LOG
@@ -123,8 +123,8 @@ echo ""
 # Repository HandBrake
 echo -n "      - Added HandBrake Repositories ... "
 echo "# Repository HandBrake
-deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu zesty main 
-deb-src http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu zesty main" >> /etc/apt/sources.list
+deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu artful main 
+deb-src http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu artful main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 816950D8 1> /dev/null 2> $LOG
@@ -134,7 +134,7 @@ echo ""
 # Repository Tor
 echo -n "      - Added Tor Repositories ... "
 echo "# Repository Tor
-deb http://deb.torproject.org/torproject.org zesty main" >> /etc/apt/sources.list
+deb http://deb.torproject.org/torproject.org artful main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 886DDD89 1> /dev/null 2> $LOG
@@ -144,8 +144,8 @@ echo ""
 # Repository Firefox
 echo -n "      - Added Firefox Repositories ... "
 echo "# Repository Firefox
-deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu zesty main
-deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu zesty main" >> /etc/apt/sources.list
+deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu artful main
+deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu artful main" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 247510BE 1> /dev/null 2> $LOG
@@ -231,7 +231,7 @@ echo ""
 # Repository Virtualbox
 echo -n "      - Added VirtualBox Repositories ... "
 echo "# Repository Virtualbox
-deb http://download.virtualbox.org/virtualbox/debian zesty non-free" >> /etc/apt/sources.list
+deb http://download.virtualbox.org/virtualbox/debian artful non-free" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 wget -q -O- http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc | sudo apt-key add - 1> /dev/null 2> $LOG
@@ -247,6 +247,40 @@ echo "" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 wget -q http://repository.akirad.net/dists/akirad.key -O- | sudo apt-key add - 1> /dev/null 2> $LOG
 echo ""
+
+
+# Repository Eclipse
+echo -n "      - Added Eclipse Repositories ... "
+echo "# Repository Eclipse
+deb http://ppa.launchpad.net/mmk2410/eclipse-ide-java/ubuntu artful main 
+deb-src http://ppa.launchpad.net/mmk2410/eclipse-ide-java/ubuntu artful main" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9263FB77 1> /dev/null 2> $LOG
+echo "" 
+
+
+# Repository Telegram
+echo -n "      - Added Telegram Repositories ... "
+echo "# Repository Telegram
+deb http://ppa.launchpad.net/atareao/telegram/ubuntu artful main 
+deb-src http://ppa.launchpad.net/atareao/telegram/ubuntu artful main " >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9263FB77 1> /dev/null 2> $LOG
+echo ""
+
+
+# Repository Skype
+echo -n "      - Added SkypeForLinux Repositories ... "
+echo "# Repository SkypeForLinux
+deb [arch=amd64] https://repo.skype.com/deb stable main" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+wget -q https://repo.skype.com/data/SKYPE-GPG-KEY -O- | sudo apt-key add - 1> /dev/null 2> $LOG
+echo ""
+
+
 
 
 # Update
