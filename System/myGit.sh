@@ -17,6 +17,7 @@ numDiploma="https://github.com/fsaporito/num_diploma.git"
 Octave="https://github.com/fsaporito/OctaveMatlab"
 OOL="https://github.com/fsaporito/OOL.git"
 ParallelR="https://github.com/fsaporito/ParallelRandomGenerator.git"
+pyTriangle="https://github.com/fsaporito/pyTriangle.git"
 RMplates="https://github.com/fsaporito/RMplates.git"
 TicTacToe="https://github.com/fsaporito/TicTacToe.git"
 
@@ -132,8 +133,15 @@ git clone ${ParallelR}
 echo ""
 echo ""
 echo "##############################################"
+echo "pyTriangle:"
+git clone ${pyTriangle}
+
+echo ""
+echo ""
+echo "##############################################"
 echo "RM plates:"
 git clone ${RMplates}
+
 
 echo ""
 echo ""
